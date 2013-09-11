@@ -1,0 +1,161 @@
+/*fixes widht issue*/
+/* line 20, ../sass/navigation.scss */
+#navigation {
+  width: inherit;
+  right: 0;
+}
+
+/* line 25, ../sass/navigation.scss */
+#page, #header {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+/* line 31, ../sass/navigation.scss */
+.header__secondary-menu {
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: inherit;
+  clear: both;
+}
+/* line 37, ../sass/navigation.scss */
+.header__secondary-menu li, .header__secondary-menu a {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 44, ../sass/navigation.scss */
+nav ul, .header__secondary-menu ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+/* line 51, ../sass/navigation.scss */
+nav li a, .header__secondary-menu li a {
+  display: block;
+  padding: .5em 0;
+  border: 0;
+  border-top: 1px solid #333;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 400;
+}
+/* line 59, ../sass/navigation.scss */
+nav li a:hover, .header__secondary-menu li a:hover {
+  text-decoration: underline;
+}
+@media only screen and (min-width: 30em) {
+  /* line 65, ../sass/navigation.scss */
+  nav .logo, .header__secondary-menu .logo {
+    float: left;
+    display: inline-block;
+  }
+  /* line 69, ../sass/navigation.scss */
+  nav ul, .header__secondary-menu ul {
+    float: right;
+    margin-top: -43px;
+    margin-right: 1em;
+  }
+  /* line 74, ../sass/navigation.scss */
+  nav li, .header__secondary-menu li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+  /* line 77, ../sass/navigation.scss */
+  nav li a, .header__secondary-menu li a {
+    border: 0;
+    padding-bottom: 2px;
+  }
+  /* line 80, ../sass/navigation.scss */
+  nav li a:hover, .header__secondary-menu li a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #666;
+  }
+}
+
+/* line 92, ../sass/navigation.scss */
+.fb a {
+  background: transparent url("../images/facebook.png") no-repeat center center;
+}
+
+/* line 97, ../sass/navigation.scss */
+.twitter a {
+  background: transparent url("../images/twitter.png") no-repeat center center;
+}
+
+/* line 102, ../sass/navigation.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  overflow: auto;
+  background-color: #111;
+  padding: 0 1em;
+  color: #f1f1f1;
+}
+/* line 113, ../sass/navigation.scss */
+.footer ul {
+  display: inline-block;
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 1em 0;
+}
+/* line 119, ../sass/navigation.scss */
+.footer ul li {
+  display: inline;
+}
+/* line 121, ../sass/navigation.scss */
+.footer ul li a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 .5em 0;
+  height: 25px;
+  width: 25px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+/* line 132, ../sass/navigation.scss */
+.footer ul li a:hover {
+  border-bottom: 0;
+  opacity: .6;
+}
+/* line 143, ../sass/navigation.scss */
+.footer .colophon {
+  padding: 0;
+  margin: 3px;
+  color: #555;
+  font-size: .775em;
+  font-weight: 400;
+  padding-bottom: .5em;
+  float: right;
+  display: inline-block;
+}
+@media only screen and (min-width: 20em) {
+  /* line 143, ../sass/navigation.scss */
+  .footer .colophon {
+    padding-top: 1.5em;
+  }
+}
+/* line 156, ../sass/navigation.scss */
+.footer .colophon a {
+  color: #555;
+}
+/* line 158, ../sass/navigation.scss */
+.footer .colophon a:hover {
+  border-color: #333;
+}

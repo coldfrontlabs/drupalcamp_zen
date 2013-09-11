@@ -43,6 +43,7 @@ h1 {
 .logo {
   padding: 0 1em;
   font-size: 1rem;
+  text-decoration: none;
 }
 /* line 50, ../sass/pages.scss */
 .logo img {
@@ -72,39 +73,40 @@ h1 {
   transition: all 500ms ease-in-out;
   border: 0;
   opacity: 0.7;
+  text-decoration: none;
 }
 
-/* line 74, ../sass/pages.scss */
+/* line 75, ../sass/pages.scss */
 header {
   background-color: #222;
   margin: 0;
   padding: 5px 0;
 }
 
-/* line 81, ../sass/pages.scss */
+/* line 82, ../sass/pages.scss */
 #main {
   position: inherit;
 }
 
-/* line 87, ../sass/pages.scss */
+/* line 88, ../sass/pages.scss */
 .main {
   color: #f1f1f1;
   padding: 1em 5%;
 }
-/* line 90, ../sass/pages.scss */
+/* line 91, ../sass/pages.scss */
 .main h1 {
   font-size: 1.9em;
   line-height: 1.4;
   text-align: center;
 }
 @media only screen and (min-width: 30em) {
-  /* line 90, ../sass/pages.scss */
+  /* line 91, ../sass/pages.scss */
   .main h1 {
     text-align: left;
     font-size: 2.5em;
   }
 }
-/* line 100, ../sass/pages.scss */
+/* line 101, ../sass/pages.scss */
 .main .feature {
   position: absolute;
   margin: 0 1em 150px 0;
@@ -122,42 +124,42 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media only screen and (min-width: 30em) {
-  /* line 100, ../sass/pages.scss */
+  /* line 101, ../sass/pages.scss */
   .main .feature {
     max-width: 550px;
   }
 }
 @media only screen and (min-width: 60em) {
-  /* line 100, ../sass/pages.scss */
+  /* line 101, ../sass/pages.scss */
   .main .feature {
     width: 550px;
   }
 }
-/* line 124, ../sass/pages.scss */
+/* line 125, ../sass/pages.scss */
 .main .feature a {
   color: #0d70aa;
   text-decoration: none;
   font-weight: bold;
   padding-bottom: 2px;
 }
-/* line 129, ../sass/pages.scss */
+/* line 130, ../sass/pages.scss */
 .main .feature a:hover {
   border-bottom: 1px solid #093f5f;
 }
 
-/* line 140, ../sass/pages.scss */
+/* line 141, ../sass/pages.scss */
 .footer a {
   color: #0d70aa;
   text-decoration: none;
   font-weight: bold;
   padding-bottom: 2px;
 }
-/* line 145, ../sass/pages.scss */
+/* line 146, ../sass/pages.scss */
 .footer a:hover {
   border-bottom: 1px solid #093f5f;
 }
 
-/* line 151, ../sass/pages.scss */
+/* line 152, ../sass/pages.scss */
 .triangle-right.top:before {
   top: -20px;
   left: 0;
@@ -166,7 +168,7 @@ header {
   border-color: transparent rgba(0, 0, 0, 0.5);
 }
 
-/* line 159, ../sass/pages.scss */
+/* line 160, ../sass/pages.scss */
 .triangle-right:before {
   content: "";
   position: absolute;
@@ -178,18 +180,18 @@ header {
   width: 0;
 }
 
-/* line 170, ../sass/pages.scss */
+/* line 171, ../sass/pages.scss */
 .wrapper {
   margin: 0 auto;
 }
 @media only screen and (min-width: 60em) {
-  /* line 170, ../sass/pages.scss */
+  /* line 171, ../sass/pages.scss */
   .wrapper {
     width: 960px;
   }
 }
 @media only screen and (min-width: 90em) {
-  /* line 170, ../sass/pages.scss */
+  /* line 171, ../sass/pages.scss */
   .wrapper {
     width: 1100px;
   }

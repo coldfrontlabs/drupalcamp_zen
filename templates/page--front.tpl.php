@@ -76,12 +76,11 @@
     <?php endif; ?>
     
     
-    <h1>Drupal Camp Ottawa</h1>
+    <h1><?php print t('Drupal Camp Ottawa'); ?></h1>
     <div class="feature triangle-right top">
-      <p>Join us in March for Drupal Camp Ottawa 2014!</p>
-      <p>Our new website will be up soon, for more information about getting involved send us a tweet <a href="https://twitter.com/DrupalCampOTT" target="_blank">@drupalcampott</a></p>
+      <p><?php print t('Join us in March for Drupal Camp Ottawa 2014!'); ?></p>
+      <p><?php print t('Our new website will be up soon, for more information about getting involved send us a tweet '); ?><a href="https://twitter.com/DrupalCampOTT" target="_blank">@drupalcampott</a></p>
     </div>
-
   </main> <!-- main content close -->
 
 <?php @include 'footer.inc'; ?>

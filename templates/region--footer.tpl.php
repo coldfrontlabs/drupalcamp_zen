@@ -11,7 +11,7 @@
 <?php if ($content): ?>
   <footer id="footer" class="<?php print $classes; ?>">
     <div class="wrapper">
-      <?php print $content; ?>
+      <?php //print $content; ?>
       <ul>
         <li class="fb"><a href="https://www.facebook.com/DrupalCampOttawa" target="_blank">Facebook</a></li>
         <li class="twitter"><a href="https://twitter.com/DrupalCampOTT" target="_blank">Twitter</a></li>

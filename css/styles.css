@@ -1852,7 +1852,7 @@ nav li a:hover, .header__secondary-menu li a:hover {
 }
 
 /* line 102, ../sass/navigation.scss */
-.footer {
+.region-footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1864,7 +1864,7 @@ nav li a:hover, .header__secondary-menu li a:hover {
   color: #f1f1f1;
 }
 /* line 113, ../sass/navigation.scss */
-.footer ul {
+.region-footer ul {
   display: inline-block;
   float: left;
   list-style-type: none;
@@ -1872,11 +1872,11 @@ nav li a:hover, .header__secondary-menu li a:hover {
   padding: 1em 0;
 }
 /* line 119, ../sass/navigation.scss */
-.footer ul li {
+.region-footer ul li {
   display: inline;
 }
 /* line 121, ../sass/navigation.scss */
-.footer ul li a {
+.region-footer ul li a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -1895,12 +1895,12 @@ nav li a:hover, .header__secondary-menu li a:hover {
   transition: all 500ms ease-in-out;
 }
 /* line 132, ../sass/navigation.scss */
-.footer ul li a:hover {
+.region-footer ul li a:hover {
   border-bottom: 0;
   opacity: .6;
 }
 /* line 143, ../sass/navigation.scss */
-.footer .colophon {
+.region-footer .colophon {
   padding: 0;
   margin: 3px;
   color: #555;
@@ -1912,16 +1912,16 @@ nav li a:hover, .header__secondary-menu li a:hover {
 }
 @media only screen and (min-width: 20em) {
   /* line 143, ../sass/navigation.scss */
-  .footer .colophon {
+  .region-footer .colophon {
     padding-top: 1.5em;
   }
 }
 /* line 156, ../sass/navigation.scss */
-.footer .colophon a {
+.region-footer .colophon a {
   color: #555;
 }
 /* line 158, ../sass/navigation.scss */
-.footer .colophon a:hover {
+.region-footer .colophon a:hover {
   border-color: #333;
 }
 

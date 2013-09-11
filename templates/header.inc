@@ -1,4 +1,4 @@
-<div id="page">
+<div id="page" class="clearfix">
 
   <header class="header" id="header" role="banner">
     <div class="wrapper">

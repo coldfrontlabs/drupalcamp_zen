@@ -14,7 +14,7 @@
 
 
 
-  <main class="main wrapper" id="main">
+  <main class="main wrapper clearfix" id="main">
 
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>

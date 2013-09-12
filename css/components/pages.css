@@ -15,69 +15,69 @@
 }
 
 /* line 18, ../../sass/components/pages.scss */
-.not-front .main {
+.main {
   background-color: #fff;
   color: #222;
   padding-bottom: 100px;
 }
 
 /* line 23, ../../sass/components/pages.scss */
-.not-front .region-footer {
+.region-footer {
   bottom: -22px;
 }
 
 /* line 27, ../../sass/components/pages.scss */
-.not-front #page {
+#page {
   position: relative;
 }
 
-/* line 34, ../../sass/components/pages.scss */
+/* line 32, ../../sass/components/pages.scss */
 .relative {
   position: relative;
   width: 100%;
   margin-top: 250px;
   background-color: #fff;
 }
-/* line 40, ../../sass/components/pages.scss */
+/* line 38, ../../sass/components/pages.scss */
 .relative #navigation.main-navigation {
   height: 56px;
   background-color: #f1f1f1;
   margin-bottom: 2em;
 }
-/* line 44, ../../sass/components/pages.scss */
+/* line 42, ../../sass/components/pages.scss */
 .relative #navigation.main-navigation li {
   padding: 1rem .5rem;
 }
 @media only screen and (min-width: 30em) {
-  /* line 52, ../../sass/components/pages.scss */
+  /* line 50, ../../sass/components/pages.scss */
   .relative #navigation.main-navigation {
     position: inherit;
   }
 }
 
-/* line 58, ../../sass/components/pages.scss */
+/* line 56, ../../sass/components/pages.scss */
 h1 {
   line-height: 1;
 }
 
-/* line 62, ../../sass/components/pages.scss */
+/* line 60, ../../sass/components/pages.scss */
 .header__site-name {
   line-height: 1;
 }
 
-/* line 66, ../../sass/components/pages.scss */
+/* line 64, ../../sass/components/pages.scss */
 .logo {
   padding: 0 1em;
   font-size: 1rem;
   text-decoration: none;
 }
-/* line 70, ../../sass/components/pages.scss */
+/* line 68, ../../sass/components/pages.scss */
 .logo img {
   margin: 0;
   padding: 0;
   vertical-align: none;
 }
-/* line 75, ../../sass/components/pages.scss */
+/* line 73, ../../sass/components/pages.scss */
 .logo span {
   vertical-align: top;
   padding: 15px 15px;
@@ -86,11 +86,11 @@ h1 {
   color: #fafafa;
   font-weight: 400;
 }
-/* line 83, ../../sass/components/pages.scss */
+/* line 81, ../../sass/components/pages.scss */
 .logo strong {
   font-weight: 900;
 }
-/* line 87, ../../sass/components/pages.scss */
+/* line 85, ../../sass/components/pages.scss */
 .logo:hover {
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
@@ -102,33 +102,43 @@ h1 {
   text-decoration: none;
 }
 
-/* line 95, ../../sass/components/pages.scss */
+/* line 93, ../../sass/components/pages.scss */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   background-color: #222;
   margin: 0;
   padding: 5px 0;
 }
 
-/* line 107, ../../sass/components/pages.scss */
+/* line 105, ../../sass/components/pages.scss */
+.my-sticky-element.stuck {
+  position: fixed;
+  top: 53px;
+}
+
+/* line 110, ../../sass/components/pages.scss */
 .front .main {
   color: #f1f1f1;
   padding: 1em;
 }
-/* line 110, ../../sass/components/pages.scss */
+/* line 113, ../../sass/components/pages.scss */
 .front .main h1 {
   font-size: 1.9em;
   line-height: 1.4;
   text-align: center;
 }
 @media only screen and (min-width: 30em) {
-  /* line 110, ../../sass/components/pages.scss */
+  /* line 113, ../../sass/components/pages.scss */
   .front .main h1 {
     text-align: left;
     font-size: 2.5em;
   }
 }
-/* line 120, ../../sass/components/pages.scss */
+/* line 123, ../../sass/components/pages.scss */
 .front .main .feature {
   position: absolute;
   margin: 0 1em 150px 0;
@@ -146,19 +156,19 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media only screen and (min-width: 30em) {
-  /* line 120, ../../sass/components/pages.scss */
+  /* line 123, ../../sass/components/pages.scss */
   .front .main .feature {
     max-width: 550px;
   }
 }
 @media only screen and (min-width: 60em) {
-  /* line 120, ../../sass/components/pages.scss */
+  /* line 123, ../../sass/components/pages.scss */
   .front .main .feature {
     width: 550px;
   }
 }
 
-/* line 150, ../../sass/components/pages.scss */
+/* line 153, ../../sass/components/pages.scss */
 .triangle-right.top:before {
   top: -20px;
   left: 0;
@@ -167,7 +177,7 @@ header {
   border-color: transparent rgba(0, 0, 0, 0.5);
 }
 
-/* line 158, ../../sass/components/pages.scss */
+/* line 161, ../../sass/components/pages.scss */
 .triangle-right:before {
   content: "";
   position: absolute;
@@ -179,18 +189,18 @@ header {
   width: 0;
 }
 
-/* line 169, ../../sass/components/pages.scss */
+/* line 172, ../../sass/components/pages.scss */
 .wrapper {
   margin: 0 auto;
 }
 @media only screen and (min-width: 60em) {
-  /* line 169, ../../sass/components/pages.scss */
+  /* line 172, ../../sass/components/pages.scss */
   .wrapper {
     width: 960px;
   }
 }
 @media only screen and (min-width: 90em) {
-  /* line 169, ../../sass/components/pages.scss */
+  /* line 172, ../../sass/components/pages.scss */
   .wrapper {
     width: 1100px;
   }

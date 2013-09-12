@@ -15,21 +15,19 @@
   }
 }
 
-.not-front .main{
+.main{
   background-color: #fff;
   color: #222;
   padding-bottom: 100px;
 }
-.not-front .region-footer{
+.region-footer{
    bottom: -22px;
  }
-.not-front{
+
   #page{
   position:relative;
   }
 
- 
-}
 
 .relative{
   position: relative;
@@ -93,15 +91,20 @@ line-height: 1;
 }
 
 header{
-  //position:fixed;
-  //top: 0;
-  //left: 0;
-  //right: 0;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
   z-index: 100;
   background-color: #222;
   margin: 0;
   padding: 5px 0;
   
+}
+
+.my-sticky-element.stuck{
+  position: fixed;
+  top: 53px;
 }
 
 .front .main{

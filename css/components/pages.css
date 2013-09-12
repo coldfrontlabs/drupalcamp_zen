@@ -1,0 +1,197 @@
+/* line 7, ../../sass/components/pages.scss */
+.front .main a:link,
+.front .main a:visited,
+.front .main a:active {
+  color: #0d70aa;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+/* line 12, ../../sass/components/pages.scss */
+.front .main a:link:hover,
+.front .main a:visited:hover,
+.front .main a:active:hover {
+  border-bottom: 1px solid #09517b;
+}
+
+/* line 18, ../../sass/components/pages.scss */
+.not-front .main {
+  background-color: #fff;
+  color: #222;
+  padding-bottom: 100px;
+}
+
+/* line 23, ../../sass/components/pages.scss */
+.not-front .region-footer {
+  bottom: -22px;
+}
+
+/* line 27, ../../sass/components/pages.scss */
+.not-front #page {
+  position: relative;
+}
+
+/* line 34, ../../sass/components/pages.scss */
+.relative {
+  position: relative;
+  width: 100%;
+  margin-top: 250px;
+  background-color: #fff;
+}
+/* line 40, ../../sass/components/pages.scss */
+.relative #navigation.main-navigation {
+  height: 56px;
+  background-color: #f1f1f1;
+  margin-bottom: 2em;
+}
+/* line 44, ../../sass/components/pages.scss */
+.relative #navigation.main-navigation li {
+  padding: 1rem .5rem;
+}
+@media only screen and (min-width: 30em) {
+  /* line 52, ../../sass/components/pages.scss */
+  .relative #navigation.main-navigation {
+    position: inherit;
+  }
+}
+
+/* line 58, ../../sass/components/pages.scss */
+h1 {
+  line-height: 1;
+}
+
+/* line 62, ../../sass/components/pages.scss */
+.header__site-name {
+  line-height: 1;
+}
+
+/* line 66, ../../sass/components/pages.scss */
+.logo {
+  padding: 0 1em;
+  font-size: 1rem;
+  text-decoration: none;
+}
+/* line 70, ../../sass/components/pages.scss */
+.logo img {
+  margin: 0;
+  padding: 0;
+  vertical-align: none;
+}
+/* line 75, ../../sass/components/pages.scss */
+.logo span {
+  vertical-align: top;
+  padding: 15px 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fafafa;
+  font-weight: 400;
+}
+/* line 83, ../../sass/components/pages.scss */
+.logo strong {
+  font-weight: 900;
+}
+/* line 87, ../../sass/components/pages.scss */
+.logo:hover {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  border: 0;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/* line 95, ../../sass/components/pages.scss */
+header {
+  z-index: 100;
+  background-color: #222;
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* line 107, ../../sass/components/pages.scss */
+.front .main {
+  color: #f1f1f1;
+  padding: 1em;
+}
+/* line 110, ../../sass/components/pages.scss */
+.front .main h1 {
+  font-size: 1.9em;
+  line-height: 1.4;
+  text-align: center;
+}
+@media only screen and (min-width: 30em) {
+  /* line 110, ../../sass/components/pages.scss */
+  .front .main h1 {
+    text-align: left;
+    font-size: 2.5em;
+  }
+}
+/* line 120, ../../sass/components/pages.scss */
+.front .main .feature {
+  position: absolute;
+  margin: 0 1em 150px 0;
+  padding: .5em 1.5em;
+  border-bottom: 7px solid #000;
+  line-height: 1.5;
+  -webkit-border-radius: 0px 0px 3px 3px;
+  border-radius: 0px 0px 3px 3px;
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000)";
+  /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+  /* IE6 & 7 */
+  zoom: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width: 30em) {
+  /* line 120, ../../sass/components/pages.scss */
+  .front .main .feature {
+    max-width: 550px;
+  }
+}
+@media only screen and (min-width: 60em) {
+  /* line 120, ../../sass/components/pages.scss */
+  .front .main .feature {
+    width: 550px;
+  }
+}
+
+/* line 150, ../../sass/components/pages.scss */
+.triangle-right.top:before {
+  top: -20px;
+  left: 0;
+  bottom: auto;
+  border-width: 20px 0 0 20px;
+  border-color: transparent rgba(0, 0, 0, 0.5);
+}
+
+/* line 158, ../../sass/components/pages.scss */
+.triangle-right:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  border-width: 20px 0 0 20px;
+  border-style: solid;
+  border-color: #000 transparent;
+  display: block;
+  width: 0;
+}
+
+/* line 169, ../../sass/components/pages.scss */
+.wrapper {
+  margin: 0 auto;
+}
+@media only screen and (min-width: 60em) {
+  /* line 169, ../../sass/components/pages.scss */
+  .wrapper {
+    width: 960px;
+  }
+}
+@media only screen and (min-width: 90em) {
+  /* line 169, ../../sass/components/pages.scss */
+  .wrapper {
+    width: 1100px;
+  }
+}

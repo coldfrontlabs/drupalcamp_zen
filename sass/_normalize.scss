@@ -110,6 +110,9 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   // Establish a vertical rhythm unit using $base-line-height.
   @include adjust-leading-to(1);
+  position:relative;
+  -webkit-font-smoothing: antialiased;
+  
 }
 
 @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
@@ -123,26 +126,60 @@ html {
 }
 
 /* Remove default margin. */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+html { 
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  position:relative;
+  overflow: auto;
 }
 
+.main{
+  padding-bottom: 100px;
+}
+ 
 /**
  * Links
  *
  * The order of link states are based on Eric Meyer's article:
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
-a:link {
-}
-a:visited {
+ 
+
+a:link, 
+a:visited, 
+a:active {
+  color: $link-color;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 1px;
+  &:hover{
+   border-bottom: 1px solid lighten($link-color, 10%);
+  }
 }
 a:hover,
 a:focus {
 }
 a:active {
 }
+
 
 /* Address `outline` inconsistency between Chrome and other browsers. */
 a:focus {

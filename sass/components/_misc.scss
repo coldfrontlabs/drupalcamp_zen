@@ -167,6 +167,8 @@
  * Breadcrumb navigation.
  */
 .breadcrumb {
+  margin-bottom: 1em;
+  font-size: 0.875em;
   ol {
     margin: 0;
     padding: 0;
@@ -176,6 +178,9 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+  a{
+    font-weight: normal;
   }
 }
 

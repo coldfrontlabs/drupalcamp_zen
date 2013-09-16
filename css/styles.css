@@ -1907,7 +1907,7 @@ tr.selected td {
 /* line 97, ../sass/components/navigation.scss */
 .front .region-footer, .not-front .region-footer {
   position: absolute;
-  bottom: -22px;
+  bottom: -24px;
   width: 100%;
   margin-bottom: 0;
   background-color: #111;

@@ -1855,58 +1855,60 @@ tr.selected td {
 }
 /* line 43, ../sass/components/navigation.scss */
 .header__secondary-menu li a:hover {
+  border: 0;
+  border-top: 1px solid #333;
   text-decoration: underline;
 }
 @media only screen and (min-width: 30em) {
-  /* line 49, ../sass/components/navigation.scss */
+  /* line 51, ../sass/components/navigation.scss */
   .header__secondary-menu .logo {
     float: left;
     display: inline-block;
   }
-  /* line 53, ../sass/components/navigation.scss */
+  /* line 55, ../sass/components/navigation.scss */
   .header__secondary-menu ul {
     float: right;
     margin-top: -43px;
     margin-right: 1em;
   }
-  /* line 58, ../sass/components/navigation.scss */
+  /* line 60, ../sass/components/navigation.scss */
   .header__secondary-menu li {
     display: inline-block;
     margin-left: 1em;
   }
-  /* line 61, ../sass/components/navigation.scss */
+  /* line 63, ../sass/components/navigation.scss */
   .header__secondary-menu li a {
     border: 0;
     padding-bottom: 2px;
   }
-  /* line 64, ../sass/components/navigation.scss */
+  /* line 66, ../sass/components/navigation.scss */
   .header__secondary-menu li a:hover {
     text-decoration: none;
     border-bottom: 1px solid #666;
   }
 }
 
-/* line 76, ../sass/components/navigation.scss */
+/* line 78, ../sass/components/navigation.scss */
 .fb a {
   background: transparent url("../images/facebook.png") no-repeat center center;
 }
 
-/* line 81, ../sass/components/navigation.scss */
+/* line 83, ../sass/components/navigation.scss */
 .twitter a {
   background: transparent url("../images/twitter.png") no-repeat center center;
 }
 
-/* line 86, ../sass/components/navigation.scss */
+/* line 94, ../sass/components/navigation.scss */
 .front .region-footer, .not-front .region-footer {
   position: absolute;
-  bottom: 0;
+  bottom: -22px;
   width: 100%;
   margin-bottom: 0;
   background-color: #111;
   padding: 0 1em;
   color: #f1f1f1;
 }
-/* line 95, ../sass/components/navigation.scss */
+/* line 103, ../sass/components/navigation.scss */
 .front .region-footer ul, .not-front .region-footer ul {
   display: inline-block;
   float: left;
@@ -1914,11 +1916,11 @@ tr.selected td {
   margin: 0;
   padding: 1em 0;
 }
-/* line 101, ../sass/components/navigation.scss */
+/* line 109, ../sass/components/navigation.scss */
 .front .region-footer ul li, .not-front .region-footer ul li {
   display: inline;
 }
-/* line 103, ../sass/components/navigation.scss */
+/* line 111, ../sass/components/navigation.scss */
 .front .region-footer ul li a, .not-front .region-footer ul li a {
   text-indent: 100%;
   white-space: nowrap;
@@ -1937,12 +1939,12 @@ tr.selected td {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-/* line 114, ../sass/components/navigation.scss */
+/* line 122, ../sass/components/navigation.scss */
 .front .region-footer ul li a:hover, .not-front .region-footer ul li a:hover {
   border-bottom: 0;
   opacity: .6;
 }
-/* line 124, ../sass/components/navigation.scss */
+/* line 132, ../sass/components/navigation.scss */
 .front .region-footer .colophon, .not-front .region-footer .colophon {
   padding: 0;
   margin: 3px;
@@ -1954,100 +1956,84 @@ tr.selected td {
   display: inline-block;
 }
 @media only screen and (min-width: 20em) {
-  /* line 124, ../sass/components/navigation.scss */
+  /* line 132, ../sass/components/navigation.scss */
   .front .region-footer .colophon, .not-front .region-footer .colophon {
     padding-top: 1.5em;
   }
 }
-/* line 137, ../sass/components/navigation.scss */
+/* line 145, ../sass/components/navigation.scss */
 .front .region-footer .colophon a, .not-front .region-footer .colophon a {
   color: #555;
 }
-/* line 139, ../sass/components/navigation.scss */
+/* line 147, ../sass/components/navigation.scss */
 .front .region-footer .colophon a:hover, .not-front .region-footer .colophon a:hover {
   border-color: #333;
 }
 
-/* line 7, ../sass/components/pages.scss */
-.front .main a:link,
-.front .main a:visited,
-.front .main a:active {
-  color: #0d70aa;
-  text-decoration: none;
-  font-weight: bold;
-  padding-bottom: 2px;
-}
-/* line 12, ../sass/components/pages.scss */
-.front .main a:link:hover,
-.front .main a:visited:hover,
-.front .main a:active:hover {
-  border-bottom: 1px solid #09517b;
-}
-
-/* line 18, ../sass/components/pages.scss */
-.main {
+/* line 6, ../sass/components/pages.scss */
+.not-front .main {
   background-color: #fff;
   color: #222;
   padding-bottom: 100px;
 }
 
-/* line 23, ../sass/components/pages.scss */
+/* line 11, ../sass/components/pages.scss */
 .region-footer {
   bottom: -22px;
 }
 
-/* line 27, ../sass/components/pages.scss */
+/* line 15, ../sass/components/pages.scss */
 #page {
   position: relative;
 }
 
-/* line 32, ../sass/components/pages.scss */
+/* line 20, ../sass/components/pages.scss */
 .relative {
   position: relative;
   width: 100%;
   margin-top: 250px;
   background-color: #fff;
 }
-/* line 38, ../sass/components/pages.scss */
+/* line 26, ../sass/components/pages.scss */
 .relative #navigation.main-navigation {
   height: 56px;
   background-color: #f1f1f1;
   margin-bottom: 2em;
 }
-/* line 42, ../sass/components/pages.scss */
+/* line 30, ../sass/components/pages.scss */
 .relative #navigation.main-navigation li {
   padding: 1rem .5rem;
 }
 @media only screen and (min-width: 30em) {
-  /* line 50, ../sass/components/pages.scss */
+  /* line 38, ../sass/components/pages.scss */
   .relative #navigation.main-navigation {
     position: inherit;
   }
 }
 
-/* line 56, ../sass/components/pages.scss */
+/* line 44, ../sass/components/pages.scss */
 h1 {
   line-height: 1;
 }
 
-/* line 60, ../sass/components/pages.scss */
+/* line 48, ../sass/components/pages.scss */
 .header__site-name {
   line-height: 1;
 }
 
-/* line 64, ../sass/components/pages.scss */
+/* line 52, ../sass/components/pages.scss */
 .logo {
   padding: 0 1em;
   font-size: 1rem;
   text-decoration: none;
 }
-/* line 68, ../sass/components/pages.scss */
+/* line 56, ../sass/components/pages.scss */
 .logo img {
   margin: 0;
   padding: 0;
   vertical-align: none;
 }
-/* line 73, ../sass/components/pages.scss */
+/* line 61, ../sass/components/pages.scss */
 .logo span {
   vertical-align: top;
   padding: 15px 15px;
@@ -2056,11 +2042,11 @@ h1 {
   color: #fafafa;
   font-weight: 400;
 }
-/* line 81, ../sass/components/pages.scss */
+/* line 69, ../sass/components/pages.scss */
 .logo strong {
   font-weight: 900;
 }
-/* line 85, ../sass/components/pages.scss */
+/* line 73, ../sass/components/pages.scss */
 .logo:hover {
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
@@ -2072,7 +2058,7 @@ h1 {
   text-decoration: none;
 }
 
-/* line 93, ../sass/components/pages.scss */
+/* line 81, ../sass/components/pages.scss */
 header {
   position: fixed;
   top: 0;
@@ -2084,34 +2070,57 @@ header {
   padding: 5px 0;
 }
 
-/* line 105, ../sass/components/pages.scss */
+/* line 93, ../sass/components/pages.scss */
 .my-sticky-element.stuck {
   position: fixed;
   top: 53px;
 }
 
-/* line 110, ../sass/components/pages.scss */
+/* line 98, ../sass/components/pages.scss */
 .front .main {
+  min-height: 800px;
   color: #f1f1f1;
   padding: 1em;
 }
-/* line 113, ../sass/components/pages.scss */
+/* line 105, ../sass/components/pages.scss */
+.front .main a:link,
+.front .main a:visited,
+.front .main a:active {
+  color: #0d70aa;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+/* line 110, ../sass/components/pages.scss */
+.front .main a:link:hover,
+.front .main a:visited:hover,
+.front .main a:active:hover {
+  border-bottom: 1px solid #09517b;
+}
+/* line 114, ../sass/components/pages.scss */
 .front .main h1 {
+  margin-top: 125px;
   font-size: 1.9em;
   line-height: 1.4;
   text-align: center;
 }
 @media only screen and (min-width: 30em) {
-  /* line 113, ../sass/components/pages.scss */
+  /* line 114, ../sass/components/pages.scss */
   .front .main h1 {
     text-align: left;
     font-size: 2.5em;
   }
 }
-/* line 123, ../sass/components/pages.scss */
+@media only screen and (min-width: 48em) {
+  /* line 114, ../sass/components/pages.scss */
+  .front .main h1 {
+    margin-top: 95px;
+    font-size: 3em;
+  }
+}
+/* line 129, ../sass/components/pages.scss */
 .front .main .feature {
-  position: absolute;
-  margin: 0 1em 150px 0;
+  position: relative;
   padding: .5em 1.5em;
   border-bottom: 7px solid #000;
   line-height: 1.5;
@@ -2126,19 +2135,20 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media only screen and (min-width: 30em) {
-  /* line 123, ../sass/components/pages.scss */
+  /* line 129, ../sass/components/pages.scss */
   .front .main .feature {
-    max-width: 550px;
+    max-width: 600px;
   }
 }
-@media only screen and (min-width: 60em) {
-  /* line 123, ../sass/components/pages.scss */
+@media only screen and (min-width: 48em) {
+  /* line 129, ../sass/components/pages.scss */
   .front .main .feature {
-    width: 550px;
+    font-size: 1.125em;
+    width: 600px;
   }
 }
 
-/* line 153, ../sass/components/pages.scss */
+/* line 162, ../sass/components/pages.scss */
 .triangle-right.top:before {
   top: -20px;
   left: 0;
@@ -2147,7 +2157,7 @@ header {
   border-color: transparent rgba(0, 0, 0, 0.5);
 }
 
-/* line 161, ../sass/components/pages.scss */
+/* line 170, ../sass/components/pages.scss */
 .triangle-right:before {
   content: "";
   position: absolute;
@@ -2159,18 +2169,18 @@ header {
   width: 0;
 }
 
-/* line 172, ../sass/components/pages.scss */
+/* line 181, ../sass/components/pages.scss */
 .wrapper {
   margin: 0 auto;
 }
 @media only screen and (min-width: 60em) {
-  /* line 172, ../sass/components/pages.scss */
+  /* line 181, ../sass/components/pages.scss */
   .wrapper {
     width: 960px;
   }
 }
 @media only screen and (min-width: 90em) {
-  /* line 172, ../sass/components/pages.scss */
+  /* line 181, ../sass/components/pages.scss */
   .wrapper {
     width: 1100px;
   }

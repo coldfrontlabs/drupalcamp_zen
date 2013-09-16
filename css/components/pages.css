@@ -1,83 +1,67 @@
-/* line 7, ../../sass/components/pages.scss */
-.front .main a:link,
-.front .main a:visited,
-.front .main a:active {
-  color: #0d70aa;
-  text-decoration: none;
-  font-weight: bold;
-  padding-bottom: 2px;
-}
-/* line 12, ../../sass/components/pages.scss */
-.front .main a:link:hover,
-.front .main a:visited:hover,
-.front .main a:active:hover {
-  border-bottom: 1px solid #09517b;
-}
-
-/* line 18, ../../sass/components/pages.scss */
-.main {
+/* line 6, ../../sass/components/pages.scss */
+.not-front .main {
   background-color: #fff;
   color: #222;
   padding-bottom: 100px;
 }
 
-/* line 23, ../../sass/components/pages.scss */
+/* line 11, ../../sass/components/pages.scss */
 .region-footer {
   bottom: -22px;
 }
 
-/* line 27, ../../sass/components/pages.scss */
+/* line 15, ../../sass/components/pages.scss */
 #page {
   position: relative;
 }
 
-/* line 32, ../../sass/components/pages.scss */
+/* line 20, ../../sass/components/pages.scss */
 .relative {
   position: relative;
   width: 100%;
   margin-top: 250px;
   background-color: #fff;
 }
-/* line 38, ../../sass/components/pages.scss */
+/* line 26, ../../sass/components/pages.scss */
 .relative #navigation.main-navigation {
   height: 56px;
   background-color: #f1f1f1;
   margin-bottom: 2em;
 }
-/* line 42, ../../sass/components/pages.scss */
+/* line 30, ../../sass/components/pages.scss */
 .relative #navigation.main-navigation li {
   padding: 1rem .5rem;
 }
 @media only screen and (min-width: 30em) {
-  /* line 50, ../../sass/components/pages.scss */
+  /* line 38, ../../sass/components/pages.scss */
   .relative #navigation.main-navigation {
     position: inherit;
   }
 }
 
-/* line 56, ../../sass/components/pages.scss */
+/* line 44, ../../sass/components/pages.scss */
 h1 {
   line-height: 1;
 }
 
-/* line 60, ../../sass/components/pages.scss */
+/* line 48, ../../sass/components/pages.scss */
 .header__site-name {
   line-height: 1;
 }
 
-/* line 64, ../../sass/components/pages.scss */
+/* line 52, ../../sass/components/pages.scss */
 .logo {
   padding: 0 1em;
   font-size: 1rem;
   text-decoration: none;
 }
-/* line 68, ../../sass/components/pages.scss */
+/* line 56, ../../sass/components/pages.scss */
 .logo img {
   margin: 0;
   padding: 0;
   vertical-align: none;
 }
-/* line 73, ../../sass/components/pages.scss */
+/* line 61, ../../sass/components/pages.scss */
 .logo span {
   vertical-align: top;
   padding: 15px 15px;
@@ -86,11 +70,11 @@ h1 {
   color: #fafafa;
   font-weight: 400;
 }
-/* line 81, ../../sass/components/pages.scss */
+/* line 69, ../../sass/components/pages.scss */
 .logo strong {
   font-weight: 900;
 }
-/* line 85, ../../sass/components/pages.scss */
+/* line 73, ../../sass/components/pages.scss */
 .logo:hover {
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
@@ -102,7 +86,7 @@ h1 {
   text-decoration: none;
 }
 
-/* line 93, ../../sass/components/pages.scss */
+/* line 81, ../../sass/components/pages.scss */
 header {
   position: fixed;
   top: 0;
@@ -114,34 +98,57 @@ header {
   padding: 5px 0;
 }
 
-/* line 105, ../../sass/components/pages.scss */
+/* line 93, ../../sass/components/pages.scss */
 .my-sticky-element.stuck {
   position: fixed;
   top: 53px;
 }
 
-/* line 110, ../../sass/components/pages.scss */
+/* line 98, ../../sass/components/pages.scss */
 .front .main {
+  min-height: 800px;
   color: #f1f1f1;
   padding: 1em;
 }
-/* line 113, ../../sass/components/pages.scss */
+/* line 105, ../../sass/components/pages.scss */
+.front .main a:link,
+.front .main a:visited,
+.front .main a:active {
+  color: #0d70aa;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+/* line 110, ../../sass/components/pages.scss */
+.front .main a:link:hover,
+.front .main a:visited:hover,
+.front .main a:active:hover {
+  border-bottom: 1px solid #09517b;
+}
+/* line 114, ../../sass/components/pages.scss */
 .front .main h1 {
+  margin-top: 125px;
   font-size: 1.9em;
   line-height: 1.4;
   text-align: center;
 }
 @media only screen and (min-width: 30em) {
-  /* line 113, ../../sass/components/pages.scss */
+  /* line 114, ../../sass/components/pages.scss */
   .front .main h1 {
     text-align: left;
     font-size: 2.5em;
   }
 }
-/* line 123, ../../sass/components/pages.scss */
+@media only screen and (min-width: 48em) {
+  /* line 114, ../../sass/components/pages.scss */
+  .front .main h1 {
+    margin-top: 95px;
+    font-size: 3em;
+  }
+}
+/* line 129, ../../sass/components/pages.scss */
 .front .main .feature {
-  position: absolute;
-  margin: 0 1em 150px 0;
+  position: relative;
   padding: .5em 1.5em;
   border-bottom: 7px solid #000;
   line-height: 1.5;
@@ -156,19 +163,20 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media only screen and (min-width: 30em) {
-  /* line 123, ../../sass/components/pages.scss */
+  /* line 129, ../../sass/components/pages.scss */
   .front .main .feature {
-    max-width: 550px;
+    max-width: 600px;
   }
 }
-@media only screen and (min-width: 60em) {
-  /* line 123, ../../sass/components/pages.scss */
+@media only screen and (min-width: 48em) {
+  /* line 129, ../../sass/components/pages.scss */
   .front .main .feature {
-    width: 550px;
+    font-size: 1.125em;
+    width: 600px;
   }
 }
 
-/* line 153, ../../sass/components/pages.scss */
+/* line 162, ../../sass/components/pages.scss */
 .triangle-right.top:before {
   top: -20px;
   left: 0;
@@ -177,7 +185,7 @@ header {
   border-color: transparent rgba(0, 0, 0, 0.5);
 }
 
-/* line 161, ../../sass/components/pages.scss */
+/* line 170, ../../sass/components/pages.scss */
 .triangle-right:before {
   content: "";
   position: absolute;
@@ -189,18 +197,18 @@ header {
   width: 0;
 }
 
-/* line 172, ../../sass/components/pages.scss */
+/* line 181, ../../sass/components/pages.scss */
 .wrapper {
   margin: 0 auto;
 }
 @media only screen and (min-width: 60em) {
-  /* line 172, ../../sass/components/pages.scss */
+  /* line 181, ../../sass/components/pages.scss */
   .wrapper {
     width: 960px;
   }
 }
 @media only screen and (min-width: 90em) {
-  /* line 172, ../../sass/components/pages.scss */
+  /* line 181, ../../sass/components/pages.scss */
   .wrapper {
     width: 1100px;
   }

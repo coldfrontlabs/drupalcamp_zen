@@ -40,7 +40,9 @@
     color: #f1f1f1;
     text-decoration: none;
     font-weight: 400;
-  &:hover{
+  &:hover{  
+    border: 0;
+    border-top: 1px solid #333;
     text-decoration: underline;
   }
   }// li a
@@ -83,9 +85,15 @@
 
   }
   
+.front{
+  main{
+    
+  }
+}
+  
 .front .region-footer, .not-front .region-footer{
   position: absolute;
-  bottom: 0;
+  bottom: -22px;
   width: 100%;
   margin-bottom: 0;
   

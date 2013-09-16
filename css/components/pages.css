@@ -98,19 +98,13 @@ header {
   padding: 5px 0;
 }
 
-/* line 93, ../../sass/components/pages.scss */
-.my-sticky-element.stuck {
-  position: fixed;
-  top: 53px;
-}
-
-/* line 98, ../../sass/components/pages.scss */
+/* line 94, ../../sass/components/pages.scss */
 .front .main {
   min-height: 700px;
   color: #f1f1f1;
   padding: 1em;
 }
-/* line 105, ../../sass/components/pages.scss */
+/* line 101, ../../sass/components/pages.scss */
 .front .main a:link,
 .front .main a:visited,
 .front .main a:active {
@@ -119,13 +113,13 @@ header {
   font-weight: bold;
   padding-bottom: 2px;
 }
-/* line 110, ../../sass/components/pages.scss */
+/* line 106, ../../sass/components/pages.scss */
 .front .main a:link:hover,
 .front .main a:visited:hover,
 .front .main a:active:hover {
   border-bottom: 1px solid #09517b;
 }
-/* line 114, ../../sass/components/pages.scss */
+/* line 110, ../../sass/components/pages.scss */
 .front .main h1 {
   margin-top: 125px;
   font-size: 1.9em;
@@ -133,20 +127,20 @@ header {
   text-align: center;
 }
 @media only screen and (min-width: 30em) {
-  /* line 114, ../../sass/components/pages.scss */
+  /* line 110, ../../sass/components/pages.scss */
   .front .main h1 {
     text-align: left;
     font-size: 2.5em;
   }
 }
 @media only screen and (min-width: 48em) {
-  /* line 114, ../../sass/components/pages.scss */
+  /* line 110, ../../sass/components/pages.scss */
   .front .main h1 {
     margin-top: 95px;
     font-size: 3em;
   }
 }
-/* line 129, ../../sass/components/pages.scss */
+/* line 125, ../../sass/components/pages.scss */
 .front .main .feature {
   position: relative;
   padding: .5em 1.5em;
@@ -163,20 +157,20 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media only screen and (min-width: 30em) {
-  /* line 129, ../../sass/components/pages.scss */
+  /* line 125, ../../sass/components/pages.scss */
   .front .main .feature {
     max-width: 600px;
   }
 }
 @media only screen and (min-width: 48em) {
-  /* line 129, ../../sass/components/pages.scss */
+  /* line 125, ../../sass/components/pages.scss */
   .front .main .feature {
     font-size: 1.125em;
     width: 600px;
   }
 }
 
-/* line 162, ../../sass/components/pages.scss */
+/* line 158, ../../sass/components/pages.scss */
 .triangle-right.top:before {
   top: -20px;
   left: 0;
@@ -185,7 +179,7 @@ header {
   border-color: transparent rgba(0, 0, 0, 0.5);
 }
 
-/* line 170, ../../sass/components/pages.scss */
+/* line 166, ../../sass/components/pages.scss */
 .triangle-right:before {
   content: "";
   position: absolute;
@@ -197,19 +191,31 @@ header {
   width: 0;
 }
 
-/* line 181, ../../sass/components/pages.scss */
+/* line 177, ../../sass/components/pages.scss */
 .wrapper {
   margin: 0 auto;
 }
 @media only screen and (min-width: 60em) {
-  /* line 181, ../../sass/components/pages.scss */
+  /* line 177, ../../sass/components/pages.scss */
   .wrapper {
     width: 960px;
   }
 }
 @media only screen and (min-width: 90em) {
-  /* line 181, ../../sass/components/pages.scss */
+  /* line 177, ../../sass/components/pages.scss */
   .wrapper {
     width: 1100px;
   }
+}
+
+/* line 188, ../../sass/components/pages.scss */
+.sticky-wrapper {
+  margin-top: 48px;
+}
+
+/* line 192, ../../sass/components/pages.scss */
+.my-sticky-element.stuck {
+  position: fixed !important;
+  top: 48px !important;
+  z-index: 100;
 }

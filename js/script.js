@@ -17,8 +17,9 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
     //Waypoints
-    	$('.my-sticky-element').waypoint('sticky');
-        offset: 53 // Apply "stuck" when element 30px from top      
+    	$('.my-sticky-element').waypoint('sticky', {
+    	  offset: 48 //Applies offset
+    	});    
   }
 };
 

@@ -1814,7 +1814,7 @@ tr.selected td {
     display: none;
   }
 }
-/*fixes widht issue*/
+/*fixes width issue*/
 /* line 9, ../sass/components/navigation.scss */
 #page, #header {
   margin: 0;
@@ -1885,7 +1885,7 @@ tr.selected td {
   /* line 66, ../sass/components/navigation.scss */
   .header__secondary-menu li a {
     border: 0;
-    padding-bottom: 2px;
+    padding-bottom: 0;
   }
   /* line 69, ../sass/components/navigation.scss */
   .header__secondary-menu li a:hover {

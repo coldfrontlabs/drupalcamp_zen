@@ -107,6 +107,12 @@ $tabs-border: #bbb;
 $light-grey: #f1f1f1;
 $link-color: #0d70aa;
 
+
+
+@import "../images/icons/*.png";
+@include all-icons-sprites;
+
+
 // =============================================================================
 // Partials to be shared with all .scss files.
 // =============================================================================
@@ -126,3 +132,6 @@ $link-color: #0d70aa;
 
 // Now we add our custom helper mixins.
 @import "mixins";
+
+
+

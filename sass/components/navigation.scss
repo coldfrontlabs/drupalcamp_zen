@@ -1,5 +1,5 @@
 // **** Navigation scss
-
+@import '../_init';
 @import '../_mixins';
 
 /*fixes width issue*/
@@ -33,16 +33,18 @@
   }
   
   li a{
-    display: block;
+    display: inline-block;
+    float: right;
+    height: 25px;
+    width: 25px;
+   // @include hide-text;
     padding: .5em 0;
     border: 0;
-    border-top: 1px solid #333;
     color: #f1f1f1;
     text-decoration: none;
     font-weight: 400;
   &:hover{  
     border: 0;
-    border-top: 1px solid #333;
     text-decoration: underline;
     @media only screen and (min-width: 30.0em) { //480px
       border-top: 0;
@@ -79,14 +81,14 @@
 }
 
 .fb a{
-  background: transparent url('../images/facebook.png') no-repeat center center;
-
+  @extend .icons-facebook; 
 }
 
 .twitter a{
-    background: transparent url('../images/twitter.png') no-repeat center center;
-
+  @extend .icons-twitter; 
+  background-position: 0 -118px !important;  
   }
+
   
 .front{
   main{
@@ -116,11 +118,7 @@
            display: inline-block;
            margin: 0 .5em 0;
            height: 25px;
-            width: 25px;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+           width: 25px;
            @include ease;
            &:hover{
             border-bottom: 0;

@@ -1,12 +1,43 @@
 // **** Pages scss
 @import '../_init';
 
+body{
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+}
 
+body.front{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%; 
+}
+
+body.not-front{
+  background-position: 0 0;
+  background-size: 600px;
+  
+  @media only screen and (min-width: 30.0em) { //480px
+    background-position: 0 -50px;
+    background-size: 800px;
+  }
+  
+  @media only screen and (min-width: 45.0em) { //720px
+    background-position: 0 0;
+    background-size: 100%;
+  }
+  
+  @media only screen and (min-width: 60.0em) { //960px
+    background-position: 0 -100px;
+  }
+}
 
 .not-front .main{
   background-color: #fff;
   color: #222;
   padding-bottom: 100px;
+  padding-top: 2em;
+  ;
 }
 .region-footer{
    bottom: -22px;
@@ -21,12 +52,10 @@
   position: relative;
   width: 100%;
   margin-top: 250px;
-  background-color: #fff;
-
+  
   #navigation.main-navigation{
     height: 56px;
     background-color: $light-grey;
-    margin-bottom: 2em;
     li{
       padding: 1rem .5rem;
 

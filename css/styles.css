@@ -1187,32 +1187,31 @@ table {
  * Tabs.
  */
 /* Basic positioning styles shared by primary and secondary tabs. */
-/* line 270, ../sass/components/_misc.scss */
+/* line 274, ../sass/components/_misc.scss */
 .tabs-primary, .tabs-secondary {
   overflow: hidden;
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(100%, #bbbbbb), color-stop(100%, transparent));
-  background-image: -webkit-linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
-  background-image: -moz-linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
-  background-image: -o-linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
-  background-image: linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(100%, #cccccc), color-stop(100%, transparent));
+  background-image: -webkit-linear-gradient(bottom, #cccccc 1px, transparent 1px);
+  background-image: -moz-linear-gradient(bottom, #cccccc 1px, transparent 1px);
+  background-image: -o-linear-gradient(bottom, #cccccc 1px, transparent 1px);
+  background-image: linear-gradient(bottom, #cccccc 1px, transparent 1px);
   /* IE 9 and earlier don't understand gradients. */
   list-style: none;
-  border-bottom: 1px solid #bbbbbb \0/ie;
+  border-bottom: 1px solid #cccccc \0/ie;
   margin: 1.5em 0;
   padding: 0 2px;
   white-space: nowrap;
 }
 
-/* line 280, ../sass/components/_misc.scss */
+/* line 284, ../sass/components/_misc.scss */
 .tabs-primary__tab, .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   float: left;
   margin: 0 3px;
 }
 
-/* line 284, ../sass/components/_misc.scss */
+/* line 288, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link, a.tabs-secondary__tab-link {
-  border: 1px solid #e9e9e9;
   border-right: 0;
   border-bottom: 0;
   display: block;
@@ -1221,7 +1220,7 @@ a.tabs-primary__tab-link, a.tabs-secondary__tab-link {
 }
 
 /* Primary tabs. */
-/* line 297, ../sass/components/_misc.scss */
+/* line 300, ../sass/components/_misc.scss */
 .tabs-primary__tab, .tabs-primary__tab.is-active {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -1229,19 +1228,18 @@ a.tabs-primary__tab-link, a.tabs-secondary__tab-link {
   -moz-border-radius-topright: 4px;
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
-  text-shadow: 1px 1px 0 white;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #cccccc;
   border-bottom-color: transparent;
   /* IE 9 and earlier don't understand gradients. */
   border-bottom: 0 \0/ie;
 }
 
-/* line 306, ../sass/components/_misc.scss */
+/* line 308, ../sass/components/_misc.scss */
 .is-active.tabs-primary__tab {
   border-bottom-color: white;
 }
 
-/* line 312, ../sass/components/_misc.scss */
+/* line 314, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -1260,39 +1258,38 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   text-align: center;
 }
 
-/* line 322, ../sass/components/_misc.scss */
+/* line 324, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link:hover, a.tabs-primary__tab-link:focus {
   background-color: #e9e9e9;
   border-color: #f2f2f2;
 }
 
-/* line 326, ../sass/components/_misc.scss */
+/* line 328, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
   background-color: transparent;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE9E9E9', endColorstr='#00E9E9E9');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9e9), color-stop(100%, rgba(233, 233, 233, 0)));
-  background-image: -webkit-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
-  background-image: -moz-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
-  background-image: -o-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
-  background-image: linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
   border-color: #fff;
 }
 
+/* line 337, ../sass/components/_misc.scss */
+a.tabs-primary__tab-link:hover, a.tabs-primary__tab-link:focus {
+  border-bottom: 0;
+}
+
 /* Secondary tabs. */
-/* line 350, ../sass/components/_misc.scss */
+/* line 351, ../sass/components/_misc.scss */
 .tabs-secondary {
   font-size: .9em;
   /* Collapse bottom margin of ul.primary. */
   margin-top: -1.5em;
 }
 
-/* line 357, ../sass/components/_misc.scss */
+/* line 358, ../sass/components/_misc.scss */
 .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   margin: 0.75em 3px;
 }
 
-/* line 363, ../sass/components/_misc.scss */
+/* line 364, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   -webkit-border-radius: 0.75em;
   -moz-border-radius: 0.75em;
@@ -1309,14 +1306,14 @@ a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   padding: 0 .5em;
 }
 
-/* line 372, ../sass/components/_misc.scss */
+/* line 373, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link:hover, a.tabs-secondary__tab-link:focus {
   background-color: #dedede;
   border-color: #999;
   color: #333;
 }
 
-/* line 377, ../sass/components/_misc.scss */
+/* line 378, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   text-shadow: 1px 1px 0 #333333;
   background-color: #666;
@@ -1328,12 +1325,12 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
  * Inline styles.
  */
 /* List of links generated by theme_links(). */
-/* line 405, ../sass/components/_misc.scss */
+/* line 406, ../sass/components/_misc.scss */
 .inline {
   display: inline;
   padding: 0;
 }
-/* line 409, ../sass/components/_misc.scss */
+/* line 410, ../sass/components/_misc.scss */
 .inline li {
   display: inline;
   list-style-type: none;
@@ -1341,7 +1338,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 }
 
 /* The inline field label used by the Fences module. */
-/* line 417, ../sass/components/_misc.scss */
+/* line 418, ../sass/components/_misc.scss */
 span.field-label {
   padding: 0 1em 0 0;
 }
@@ -1349,17 +1346,17 @@ span.field-label {
 /**
  * "More" links.
  */
-/* line 424, ../sass/components/_misc.scss */
+/* line 425, ../sass/components/_misc.scss */
 .more-link {
   text-align: right;
 }
 
-/* line 427, ../sass/components/_misc.scss */
+/* line 428, ../sass/components/_misc.scss */
 .more-help-link {
   text-align: right;
 }
 
-/* line 430, ../sass/components/_misc.scss */
+/* line 431, ../sass/components/_misc.scss */
 .more-help-link a {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA7UlEQVR42qWTPQqDQBCFcwSPkCNITpAj5AjeIm1uYpkyR7Cy2Mot7OwsBAsRwUKwmOwLGRle3EIy8PyBfZ/z3J2TiPylz8VWWZZpUB40BonRKyizaxkA88MYYiqCEgv4MTvnZJom0VqWRbz3FlJZgLYtqmEY1Lg9r+sKsIXcLSC3AC019H0vqLquLeC5AfiHYSGkcdAJimKIBQiJ4+CO92OAtm0FNc8zOjkMwE5Q63FAtbeg6zpAYvG8BWR7i5qmQYwY4MIHqYhE2DOPQWcGJBQF2XU72ZzyUeZ5GCNt5/hybJgYdAXsq5sOEE/jG6dC5IOqCXTmAAAAAElFTkSuQmCC');
   background-position: 0 50%;
@@ -1371,14 +1368,14 @@ span.field-label {
  * Pager.
  */
 /* A list of page numbers when more than 1 page of content is available. */
-/* line 445, ../sass/components/_misc.scss */
+/* line 446, ../sass/components/_misc.scss */
 .pager {
   clear: both;
   padding: 0;
   text-align: center;
 }
 
-/* line 450, ../sass/components/_misc.scss */
+/* line 451, ../sass/components/_misc.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1391,7 +1388,7 @@ span.field-label {
   background-image: none;
 }
 
-/* line 462, ../sass/components/_misc.scss */
+/* line 463, ../sass/components/_misc.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1402,7 +1399,7 @@ span.field-label {
 }
 
 /* The current page's list item. */
-/* line 467, ../sass/components/_misc.scss */
+/* line 468, ../sass/components/_misc.scss */
 .pager-current {
   font-weight: bold;
 }
@@ -1411,7 +1408,7 @@ span.field-label {
  * Blocks.
  */
 /* Block wrapper. */
-/* line 477, ../sass/components/_misc.scss */
+/* line 478, ../sass/components/_misc.scss */
 .block {
   margin-bottom: 1.5em;
 }
@@ -1419,26 +1416,26 @@ span.field-label {
 /**
  * Menus.
  */
-/* line 484, ../sass/components/_misc.scss */
+/* line 485, ../sass/components/_misc.scss */
 .menu__item.is-leaf {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCFtjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa/9ugeaAAAAAElFTkSuQmCC');
   list-style-type: square;
 }
 
-/* line 491, ../sass/components/_misc.scss */
+/* line 492, ../sass/components/_misc.scss */
 .menu__item.is-expanded {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   list-style-type: circle;
 }
 
-/* line 498, ../sass/components/_misc.scss */
+/* line 499, ../sass/components/_misc.scss */
 .menu__item.is-collapsed {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   list-style-type: disc;
 }
 
 /* The active item in a Drupal menu. */
-/* line 507, ../sass/components/_misc.scss */
+/* line 508, ../sass/components/_misc.scss */
 .menu a.active {
   color: #000;
 }
@@ -1447,7 +1444,7 @@ span.field-label {
  * Marker.
  */
 /* The "new" or "updated" marker. */
-/* line 517, ../sass/components/_misc.scss */
+/* line 518, ../sass/components/_misc.scss */
 .new,
 .update {
   color: #c00;
@@ -1459,7 +1456,7 @@ span.field-label {
  * Unpublished note.
  */
 /* The word "Unpublished" displayed underneath the content. */
-/* line 528, ../sass/components/_misc.scss */
+/* line 529, ../sass/components/_misc.scss */
 .unpublished {
   height: 0;
   overflow: visible;
@@ -1480,31 +1477,31 @@ span.field-label {
  * Comments.
  */
 /* Wrapper for the list of comments and its title. */
-/* line 556, ../sass/components/_misc.scss */
+/* line 557, ../sass/components/_misc.scss */
 .comments {
   margin: 1.5em 0;
 }
 
 /* Preview of the comment before submitting new or updated comment. */
-/* line 561, ../sass/components/_misc.scss */
+/* line 562, ../sass/components/_misc.scss */
 .comment-preview {
   /* Drupal core will use a #ffffea background. See #1110842. */
   background-color: #ffffea;
 }
 
 /* Wrapper for a single comment. */
-/* line 567, ../sass/components/_misc.scss */
+/* line 568, ../sass/components/_misc.scss */
 .comment {
   /* Comment's permalink wrapper. */
 }
-/* line 570, ../sass/components/_misc.scss */
+/* line 571, ../sass/components/_misc.scss */
 .comment .permalink {
   text-transform: uppercase;
   font-size: 75%;
 }
 
 /* Nested comments are indented. */
-/* line 577, ../sass/components/_misc.scss */
+/* line 578, ../sass/components/_misc.scss */
 .indented {
   /* Drupal core uses a 25px left margin. */
   margin-left: 30px;
@@ -1514,7 +1511,7 @@ span.field-label {
  * Forms.
  */
 /* Wrapper for a form element (or group of form elements) and its label. */
-/* line 587, ../sass/components/_misc.scss */
+/* line 588, ../sass/components/_misc.scss */
 .form-item {
   margin: 1.5em 0;
   /* Pack groups of checkboxes and radio buttons closer together. */
@@ -1522,47 +1519,47 @@ span.field-label {
   /* Highlight the form elements that caused a form submission error. */
   /* The descriptive help text (separate from the label). */
 }
-/* line 592, ../sass/components/_misc.scss */
+/* line 593, ../sass/components/_misc.scss */
 .form-checkboxes .form-item, .form-radios .form-item {
   /* Drupal core uses "0.4em 0". */
   margin: 0;
 }
-/* line 599, ../sass/components/_misc.scss */
+/* line 600, ../sass/components/_misc.scss */
 tr.odd .form-item, tr.even .form-item {
   margin: 0;
 }
-/* line 606, ../sass/components/_misc.scss */
+/* line 607, ../sass/components/_misc.scss */
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #c00;
 }
-/* line 611, ../sass/components/_misc.scss */
+/* line 612, ../sass/components/_misc.scss */
 .form-item .description {
   font-size: 0.85em;
 }
 
-/* line 618, ../sass/components/_misc.scss */
+/* line 619, ../sass/components/_misc.scss */
 .form-type-radio .description,
 .form-type-checkbox .description {
   margin-left: 2.4em;
 }
 
 /* The part of the label that indicates a required field. */
-/* line 624, ../sass/components/_misc.scss */
+/* line 625, ../sass/components/_misc.scss */
 .form-required {
   color: #c00;
 }
 
 /* Labels for radios and checkboxes. */
-/* line 629, ../sass/components/_misc.scss */
+/* line 630, ../sass/components/_misc.scss */
 label.option {
   display: inline;
   font-weight: normal;
 }
 
 /* Buttons used by contrib modules like Media. */
-/* line 635, ../sass/components/_misc.scss */
+/* line 636, ../sass/components/_misc.scss */
 a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -1570,14 +1567,14 @@ a.button {
 }
 
 /* Password confirmation. */
-/* line 641, ../sass/components/_misc.scss */
+/* line 642, ../sass/components/_misc.scss */
 .password-parent,
 .confirm-parent {
   margin: 0;
 }
 
 /* Drupal's default login form block. */
-/* line 646, ../sass/components/_misc.scss */
+/* line 647, ../sass/components/_misc.scss */
 #user-login-form {
   text-align: left;
 }
@@ -1589,27 +1586,27 @@ a.button {
  * styling of list items.
  */
 /* OpenID creates a new ul above the login form's links. */
-/* line 658, ../sass/components/_misc.scss */
+/* line 659, ../sass/components/_misc.scss */
 .openid-links {
   /* Position OpenID's ul next to the rest of the links. */
   margin-bottom: 0;
 }
 
 /* The "Log in using OpenID" and "Cancel OpenID login" links. */
-/* line 665, ../sass/components/_misc.scss */
+/* line 666, ../sass/components/_misc.scss */
 .openid-link,
 .user-link {
   margin-top: 1.5em;
 }
 
-/* line 669, ../sass/components/_misc.scss */
+/* line 670, ../sass/components/_misc.scss */
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   /* Un-do some of the padding on the ul list. */
   margin-left: -20px;
 }
 
-/* line 673, ../sass/components/_misc.scss */
+/* line 674, ../sass/components/_misc.scss */
 #user-login ul {
   margin: 1.5em 0;
 }
@@ -1617,22 +1614,22 @@ html.js #user-login-form li.openid-link,
 /**
  * Drupal admin tables.
  */
-/* line 681, ../sass/components/_misc.scss */
+/* line 682, ../sass/components/_misc.scss */
 form th {
   text-align: left;
   padding-right: 1em;
   border-bottom: 3px solid #ccc;
 }
-/* line 686, ../sass/components/_misc.scss */
+/* line 687, ../sass/components/_misc.scss */
 form tbody {
   border-top: 1px solid #ccc;
 }
-/* line 689, ../sass/components/_misc.scss */
+/* line 690, ../sass/components/_misc.scss */
 form table ul {
   margin: 0;
 }
 
-/* line 694, ../sass/components/_misc.scss */
+/* line 695, ../sass/components/_misc.scss */
 tr.even,
 tr.odd {
   background-color: #eee;
@@ -1640,26 +1637,26 @@ tr.odd {
   padding: 0.1em 0.6em;
 }
 
-/* line 699, ../sass/components/_misc.scss */
+/* line 700, ../sass/components/_misc.scss */
 tr.even {
   background-color: #fff;
 }
 
 /* Markup generated by theme_tablesort_indicator(). */
-/* line 714, ../sass/components/_misc.scss */
+/* line 715, ../sass/components/_misc.scss */
 td.active {
   background-color: #ddd;
 }
 
 /* Center checkboxes inside table cell. */
-/* line 720, ../sass/components/_misc.scss */
+/* line 721, ../sass/components/_misc.scss */
 td.checkbox,
 th.checkbox {
   text-align: center;
 }
 
 /* Drupal core wrongly puts this in system.menus.css. Since we override that, add it back. */
-/* line 725, ../sass/components/_misc.scss */
+/* line 726, ../sass/components/_misc.scss */
 td.menu-disabled {
   background: #ccc;
 }
@@ -1670,7 +1667,7 @@ td.menu-disabled {
  * @see autocomplete.js
  */
 /* Suggestion list. */
-/* line 736, ../sass/components/_misc.scss */
+/* line 737, ../sass/components/_misc.scss */
 #autocomplete .selected {
   background: #0072b9;
   color: #fff;
@@ -1681,19 +1678,19 @@ td.menu-disabled {
  *
  * @see collapse.js
  */
-/* line 747, ../sass/components/_misc.scss */
+/* line 748, ../sass/components/_misc.scss */
 html.js .collapsible .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   background-position: 5px 65%;
   background-repeat: no-repeat;
   padding-left: 15px;
 }
-/* line 756, ../sass/components/_misc.scss */
+/* line 757, ../sass/components/_misc.scss */
 html.js .collapsed .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   background-position: 5px 50%;
 }
-/* line 763, ../sass/components/_misc.scss */
+/* line 764, ../sass/components/_misc.scss */
 .fieldset-legend .summary {
   color: #999;
   font-size: 0.9em;
@@ -1705,17 +1702,17 @@ html.js .collapsed .fieldset-legend {
  *
  * @see tabledrag.js
  */
-/* line 775, ../sass/components/_misc.scss */
+/* line 776, ../sass/components/_misc.scss */
 tr.drag {
   background-color: #fffff0;
 }
 
-/* line 778, ../sass/components/_misc.scss */
+/* line 779, ../sass/components/_misc.scss */
 tr.drag-previous {
   background-color: #ffd;
 }
 
-/* line 781, ../sass/components/_misc.scss */
+/* line 782, ../sass/components/_misc.scss */
 .tabledrag-toggle-weight {
   font-size: 0.9em;
 }
@@ -1725,7 +1722,7 @@ tr.drag-previous {
  *
  * @see tableselect.js
  */
-/* line 790, ../sass/components/_misc.scss */
+/* line 791, ../sass/components/_misc.scss */
 tr.selected td {
   background: #ffc;
 }
@@ -1735,11 +1732,11 @@ tr.selected td {
  *
  * @see progress.js
  */
-/* line 799, ../sass/components/_misc.scss */
+/* line 800, ../sass/components/_misc.scss */
 .progress {
   font-weight: bold;
 }
-/* line 802, ../sass/components/_misc.scss */
+/* line 803, ../sass/components/_misc.scss */
 .progress .bar {
   background: #ccc;
   border-color: #666;
@@ -1750,7 +1747,7 @@ tr.selected td {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 808, ../sass/components/_misc.scss */
+/* line 809, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
   background-image: url('../images/progress.gif?1376896851');

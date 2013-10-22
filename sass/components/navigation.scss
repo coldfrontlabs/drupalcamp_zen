@@ -17,12 +17,33 @@
   padding: 0;
   display: block;
   float: inherit;
-  clear: both;
+  @media only screen and (min-width: 30.0em) { //480px
+    clear: both;
+  }
   li, a{
     margin: 0;
     padding: 0;
   }
 }
+
+.not-logged-in .header__secondary-menu{
+    .login{
+      @extend .icons-login;
+    }
+}
+
+.logged-in .header__secondary-menu{ 
+    .login{
+      display: none ;
+    }
+    .logout{
+      @extend .icons-logout;
+    }
+}
+
+.user-settings{
+   @extend .icons-gear;
+ }
 
 .header__secondary-menu{ 
   ul{
@@ -30,26 +51,32 @@
     text-align: center;
     margin: 0;
     padding: 0;
+    float: right;
   }
   
   li a{
     display: inline-block;
-    float: right;
     height: 25px;
     width: 25px;
-   // @include hide-text;
+    @include hide-text;
     padding: .5em 0;
     border: 0;
     color: #f1f1f1;
     text-decoration: none;
     font-weight: 400;
-  &:hover{  
-    border: 0;
-    text-decoration: underline;
-    @media only screen and (min-width: 30.0em) { //480px
-      border-top: 0;
+    margin: 0 10px 10px;
+    clear: left;
+    @include ease;
+    @include transition-property(opacity);
+    
+    &:hover{
+      border: 0;
+      @include opacity(.6);
     }
-  }
+    @media only screen and (min-width: 20.9375em) { //335px
+      margin: 10px;
+      clear: none;
+    }
   }// li a
   
   @media only screen and (min-width: 30.0em) { //480px
@@ -66,19 +93,25 @@
      display: inline-block;
      margin-left: 1em;
      a{
-       border: 0;
-       padding-bottom: 0;
+       @include show-text;
+       background: none !important; 
+       width: auto;
+       height: 2em;
+       margin: 0;
+       padding-bottom: 0;       
        &:hover{
          text-decoration: none;
+         @include opacity(1);
+         
         border-bottom: 1px solid #666;
        }//hover
      }//a
-     
-   } 
-  
-  }
-
+   }//li 
+  }//mediaquery
 }
+
+
+
 
 .fb a{
   @extend .icons-facebook; 
@@ -86,7 +119,7 @@
 
 .twitter a{
   @extend .icons-twitter; 
-  background-position: 0 -118px !important;  
+  background-position: 0 -48px !important;
   }
 
   
@@ -122,7 +155,7 @@
            @include ease;
            &:hover{
             border-bottom: 0;
-            opacity: .6; 
+            @include opacity(.6); 
            }
         }
       }//li

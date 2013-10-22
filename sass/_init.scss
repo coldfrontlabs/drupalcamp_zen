@@ -112,7 +112,7 @@ $link-color: #0d70aa;
 // =============================================================================
 
 @import "../images/icons/*.png";
-@include all-icons-sprites;
+@include all-icons-sprites; 
 
 // =============================================================================
 // Partials to be shared with all .scss files.

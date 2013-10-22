@@ -1,31 +1,31 @@
 /* line 74, ../images/icons/*.png */
-.icons-sprite, .icons-facebook, .fb a, .icons-gear, .icons-login, .icons-logout, .icons-twitter, .twitter a {
-  background: url('../../images/../images/icons-sbc43f913d1.png') no-repeat;
+.icons-sprite, .icons-facebook, .fb a, .icons-gear, .user-settings, .icons-login, .not-logged-in .header__secondary-menu .login, .icons-logout, .logged-in .header__secondary-menu .logout, .icons-twitter, .twitter a {
+  background: url('../../images/../images/icons-s72525cd446.png') no-repeat;
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook, .fb a {
-  background-position: 0 -145px;
+  background-position: 0 -100px;
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-gear {
+.icons-gear, .user-settings {
   background-position: 0 0;
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-login {
-  background-position: 0 -80px;
+.icons-login, .not-logged-in .header__secondary-menu .login {
+  background-position: 0 -75px;
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-logout {
-  background-position: 0 -40px;
+.icons-logout, .logged-in .header__secondary-menu .logout {
+  background-position: 0 -25px;
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter, .twitter a {
-  background-position: 0 -120px;
+  background-position: 0 -50px;
 }
 
 /*fixes width issue*/
@@ -42,79 +42,120 @@
   padding: 0;
   display: block;
   float: inherit;
-  clear: both;
 }
-/* line 21, ../../sass/components/navigation.scss */
+@media only screen and (min-width: 30em) {
+  /* line 15, ../../sass/components/navigation.scss */
+  .header__secondary-menu {
+    clear: both;
+  }
+}
+/* line 23, ../../sass/components/navigation.scss */
 .header__secondary-menu li, .header__secondary-menu a {
   margin: 0;
   padding: 0;
 }
 
-/* line 28, ../../sass/components/navigation.scss */
+/* line 36, ../../sass/components/navigation.scss */
+.logged-in .header__secondary-menu .login {
+  display: none;
+}
+
+/* line 49, ../../sass/components/navigation.scss */
 .header__secondary-menu ul {
   list-style-type: none;
   text-align: center;
   margin: 0;
   padding: 0;
+  float: right;
 }
-/* line 35, ../../sass/components/navigation.scss */
+/* line 57, ../../sass/components/navigation.scss */
 .header__secondary-menu li a {
   display: inline-block;
-  float: right;
   height: 25px;
   width: 25px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
   padding: .5em 0;
   border: 0;
   color: #f1f1f1;
   text-decoration: none;
   font-weight: 400;
+  margin: 0 10px 10px;
+  clear: left;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
 }
-/* line 46, ../../sass/components/navigation.scss */
+/* line 72, ../../sass/components/navigation.scss */
 .header__secondary-menu li a:hover {
   border: 0;
-  text-decoration: underline;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
 }
-@media only screen and (min-width: 30em) {
-  /* line 46, ../../sass/components/navigation.scss */
-  .header__secondary-menu li a:hover {
-    border-top: 0;
+@media only screen and (min-width: 20.9375em) {
+  /* line 57, ../../sass/components/navigation.scss */
+  .header__secondary-menu li a {
+    margin: 10px;
+    clear: none;
   }
 }
 @media only screen and (min-width: 30em) {
-  /* line 56, ../../sass/components/navigation.scss */
+  /* line 83, ../../sass/components/navigation.scss */
   .header__secondary-menu .logo {
     float: left;
     display: inline-block;
   }
-  /* line 60, ../../sass/components/navigation.scss */
+  /* line 87, ../../sass/components/navigation.scss */
   .header__secondary-menu ul {
     float: right;
     margin-top: -43px;
     margin-right: 1em;
   }
-  /* line 65, ../../sass/components/navigation.scss */
+  /* line 92, ../../sass/components/navigation.scss */
   .header__secondary-menu li {
     display: inline-block;
     margin-left: 1em;
   }
-  /* line 68, ../../sass/components/navigation.scss */
+  /* line 95, ../../sass/components/navigation.scss */
   .header__secondary-menu li a {
-    border: 0;
+    text-indent: 0;
+    white-space: normal;
+    overflow: visible;
+    background: none !important;
+    width: auto;
+    height: 2em;
+    margin: 0;
     padding-bottom: 0;
   }
-  /* line 71, ../../sass/components/navigation.scss */
+  /* line 102, ../../sass/components/navigation.scss */
   .header__secondary-menu li a:hover {
     text-decoration: none;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
     border-bottom: 1px solid #666;
   }
 }
 
-/* line 87, ../../sass/components/navigation.scss */
+/* line 120, ../../sass/components/navigation.scss */
 .twitter a {
-  background-position: 0 -118px !important;
+  background-position: 0 -48px !important;
 }
 
-/* line 99, ../../sass/components/navigation.scss */
+/* line 132, ../../sass/components/navigation.scss */
 .front .region-footer, .not-front .region-footer {
   position: absolute;
   bottom: -24px;
@@ -124,7 +165,7 @@
   padding: 0 1em;
   color: #f1f1f1;
 }
-/* line 108, ../../sass/components/navigation.scss */
+/* line 141, ../../sass/components/navigation.scss */
 .front .region-footer ul, .not-front .region-footer ul {
   display: inline-block;
   float: left;
@@ -132,11 +173,11 @@
   margin: 0;
   padding: 1em 0;
 }
-/* line 114, ../../sass/components/navigation.scss */
+/* line 147, ../../sass/components/navigation.scss */
 .front .region-footer ul li, .not-front .region-footer ul li {
   display: inline;
 }
-/* line 116, ../../sass/components/navigation.scss */
+/* line 149, ../../sass/components/navigation.scss */
 .front .region-footer ul li a, .not-front .region-footer ul li a {
   text-indent: 100%;
   white-space: nowrap;
@@ -145,18 +186,26 @@
   margin: 0 .5em 0;
   height: 25px;
   width: 25px;
-  -webkit-transition: all 500ms ease-in-out;
-  -moz-transition: all 500ms ease-in-out;
-  -ms-transition: all 500ms ease-in-out;
-  -o-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
-/* line 123, ../../sass/components/navigation.scss */
+/* line 156, ../../sass/components/navigation.scss */
 .front .region-footer ul li a:hover, .not-front .region-footer ul li a:hover {
   border-bottom: 0;
-  opacity: .6;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
 }
-/* line 133, ../../sass/components/navigation.scss */
+/* line 166, ../../sass/components/navigation.scss */
 .front .region-footer .colophon, .not-front .region-footer .colophon {
   padding: 0;
   margin: 3px;
@@ -168,16 +217,16 @@
   display: inline-block;
 }
 @media only screen and (min-width: 20em) {
-  /* line 133, ../../sass/components/navigation.scss */
+  /* line 166, ../../sass/components/navigation.scss */
   .front .region-footer .colophon, .not-front .region-footer .colophon {
     padding-top: 1.5em;
   }
 }
-/* line 146, ../../sass/components/navigation.scss */
+/* line 179, ../../sass/components/navigation.scss */
 .front .region-footer .colophon a, .not-front .region-footer .colophon a {
   color: #555;
 }
-/* line 148, ../../sass/components/navigation.scss */
+/* line 181, ../../sass/components/navigation.scss */
 .front .region-footer .colophon a:hover, .not-front .region-footer .colophon a:hover {
   border-color: #333;
 }

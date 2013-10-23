@@ -38,11 +38,9 @@
 
 // Eases all element css properties
 @mixin ease{
-  -webkit-transition: all 500ms ease-in-out;
-  -moz-transition: all 500ms ease-in-out;
-  -ms-transition: all 500ms ease-in-out;
-  -o-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+  @include transition-property(all);
+  @include transition-duration(300ms);
+  @include transition-timing-function(ease-in-out);
 }
 
 
@@ -50,5 +48,11 @@
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@mixin show-text{
+  text-indent: 0;
+  white-space: normal;
+  overflow: visible;
 }
 

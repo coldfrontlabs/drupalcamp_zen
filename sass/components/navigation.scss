@@ -1,8 +1,8 @@
 // **** Navigation scss
-
+@import '../_init';
 @import '../_mixins';
 
-/*fixes widht issue*/
+/*fixes width issue*/
 
 
 
@@ -17,12 +17,33 @@
   padding: 0;
   display: block;
   float: inherit;
-  clear: both;
+  @media only screen and (min-width: 30.0em) { //480px
+    clear: both;
+  }
   li, a{
     margin: 0;
     padding: 0;
   }
 }
+
+.not-logged-in .header__secondary-menu{
+    .login{
+      @extend .icons-login;
+    }
+}
+
+.logged-in .header__secondary-menu{ 
+    .login{
+      display: none ;
+    }
+    .logout{
+      @extend .icons-logout;
+    }
+}
+
+.user-settings{
+   @extend .icons-gear;
+ }
 
 .header__secondary-menu{ 
   ul{
@@ -30,24 +51,32 @@
     text-align: center;
     margin: 0;
     padding: 0;
+    float: right;
   }
   
   li a{
-    display: block;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    @include hide-text;
     padding: .5em 0;
     border: 0;
-    border-top: 1px solid #333;
     color: #f1f1f1;
     text-decoration: none;
     font-weight: 400;
-  &:hover{  
-    border: 0;
-    border-top: 1px solid #333;
-    text-decoration: underline;
-    @media only screen and (min-width: 30.0em) { //480px
-      border-top: 0;
+    margin: 0 10px 10px;
+    clear: left;
+    @include ease;
+    @include transition-property(opacity);
+    
+    &:hover{
+      border: 0;
+      @include opacity(.6);
     }
-  }
+    @media only screen and (min-width: 20.9375em) { //335px
+      margin: 10px;
+      clear: none;
+    }
   }// li a
   
   @media only screen and (min-width: 30.0em) { //480px
@@ -64,29 +93,35 @@
      display: inline-block;
      margin-left: 1em;
      a{
-       border: 0;
-       padding-bottom: 2px;
+       @include show-text;
+       background: none !important; 
+       width: auto;
+       height: 2em;
+       margin: 0;
+       padding-bottom: 0;       
        &:hover{
          text-decoration: none;
+         @include opacity(1);
+         
         border-bottom: 1px solid #666;
        }//hover
      }//a
-     
-   } 
-  
-  }
-
+   }//li 
+  }//mediaquery
 }
 
-.fb a{
-  background: transparent url('../images/facebook.png') no-repeat center center;
 
+
+
+.fb a{
+  @extend .icons-facebook; 
 }
 
 .twitter a{
-    background: transparent url('../images/twitter.png') no-repeat center center;
-
+  @extend .icons-twitter; 
+  background-position: 0 -48px !important;
   }
+
   
 .front{
   main{
@@ -116,15 +151,11 @@
            display: inline-block;
            margin: 0 .5em 0;
            height: 25px;
-            width: 25px;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+           width: 25px;
            @include ease;
            &:hover{
             border-bottom: 0;
-            opacity: .6; 
+            @include opacity(.6); 
            }
         }
       }//li

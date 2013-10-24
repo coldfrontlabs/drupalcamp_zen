@@ -207,12 +207,8 @@ pre {
 }
 
 .not-front{
-  p,
-  pre{
-    font-weight: 300;
-    @include text-shadow( 1px 1px 1px rgba(0,0,0,0.05));
-    color: #000; 
-  }
+    color: #555; 
+    line-height: 1.5;
 }
 
 blockquote {

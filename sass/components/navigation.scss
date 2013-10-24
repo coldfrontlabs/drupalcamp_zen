@@ -110,14 +110,53 @@
   }//mediaquery
 }
 
+.relative{
+  position: relative;
+  width: 100%;
+  margin-top: 250px;
+  
+  #navigation.main-navigation{
+   // height: 56px;
+    background-color: $light-grey;
+    @media only screen and (min-width: 30.0em) { //480px
+      height: 56px;
+    }
+    li{
+      padding: 1rem .5rem;
 
+    }
+  }
+  @media only screen and (min-width: 30.0em) { //480px
+    //margin-top: 260px;
+    //padding-top: 55px;
+    #navigation.main-navigation{
+      position: inherit;
+    }
+  }
+}
 
+.sticky-wrapper{
+  margin-top: 48px;
+}
 
-.fb a{
+.my-sticky-element.stuck{
+  width: 100%;
+  position: fixed !important;
+  z-index: 100;
+  //top: 151px !important;
+  
+  
+  
+  top: 48px !important;
+}
+
+/* Footer Styling */
+
+.fb{
   @extend .icons-facebook; 
 }
 
-.twitter a{
+.twitter{
   @extend .icons-twitter; 
   background-position: 0 -48px !important;
   }
@@ -128,7 +167,7 @@
     
   }
 }
-  
+
 .front .region-footer, .not-front .region-footer{
   position: absolute;
   bottom: -24px;
@@ -143,7 +182,7 @@
       float: left;
       list-style-type: none;
       margin: 0;
-      padding: 1em 0; 
+      padding: .5em 0; 
       li{
         display: inline;
         a{
@@ -161,6 +200,9 @@
       }//li
     }//ul
     
+    .block{
+      margin-bottom: 0;
+    }
     
     
     .colophon{
@@ -169,12 +211,11 @@
       color: #555;
       font-size: .775em;
       font-weight: 400;
-      padding-bottom: .5em;
       float: right;
       display: inline-block;
       
       @media only screen and (min-width: 20.0em) { //320px
-        padding-top: 1.5em;
+        padding-top: .75em;
       }
       a{
         color: #555;

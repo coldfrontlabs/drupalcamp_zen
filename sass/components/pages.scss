@@ -48,28 +48,6 @@ body.not-front{
   }
 
 
-.relative{
-  position: relative;
-  width: 100%;
-  margin-top: 250px;
-  
-  #navigation.main-navigation{
-    height: 56px;
-    background-color: $light-grey;
-    li{
-      padding: 1rem .5rem;
-
-    }
-  }
-  @media only screen and (min-width: 30.0em) { //480px
-    //margin-top: 260px;
-    //padding-top: 55px;
-    #navigation.main-navigation{
-      position: inherit;
-    }
-  }
-}
-
 h1{
 line-height: 1;
 }
@@ -223,15 +201,6 @@ width: 0;
    }
 }
 
-.sticky-wrapper{
-  margin-top: 48px;
-}
-
-.my-sticky-element.stuck{
-  position: fixed !important;
-  top: 48px !important;
-  z-index: 100;
-}
 
 
 

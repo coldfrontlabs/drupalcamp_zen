@@ -1,10 +1,10 @@
 /* line 74, ../images/icons/*.png */
-.icons-sprite, .icons-facebook, .fb a, .icons-gear, .user-settings, .icons-login, .not-logged-in .header__secondary-menu .login, .icons-logout, .logged-in .header__secondary-menu .logout, .icons-twitter, .twitter a {
+.icons-sprite, .icons-facebook, .fb, .icons-gear, .user-settings, .icons-login, .not-logged-in .header__secondary-menu .login, .icons-logout, .logged-in .header__secondary-menu .logout, .icons-twitter, .twitter {
   background: url('../../images/../images/icons-s72525cd446.png') no-repeat;
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-facebook, .fb a {
+.icons-facebook, .fb {
   background-position: 0 -100px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-twitter, .twitter a {
+.icons-twitter, .twitter {
   background-position: 0 -50px;
 }
 
@@ -150,12 +150,53 @@
   }
 }
 
-/* line 120, ../../sass/components/navigation.scss */
-.twitter a {
+/* line 113, ../../sass/components/navigation.scss */
+.relative {
+  position: relative;
+  width: 100%;
+  margin-top: 250px;
+}
+/* line 118, ../../sass/components/navigation.scss */
+.relative #navigation.main-navigation {
+  background-color: #f1f1f1;
+}
+@media only screen and (min-width: 30em) {
+  /* line 118, ../../sass/components/navigation.scss */
+  .relative #navigation.main-navigation {
+    height: 56px;
+  }
+}
+/* line 124, ../../sass/components/navigation.scss */
+.relative #navigation.main-navigation li {
+  padding: 1rem .5rem;
+}
+@media only screen and (min-width: 30em) {
+  /* line 132, ../../sass/components/navigation.scss */
+  .relative #navigation.main-navigation {
+    position: inherit;
+  }
+}
+
+/* line 138, ../../sass/components/navigation.scss */
+.sticky-wrapper {
+  margin-top: 48px;
+}
+
+/* line 142, ../../sass/components/navigation.scss */
+.my-sticky-element.stuck {
+  width: 100%;
+  position: fixed !important;
+  z-index: 100;
+  top: 48px !important;
+}
+
+/* Footer Styling */
+/* line 159, ../../sass/components/navigation.scss */
+.twitter {
   background-position: 0 -48px !important;
 }
 
-/* line 132, ../../sass/components/navigation.scss */
+/* line 171, ../../sass/components/navigation.scss */
 .front .region-footer, .not-front .region-footer {
   position: absolute;
   bottom: -24px;
@@ -165,19 +206,19 @@
   padding: 0 1em;
   color: #f1f1f1;
 }
-/* line 141, ../../sass/components/navigation.scss */
+/* line 180, ../../sass/components/navigation.scss */
 .front .region-footer ul, .not-front .region-footer ul {
   display: inline-block;
   float: left;
   list-style-type: none;
   margin: 0;
-  padding: 1em 0;
+  padding: .5em 0;
 }
-/* line 147, ../../sass/components/navigation.scss */
+/* line 186, ../../sass/components/navigation.scss */
 .front .region-footer ul li, .not-front .region-footer ul li {
   display: inline;
 }
-/* line 149, ../../sass/components/navigation.scss */
+/* line 188, ../../sass/components/navigation.scss */
 .front .region-footer ul li a, .not-front .region-footer ul li a {
   text-indent: 100%;
   white-space: nowrap;
@@ -199,34 +240,37 @@
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 156, ../../sass/components/navigation.scss */
+/* line 195, ../../sass/components/navigation.scss */
 .front .region-footer ul li a:hover, .not-front .region-footer ul li a:hover {
   border-bottom: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 166, ../../sass/components/navigation.scss */
+/* line 203, ../../sass/components/navigation.scss */
+.front .region-footer .block, .not-front .region-footer .block {
+  margin-bottom: 0;
+}
+/* line 208, ../../sass/components/navigation.scss */
 .front .region-footer .colophon, .not-front .region-footer .colophon {
   padding: 0;
   margin: 3px;
   color: #555;
   font-size: .775em;
   font-weight: 400;
-  padding-bottom: .5em;
   float: right;
   display: inline-block;
 }
 @media only screen and (min-width: 20em) {
-  /* line 166, ../../sass/components/navigation.scss */
+  /* line 208, ../../sass/components/navigation.scss */
   .front .region-footer .colophon, .not-front .region-footer .colophon {
-    padding-top: 1.5em;
+    padding-top: .75em;
   }
 }
-/* line 179, ../../sass/components/navigation.scss */
+/* line 220, ../../sass/components/navigation.scss */
 .front .region-footer .colophon a, .not-front .region-footer .colophon a {
   color: #555;
 }
-/* line 181, ../../sass/components/navigation.scss */
+/* line 222, ../../sass/components/navigation.scss */
 .front .region-footer .colophon a:hover, .not-front .region-footer .colophon a:hover {
   border-color: #333;
 }

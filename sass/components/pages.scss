@@ -65,20 +65,22 @@ line-height: 1;
   }
   
   img{
-    margin: 2px;
+    margin: 7px 2px;
     padding: 0;
     vertical-align: none;
   }
   span{
+    display: none;
+    @media only screen and (min-width:  20.6875em) { 
     vertical-align: top;
-    padding: 15px 15px 15px 0;
+    padding: 20px 15px 15px 0;
     display: inline-block;
     text-transform: uppercase;
     color: #fafafa;
     font-weight: 400;
-    
+    }
     @media only screen and (min-width: 30.0em) { //480px
-      padding: 15px 15px;
+      padding: 20px 15px;
     
     }
   }
@@ -103,6 +105,7 @@ line-height: 1;
   background-color: #222;
   margin: 0;
   padding: 5px 0;
+  height: 56px;
   
 }
 
@@ -110,7 +113,7 @@ article header{
   position: static;
   background-color: transparent;
   margin: inherit;
-  padding: 1em;
+  padding: 1em 0 ;
 }
 
 .front .main{
@@ -174,8 +177,37 @@ article header{
    
     }
     
+
   
 }//main
+
+
+// Home Page Styling
+.relative{
+  position: relative;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.front.home{
+  .relative{
+    position: relative;
+    width: 100%;
+    margin-top: 450px;
+  }
+  
+  article{
+    color: #222;        
+  }
+  .featurehover-block{
+    color: #f1f1f1;
+  }
+  .feature:hover{
+    border-bottom: 7px solid #000;
+    
+  }
+}
+
 
 .triangle-right.top:before {
 top: -20px;

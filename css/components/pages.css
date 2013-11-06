@@ -24,27 +24,27 @@
   background: url('../../images/../images/icons-s72525cd446.png') no-repeat;
 }
 
-/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook {
   background-position: 0 -100px;
 }
 
-/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-gear {
   background-position: 0 0;
 }
 
-/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-login {
   background-position: 0 -75px;
 }
 
-/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-logout {
   background-position: 0 -25px;
 }
 
-/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter {
   background-position: 0 -50px;
 }
@@ -131,30 +131,36 @@ h1 {
 }
 /* line 67, ../../sass/components/pages.scss */
 .logo img {
-  margin: 2px;
+  margin: 7px 2px;
   padding: 0;
   vertical-align: none;
 }
 /* line 72, ../../sass/components/pages.scss */
 .logo span {
-  vertical-align: top;
-  padding: 15px 15px 15px 0;
-  display: inline-block;
-  text-transform: uppercase;
-  color: #fafafa;
-  font-weight: 400;
+  display: none;
+}
+@media only screen and (min-width: 20.6875em) {
+  /* line 72, ../../sass/components/pages.scss */
+  .logo span {
+    vertical-align: top;
+    padding: 20px 15px 15px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fafafa;
+    font-weight: 400;
+  }
 }
 @media only screen and (min-width: 30em) {
   /* line 72, ../../sass/components/pages.scss */
   .logo span {
-    padding: 15px 15px;
+    padding: 20px 15px;
   }
 }
-/* line 85, ../../sass/components/pages.scss */
+/* line 87, ../../sass/components/pages.scss */
 .logo strong {
   font-weight: 900;
 }
-/* line 89, ../../sass/components/pages.scss */
+/* line 91, ../../sass/components/pages.scss */
 .logo:hover {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -173,7 +179,7 @@ h1 {
   text-decoration: none;
 }
 
-/* line 97, ../../sass/components/pages.scss */
+/* line 99, ../../sass/components/pages.scss */
 .header {
   position: fixed;
   top: 0;
@@ -183,23 +189,24 @@ h1 {
   background-color: #222;
   margin: 0;
   padding: 5px 0;
+  height: 56px;
 }
 
-/* line 109, ../../sass/components/pages.scss */
+/* line 112, ../../sass/components/pages.scss */
 article header {
   position: static;
   background-color: transparent;
   margin: inherit;
-  padding: 1em;
+  padding: 1em 0;
 }
 
-/* line 116, ../../sass/components/pages.scss */
+/* line 119, ../../sass/components/pages.scss */
 .front .main {
   min-height: 700px;
   color: #f1f1f1;
   padding: 1em;
 }
-/* line 123, ../../sass/components/pages.scss */
+/* line 126, ../../sass/components/pages.scss */
 .front .main a:link,
 .front .main a:visited,
 .front .main a:active {
@@ -208,13 +215,13 @@ article header {
   font-weight: bold;
   padding-bottom: 2px;
 }
-/* line 128, ../../sass/components/pages.scss */
+/* line 131, ../../sass/components/pages.scss */
 .front .main a:link:hover,
 .front .main a:visited:hover,
 .front .main a:active:hover {
   border-bottom: 1px solid #09517b;
 }
-/* line 132, ../../sass/components/pages.scss */
+/* line 135, ../../sass/components/pages.scss */
 .front .main h1 {
   margin-top: 125px;
   font-size: 1.9em;
@@ -222,20 +229,20 @@ article header {
   text-align: center;
 }
 @media only screen and (min-width: 30em) {
-  /* line 132, ../../sass/components/pages.scss */
+  /* line 135, ../../sass/components/pages.scss */
   .front .main h1 {
     text-align: left;
     font-size: 2.5em;
   }
 }
 @media only screen and (min-width: 48em) {
-  /* line 132, ../../sass/components/pages.scss */
+  /* line 135, ../../sass/components/pages.scss */
   .front .main h1 {
     margin-top: 95px;
     font-size: 3em;
   }
 }
-/* line 147, ../../sass/components/pages.scss */
+/* line 150, ../../sass/components/pages.scss */
 .front .main .feature {
   position: relative;
   padding: .5em 1.5em;
@@ -252,20 +259,46 @@ article header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media only screen and (min-width: 30em) {
-  /* line 147, ../../sass/components/pages.scss */
+  /* line 150, ../../sass/components/pages.scss */
   .front .main .feature {
     max-width: 600px;
   }
 }
 @media only screen and (min-width: 48em) {
-  /* line 147, ../../sass/components/pages.scss */
+  /* line 150, ../../sass/components/pages.scss */
   .front .main .feature {
     font-size: 1.125em;
     width: 600px;
   }
 }
 
-/* line 180, ../../sass/components/pages.scss */
+/* line 186, ../../sass/components/pages.scss */
+.relative {
+  position: relative;
+  width: 100%;
+  margin-top: 48px;
+}
+
+/* line 193, ../../sass/components/pages.scss */
+.front.home .relative {
+  position: relative;
+  width: 100%;
+  margin-top: 450px;
+}
+/* line 199, ../../sass/components/pages.scss */
+.front.home article {
+  color: #222;
+}
+/* line 202, ../../sass/components/pages.scss */
+.front.home .featurehover-block {
+  color: #f1f1f1;
+}
+/* line 205, ../../sass/components/pages.scss */
+.front.home .feature:hover {
+  border-bottom: 7px solid #000;
+}
+
+/* line 212, ../../sass/components/pages.scss */
 .triangle-right.top:before {
   top: -20px;
   left: 0;
@@ -274,7 +307,7 @@ article header {
   border-color: transparent rgba(0, 0, 0, 0.5);
 }
 
-/* line 188, ../../sass/components/pages.scss */
+/* line 220, ../../sass/components/pages.scss */
 .triangle-right:before {
   content: "";
   position: absolute;
@@ -286,18 +319,18 @@ article header {
   width: 0;
 }
 
-/* line 199, ../../sass/components/pages.scss */
+/* line 231, ../../sass/components/pages.scss */
 .wrapper {
   margin: 0 auto;
 }
 @media only screen and (min-width: 60em) {
-  /* line 199, ../../sass/components/pages.scss */
+  /* line 231, ../../sass/components/pages.scss */
   .wrapper {
     width: 960px;
   }
 }
 @media only screen and (min-width: 90em) {
-  /* line 199, ../../sass/components/pages.scss */
+  /* line 231, ../../sass/components/pages.scss */
   .wrapper {
     width: 1100px;
   }

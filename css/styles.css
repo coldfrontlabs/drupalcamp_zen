@@ -32,27 +32,27 @@
   background: url('../images/../images/icons-s72525cd446.png') no-repeat;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook, .fb {
   background-position: 0 -100px;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-gear, .user-settings {
   background-position: 0 0;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-login, .not-logged-in .header__secondary-menu .login {
   background-position: 0 -75px;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-logout, .logged-in .header__secondary-menu .logout {
   background-position: 0 -25px;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter, .twitter {
   background-position: 0 -50px;
 }
@@ -1223,14 +1223,14 @@ table {
 }
 
 /* line 284, ../sass/components/_misc.scss */
-.tabs-primary__tab, .tabs-secondary__tab,
+.tabs-primary__tab, .tabs-primary__tab.is-active, .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   float: left;
   margin: 0 3px;
 }
 
 /* line 288, ../sass/components/_misc.scss */
-a.tabs-primary__tab-link, a.tabs-secondary__tab-link {
+a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   border-right: 0;
   border-bottom: 0;
   display: block;
@@ -1769,7 +1769,7 @@ tr.selected td {
 /* line 809, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1376896851');
+  background-image: url('../images/progress.gif?1380763474');
 }
 
 /**
@@ -1884,27 +1884,27 @@ tr.selected td {
   background: url('../images/../images/icons-s72525cd446.png') no-repeat;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook, .fb {
   background-position: 0 -100px;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-gear, .user-settings {
   background-position: 0 0;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-login, .not-logged-in .header__secondary-menu .login {
   background-position: 0 -75px;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-logout, .logged-in .header__secondary-menu .logout {
   background-position: 0 -25px;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter, .twitter {
   background-position: 0 -50px;
 }
@@ -1920,28 +1920,39 @@ tr.selected td {
 /* line 15, ../sass/components/navigation.scss */
 .header__secondary-menu {
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
   display: block;
   float: inherit;
+}
+@media only screen and (min-width: 20.6875em) {
+  /* line 15, ../sass/components/navigation.scss */
+  .header__secondary-menu {
+    padding: 5px 0;
+  }
 }
 @media only screen and (min-width: 30em) {
   /* line 15, ../sass/components/navigation.scss */
   .header__secondary-menu {
     clear: both;
+    padding: 0;
+  }
+  /* line 27, ../sass/components/navigation.scss */
+  .header__secondary-menu li {
+    margin-top: -5px;
   }
 }
-/* line 23, ../sass/components/navigation.scss */
+/* line 31, ../sass/components/navigation.scss */
 .header__secondary-menu li, .header__secondary-menu a {
   margin: 0;
   padding: 0;
 }
 
-/* line 36, ../sass/components/navigation.scss */
+/* line 44, ../sass/components/navigation.scss */
 .logged-in .header__secondary-menu .login {
   display: none;
 }
 
-/* line 49, ../sass/components/navigation.scss */
+/* line 57, ../sass/components/navigation.scss */
 .header__secondary-menu ul {
   list-style-type: none;
   text-align: center;
@@ -1949,7 +1960,7 @@ tr.selected td {
   padding: 0;
   float: right;
 }
-/* line 57, ../sass/components/navigation.scss */
+/* line 65, ../sass/components/navigation.scss */
 .header__secondary-menu li a {
   display: inline-block;
   height: 25px;
@@ -1981,37 +1992,37 @@ tr.selected td {
   -o-transition-property: opacity;
   transition-property: opacity;
 }
-/* line 72, ../sass/components/navigation.scss */
+/* line 80, ../sass/components/navigation.scss */
 .header__secondary-menu li a:hover {
   border: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
 @media only screen and (min-width: 20.9375em) {
-  /* line 57, ../sass/components/navigation.scss */
+  /* line 65, ../sass/components/navigation.scss */
   .header__secondary-menu li a {
     margin: 10px;
     clear: none;
   }
 }
 @media only screen and (min-width: 30em) {
-  /* line 83, ../sass/components/navigation.scss */
+  /* line 91, ../sass/components/navigation.scss */
   .header__secondary-menu .logo {
     float: left;
     display: inline-block;
   }
-  /* line 87, ../sass/components/navigation.scss */
+  /* line 95, ../sass/components/navigation.scss */
   .header__secondary-menu ul {
     float: right;
-    margin-top: -43px;
+    margin-top: -50px;
     margin-right: 1em;
   }
-  /* line 92, ../sass/components/navigation.scss */
+  /* line 100, ../sass/components/navigation.scss */
   .header__secondary-menu li {
     display: inline-block;
     margin-left: 1em;
   }
-  /* line 95, ../sass/components/navigation.scss */
+  /* line 103, ../sass/components/navigation.scss */
   .header__secondary-menu li a {
     text-indent: 0;
     white-space: normal;
@@ -2022,7 +2033,7 @@ tr.selected td {
     margin: 0;
     padding-bottom: 0;
   }
-  /* line 102, ../sass/components/navigation.scss */
+  /* line 110, ../sass/components/navigation.scss */
   .header__secondary-menu li a:hover {
     text-decoration: none;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -2031,39 +2042,33 @@ tr.selected td {
   }
 }
 
-/* line 113, ../sass/components/navigation.scss */
-.relative {
-  position: relative;
-  width: 100%;
-  margin-top: 250px;
-}
-/* line 118, ../sass/components/navigation.scss */
+/* line 124, ../sass/components/navigation.scss */
 .relative #navigation.main-navigation {
   background-color: #f1f1f1;
 }
 @media only screen and (min-width: 30em) {
-  /* line 118, ../sass/components/navigation.scss */
+  /* line 124, ../sass/components/navigation.scss */
   .relative #navigation.main-navigation {
     height: 56px;
   }
 }
-/* line 124, ../sass/components/navigation.scss */
+/* line 130, ../sass/components/navigation.scss */
 .relative #navigation.main-navigation li {
   padding: 1rem .5rem;
 }
 @media only screen and (min-width: 30em) {
-  /* line 132, ../sass/components/navigation.scss */
+  /* line 138, ../sass/components/navigation.scss */
   .relative #navigation.main-navigation {
     position: inherit;
   }
 }
 
-/* line 138, ../sass/components/navigation.scss */
+/* line 144, ../sass/components/navigation.scss */
 .sticky-wrapper {
   margin-top: 48px;
 }
 
-/* line 142, ../sass/components/navigation.scss */
+/* line 148, ../sass/components/navigation.scss */
 .my-sticky-element.stuck {
   width: 100%;
   position: fixed !important;
@@ -2072,12 +2077,12 @@ tr.selected td {
 }
 
 /* Footer Styling */
-/* line 159, ../sass/components/navigation.scss */
+/* line 165, ../sass/components/navigation.scss */
 .twitter {
   background-position: 0 -48px !important;
 }
 
-/* line 171, ../sass/components/navigation.scss */
+/* line 177, ../sass/components/navigation.scss */
 .front .region-footer, .not-front .region-footer {
   position: absolute;
   bottom: -24px;
@@ -2087,7 +2092,7 @@ tr.selected td {
   padding: 0 1em;
   color: #f1f1f1;
 }
-/* line 180, ../sass/components/navigation.scss */
+/* line 186, ../sass/components/navigation.scss */
 .front .region-footer ul, .not-front .region-footer ul {
   display: inline-block;
   float: left;
@@ -2095,11 +2100,11 @@ tr.selected td {
   margin: 0;
   padding: .5em 0;
 }
-/* line 186, ../sass/components/navigation.scss */
+/* line 192, ../sass/components/navigation.scss */
 .front .region-footer ul li, .not-front .region-footer ul li {
   display: inline;
 }
-/* line 188, ../sass/components/navigation.scss */
+/* line 194, ../sass/components/navigation.scss */
 .front .region-footer ul li a, .not-front .region-footer ul li a {
   text-indent: 100%;
   white-space: nowrap;
@@ -2121,17 +2126,17 @@ tr.selected td {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 195, ../sass/components/navigation.scss */
+/* line 201, ../sass/components/navigation.scss */
 .front .region-footer ul li a:hover, .not-front .region-footer ul li a:hover {
   border-bottom: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 203, ../sass/components/navigation.scss */
+/* line 209, ../sass/components/navigation.scss */
 .front .region-footer .block, .not-front .region-footer .block {
   margin-bottom: 0;
 }
-/* line 208, ../sass/components/navigation.scss */
+/* line 214, ../sass/components/navigation.scss */
 .front .region-footer .colophon, .not-front .region-footer .colophon {
   padding: 0;
   margin: 3px;
@@ -2142,16 +2147,16 @@ tr.selected td {
   display: inline-block;
 }
 @media only screen and (min-width: 20em) {
-  /* line 208, ../sass/components/navigation.scss */
+  /* line 214, ../sass/components/navigation.scss */
   .front .region-footer .colophon, .not-front .region-footer .colophon {
     padding-top: .75em;
   }
 }
-/* line 220, ../sass/components/navigation.scss */
+/* line 226, ../sass/components/navigation.scss */
 .front .region-footer .colophon a, .not-front .region-footer .colophon a {
   color: #555;
 }
-/* line 222, ../sass/components/navigation.scss */
+/* line 228, ../sass/components/navigation.scss */
 .front .region-footer .colophon a:hover, .not-front .region-footer .colophon a:hover {
   border-color: #333;
 }
@@ -2182,27 +2187,27 @@ tr.selected td {
   background: url('../images/../images/icons-s72525cd446.png') no-repeat;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook, .fb {
   background-position: 0 -100px;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-gear, .user-settings {
   background-position: 0 0;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-login, .not-logged-in .header__secondary-menu .login {
   background-position: 0 -75px;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-logout, .logged-in .header__secondary-menu .logout {
   background-position: 0 -25px;
 }
 
-/* line 60, ../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter, .twitter {
   background-position: 0 -50px;
 }
@@ -2289,30 +2294,36 @@ h1 {
 }
 /* line 67, ../sass/components/pages.scss */
 .logo img {
-  margin: 2px;
+  margin: 7px 2px;
   padding: 0;
   vertical-align: none;
 }
 /* line 72, ../sass/components/pages.scss */
 .logo span {
-  vertical-align: top;
-  padding: 15px 15px 15px 0;
-  display: inline-block;
-  text-transform: uppercase;
-  color: #fafafa;
-  font-weight: 400;
+  display: none;
+}
+@media only screen and (min-width: 20.6875em) {
+  /* line 72, ../sass/components/pages.scss */
+  .logo span {
+    vertical-align: top;
+    padding: 20px 15px 15px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fafafa;
+    font-weight: 400;
+  }
 }
 @media only screen and (min-width: 30em) {
   /* line 72, ../sass/components/pages.scss */
   .logo span {
-    padding: 15px 15px;
+    padding: 20px 15px;
   }
 }
-/* line 85, ../sass/components/pages.scss */
+/* line 87, ../sass/components/pages.scss */
 .logo strong {
   font-weight: 900;
 }
-/* line 89, ../sass/components/pages.scss */
+/* line 91, ../sass/components/pages.scss */
 .logo:hover {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -2331,7 +2342,7 @@ h1 {
   text-decoration: none;
 }
 
-/* line 97, ../sass/components/pages.scss */
+/* line 99, ../sass/components/pages.scss */
 .header {
   position: fixed;
   top: 0;
@@ -2341,23 +2352,24 @@ h1 {
   background-color: #222;
   margin: 0;
   padding: 5px 0;
+  height: 56px;
 }
 
-/* line 109, ../sass/components/pages.scss */
+/* line 112, ../sass/components/pages.scss */
 article header {
   position: static;
   background-color: transparent;
   margin: inherit;
-  padding: 1em;
+  padding: 1em 0;
 }
 
-/* line 116, ../sass/components/pages.scss */
+/* line 119, ../sass/components/pages.scss */
 .front .main {
   min-height: 700px;
   color: #f1f1f1;
   padding: 1em;
 }
-/* line 123, ../sass/components/pages.scss */
+/* line 126, ../sass/components/pages.scss */
 .front .main a:link,
 .front .main a:visited,
 .front .main a:active {
@@ -2366,13 +2378,13 @@ article header {
   font-weight: bold;
   padding-bottom: 2px;
 }
-/* line 128, ../sass/components/pages.scss */
+/* line 131, ../sass/components/pages.scss */
 .front .main a:link:hover,
 .front .main a:visited:hover,
 .front .main a:active:hover {
   border-bottom: 1px solid #09517b;
 }
-/* line 132, ../sass/components/pages.scss */
+/* line 135, ../sass/components/pages.scss */
 .front .main h1 {
   margin-top: 125px;
   font-size: 1.9em;
@@ -2380,20 +2392,20 @@ article header {
   text-align: center;
 }
 @media only screen and (min-width: 30em) {
-  /* line 132, ../sass/components/pages.scss */
+  /* line 135, ../sass/components/pages.scss */
   .front .main h1 {
     text-align: left;
     font-size: 2.5em;
   }
 }
 @media only screen and (min-width: 48em) {
-  /* line 132, ../sass/components/pages.scss */
+  /* line 135, ../sass/components/pages.scss */
   .front .main h1 {
     margin-top: 95px;
     font-size: 3em;
   }
 }
-/* line 147, ../sass/components/pages.scss */
+/* line 150, ../sass/components/pages.scss */
 .front .main .feature {
   position: relative;
   padding: .5em 1.5em;
@@ -2410,20 +2422,46 @@ article header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media only screen and (min-width: 30em) {
-  /* line 147, ../sass/components/pages.scss */
+  /* line 150, ../sass/components/pages.scss */
   .front .main .feature {
     max-width: 600px;
   }
 }
 @media only screen and (min-width: 48em) {
-  /* line 147, ../sass/components/pages.scss */
+  /* line 150, ../sass/components/pages.scss */
   .front .main .feature {
     font-size: 1.125em;
     width: 600px;
   }
 }
 
-/* line 180, ../sass/components/pages.scss */
+/* line 186, ../sass/components/pages.scss */
+.relative {
+  position: relative;
+  width: 100%;
+  margin-top: 48px;
+}
+
+/* line 193, ../sass/components/pages.scss */
+.front.home .relative {
+  position: relative;
+  width: 100%;
+  margin-top: 450px;
+}
+/* line 199, ../sass/components/pages.scss */
+.front.home article {
+  color: #222;
+}
+/* line 202, ../sass/components/pages.scss */
+.front.home .featurehover-block {
+  color: #f1f1f1;
+}
+/* line 205, ../sass/components/pages.scss */
+.front.home .feature:hover {
+  border-bottom: 7px solid #000;
+}
+
+/* line 212, ../sass/components/pages.scss */
 .triangle-right.top:before {
   top: -20px;
   left: 0;
@@ -2432,7 +2470,7 @@ article header {
   border-color: transparent rgba(0, 0, 0, 0.5);
 }
 
-/* line 188, ../sass/components/pages.scss */
+/* line 220, ../sass/components/pages.scss */
 .triangle-right:before {
   content: "";
   position: absolute;
@@ -2444,18 +2482,18 @@ article header {
   width: 0;
 }
 
-/* line 199, ../sass/components/pages.scss */
+/* line 231, ../sass/components/pages.scss */
 .wrapper {
   margin: 0 auto;
 }
 @media only screen and (min-width: 60em) {
-  /* line 199, ../sass/components/pages.scss */
+  /* line 231, ../sass/components/pages.scss */
   .wrapper {
     width: 960px;
   }
 }
 @media only screen and (min-width: 90em) {
-  /* line 199, ../sass/components/pages.scss */
+  /* line 231, ../sass/components/pages.scss */
   .wrapper {
     width: 1100px;
   }

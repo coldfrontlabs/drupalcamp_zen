@@ -14,11 +14,19 @@
 
 .header__secondary-menu{
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
   display: block;
   float: inherit;
+  @media only screen and (min-width: 20.6875em){
+    padding: 5px 0;
+    
+  }
   @media only screen and (min-width: 30.0em) { //480px
     clear: both;
+    padding: 0;
+    li{
+      margin-top: -5px;
+    }
   }
   li, a{
     margin: 0;
@@ -86,7 +94,7 @@
    }
    ul{
      float: right;
-     margin-top: -43px;
+     margin-top: -50px;
      margin-right: 1em;
    }
    li{
@@ -111,9 +119,7 @@
 }
 
 .relative{
-  position: relative;
-  width: 100%;
-  margin-top: 250px;
+
   
   #navigation.main-navigation{
    // height: 56px;

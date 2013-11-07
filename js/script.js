@@ -18,13 +18,8 @@ Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
     //Waypoints
     	$('.my-sticky-element').waypoint('sticky', {
-    	  offset: 48 //Applies offset
+    	  offset: 56 //Applies offset
     	});
-    
-    // Twitter widget js.
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-
-
   }
 };
 

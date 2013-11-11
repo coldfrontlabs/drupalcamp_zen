@@ -208,3 +208,41 @@ $zen-auto-include-item-base: false;
     }
   }
 }
+
+
+/* Drupal Camp Styles */
+.front.home{
+  .panel-2col-bricks{
+
+    @media only screen and (min-width: 30em){
+      .panel-col-first{
+        width: 65%;
+        float: left;
+      }
+      .panel-col-last{
+        width: 30%;
+        float: right;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

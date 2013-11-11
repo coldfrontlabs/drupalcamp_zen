@@ -279,6 +279,8 @@ hr {
   margin: rhythm(1) 0;
 }
 
+
+
 /* Address styling not present in IE 8/9. */
 mark {
   background: #ff0;
@@ -386,6 +388,9 @@ img {
     /* Improve image quality when scaled in IE 7. */
     -ms-interpolation-mode: bicubic;
   }
+  
+  @include border-radius(3px);
+  @include box-shadow(rgba(0,0,0,0.3) 0 1px 3px 0);
 
   /* Suppress the space beneath the baseline */
   /* vertical-align: bottom; */

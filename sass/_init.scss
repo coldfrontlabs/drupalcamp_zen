@@ -53,7 +53,7 @@ $base-font-size:   16px; // The font size set on the root html element.
 $base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
 
 $h1-font-size: 2    * $base-font-size;
-$h2-font-size: 1.5  * $base-font-size;
+$h2-font-size: 1.675  * $base-font-size;
 $h3-font-size: 1.17 * $base-font-size;
 $h4-font-size: 1    * $base-font-size;
 $h5-font-size: 0.83 * $base-font-size;
@@ -127,7 +127,10 @@ $tabs-border: #bbb;
 $light-grey: #f1f1f1;
 $link-color: #0d70aa;
 
+$dc-blue: $link-color;
+
 $line-grey: #ccc;
+$light-line-grey: #eee;
 
 // =============================================================================
 // Sprites

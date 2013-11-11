@@ -65,18 +65,9 @@ function drupalcamp_zen_preprocess_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function drupalcamp_zen_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-
-  // Optionally, run node-type-specific preprocess functions, like
-  // drupalcamp_zen_preprocess_node_page() or drupalcamp_zen_preprocess_node_story().
-  $function = __FUNCTION__ . '_' . $variables['node']->type;
-  if (function_exists($function)) {
-    $function($variables, $hook);
-  }
+  $variables['submitted'] = $variables['pubdate'];
 }
-// */
 
 /**
  * Override or insert variables into the comment templates.

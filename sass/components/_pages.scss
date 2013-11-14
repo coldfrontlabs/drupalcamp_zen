@@ -1,0 +1,600 @@
+// **** Pages scss
+@import '../_init';
+
+body.html{
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+}
+
+
+
+
+body.front{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%; 
+}
+
+body.not-front{
+  background-position: 0 0;
+  background-size: 600px;
+  
+  .main{
+    padding: 3em 1em;
+  }
+  
+  @media only screen and (min-width: 30.0em) { //480px
+    background-position: 0 -50px;
+    background-size: 800px;
+  }
+  
+  @media only screen and (min-width: 45.0em) { //720px
+    background-position: 0 0;
+    background-size: 100%;
+  }
+  
+  @media only screen and (min-width: 60.0em) { //960px
+    background-position: 0 -100px;
+  }
+}
+
+
+body.home{
+  background-position: -100px -50px;
+  background-size: auto 550px;
+  
+  @media only screen and (min-width: 30.0em) { //480px
+    background-position: 0 -50px;
+  }
+  
+  @media only screen and (min-width: 45.0em) { //720px
+    background-size: auto 650px;
+    
+  }
+  
+  @media only screen and (min-width: 80em) { //960px
+    background-size: 100%;
+    
+  }
+}
+
+.not-front .main{
+  background-color: #fff;
+  color: #222;
+  padding-bottom: 100px;
+  padding-top: 2em;
+}
+
+.region-footer{
+   bottom: -22px;
+ }
+
+  #page{
+  position:relative;
+  }
+
+
+h1{
+line-height: 1;
+}
+
+.header__site-name{
+  line-height: 1;
+}
+
+.logo{
+  padding: 0;  
+  @include rem-fallback(font-size, 1);//16px
+  text-decoration: none;
+  @media only screen and (min-width: 30.0em) { //480px
+    padding: 0 1em;  
+  }
+  
+  @media only screen and (min-width: 60em) { //960px
+    padding: 0 .3em;
+  
+  }  
+  
+  img{
+    margin: 7px 2px;
+    padding: 0;
+    vertical-align: none;
+  }
+  span{
+    display: none;
+    @media only screen and (min-width:  25em) { 
+    vertical-align: top;
+    padding: 20px 15px 15px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fafafa;
+    font-weight: 400;
+    }
+    @media only screen and (min-width: 30.0em) { //480px
+      padding: 20px 15px;
+    
+    }
+  }
+  strong{
+    font-weight: 900;
+  }
+  
+  &:hover{
+    @include ease;
+    border: 0 !important;
+    opacity: 0.7;
+    text-decoration: none;
+  }
+}
+
+.header{
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
+  z-index: 100;
+  background-color: #222;
+  margin: 0;
+  padding: 5px 0;
+  height: 56px;
+  
+}
+
+article header{
+  position: static;
+  background-color: transparent;
+  margin: inherit;
+  padding: 1em 0 ;
+}
+
+.front .main{
+  min-height: 700px;
+  color: #f1f1f1;
+  padding: 1em 1em 5em;
+  
+  a
+  a:link, 
+  a:visited {
+     color: $link-color;
+     text-decoration: none;
+     font-weight: bold;
+     padding-bottom: 2px;
+     border-bottom: 0 solid darken($link-color, 5%);
+   }
+  a:hover,
+  a:focus,
+  a:active{
+    color: darken($link-color, 10%);
+    border-bottom: 1px solid darken($link-color, 5%);
+  }
+  h1{
+    margin-top: 125px;
+    font-size: 1.9em;
+    line-height: 1.4;
+    text-align: center;
+    @media only screen and (min-width: 30.0em) { //480px
+    text-align: left;
+    font-size: 2.5em;
+    }
+    @media only screen and (min-width: 45.000em) { //768px
+      margin-top: 95px;
+      font-size: 3em;
+    }
+  }
+  
+  .feature{
+    position:relative;
+    padding: .5em 1.5em;
+    border-bottom: 7px solid #000;
+    line-height: 1.5;
+    
+    -webkit-border-radius: 0px 0px 3px 3px;
+            border-radius: 0px 0px 3px 3px;
+    
+    
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000)"; /* IE8 */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);   /* IE6 & 7 */
+          zoom: 1;
+    background-color: rgba(0,0,0,0.5);
+    
+    @media only screen and (min-width: 30.0em) { //480px
+      max-width: 600px;
+    }
+     @media only screen and (min-width: 45.000em) { //768px
+        font-size: 1.125em;
+        width: 600px;   
+    }
+  }
+}//main
+
+
+// Home Page Styling
+.relative{
+  position: relative;
+  width: 100%;
+  margin-top: 250px;
+  .main{
+    min-height: 800px;
+  }
+}
+
+.front.home{
+  .relative{
+    position: relative;
+    width: 100%;
+    margin-top: 350px;
+    
+    @media only screen and (min-width: 20.0em) { 
+      margin-top: 450px;
+    
+    }
+    @media only screen and (min-width: 45.0em) { //720px
+      margin-top: 500px;
+    }
+  }
+  
+  article, .pane-title{
+    color: #222;        
+  }
+  
+  h2{
+    margin: 1em 0;
+  }
+  
+  header{
+    padding: 0;
+  }
+  .contextual-links-region{
+    .featurehover-block{
+      color: #f1f1f1;
+      position: absolute;
+      top: -340px;
+      max-width: 350px;
+      
+      
+      @media only screen and (min-width: 20.0em) { //480px
+        top: -380px;
+        max-width: 450px;
+      }
+    
+     @media only screen and (min-width: 30.0em) { //600px
+       top: -420px;
+      }
+      
+      @media only screen and (min-width: 45.0em) { //720px
+        top: -460px;
+        max-width: 525px;
+      }
+
+    }
+  }
+  
+  .featurehover-block{
+    position: absolute;
+    @include ease;
+    
+      top: -255px;
+      max-width: 350px;
+     
+      @media only screen and (min-width: 20.0em) { //480px
+        top: -295px;
+        max-width: 450px;
+      }
+       @media only screen and (min-width: 30.0em) { //600px
+         top: -355px;
+        }
+      
+      @media only screen and (min-width: 45.0em) { //720px
+        top: -400px;
+        max-width: 525px;
+      }
+
+    article{
+      color: #f1f1f1;
+    }
+    
+    h1{
+      margin-top: 0;
+      text-align: left;
+      line-height: 1.3;
+      
+    }
+    
+    .feature{
+      display: inline-block;
+      color: #f1f1f1;
+      padding: .5em 1.5em;
+      width: auto;
+      text-transform: capitalize;
+      @include border-radius(2px);
+      border-bottom: 7px solid #000;
+      @include ease;
+      
+      &:hover{
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#77000000,endColorstr=#66000000)"; /* IE8 */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#77000000,endColorstr=#66000000);   /* IE6 & 7 */
+              zoom: 1;
+        background-color: rgba(0,0,0,0.6);
+      }
+      
+      @media only screen and (min-width: 30.0em) { //480px        
+        @include rem-fallback(font-size, 1.25);//20px
+      }
+      @media only screen and (min-width: 45.0em) { //720px
+        @include rem-fallback(font-size, 1.375);//24px
+        padding: .54m 1.2em;
+        margin-top: -.2em;
+      }
+    }
+    .feature:hover{
+    }
+  }
+  
+
+
+  .feature-text{
+    color: $dc-blue; 
+    text-align: center;
+    line-height: 1.4;
+    font-style: italic;
+    border-top: 1px solid $light-line-grey;
+    border-bottom: 1px solid $light-line-grey;
+    margin: .5em;
+    padding: .75em;
+    
+    @media only screen and (min-width: 30.0em) { //480px     
+      margin: 2em 0;
+         
+      padding: .75em 20%;
+      @include rem-fallback(font-size, 1.675);//26.8px
+      
+    }
+  }
+  article.node-news{
+    h2{
+      margin-bottom: 0;
+      a,
+      a:link, 
+      a:visited{
+         color: #222;
+         @include ease;
+         border-bottom: 0;
+      }
+      a:hover,
+      a:focus,
+      a:active{
+        color:darken($link-color, 10%);
+        border-bottom: 0;
+      }
+      
+    }//h2
+    p.submitted{
+      margin: 0 0 2em; 
+    }
+  }//news
+
+
+
+  /* Drupal Camp Styles */
+  .panel-2col-bricks{
+    .panel-col-first{
+        width: 100%;
+    }
+    .panel-col-last{
+      width: 100%;
+      .inside{
+        margin: 0;
+      }
+    }
+    @media only screen and (min-width: 50em){
+      
+      .panel-col-first{
+        width: 65%;
+        float: left;
+      }
+      .panel-col-last{
+        width: 30%;
+        float: right;
+      }// panel-col-last
+    }//mediaquery
+  }//2-col
+}//fronthome
+
+time{
+  padding: .3em 2em .3em 2em;
+  background: transparent url('../images/time.png') no-repeat .5em center;
+  background-size: 15px 15px;
+  background-color: #f5f5f5;
+  @include border-radius(3px);
+  @include rem-fallback(font-size, .8);
+  color: #999;
+  font-weight: bold;
+}
+
+hr{
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $light-line-grey;
+}
+
+
+.triangle-right.top:before {
+top: -20px;
+left: 0;
+bottom: auto;
+border-width: 20px 0 0 20px ;
+border-color:transparent rgba(0,0,0,0.5);
+}
+
+.triangle-right:before{
+content: "";
+position: absolute;
+bottom: -20px;
+border-width: 20px 0 0 20px;
+border-style: solid;
+border-color: #000 transparent;
+display: block;
+width: 0;
+}
+
+.wrapper{
+  margin: 0 auto;
+  max-width: 1100px;
+  @media only screen and (min-width: 75.0em) { //960px
+    width: 1100px;
+  }
+}
+
+/* Sponsor Pages */
+
+
+
+.not-front.sponsors .main{
+  h1{
+   line-height: 1.5;
+  }
+  
+  .panel-pane{
+    clear: both;
+  }
+  
+
+  .pane-drupalcamp-sponsor-title-drupalcamp-sponsors{
+    margin: 3em 0;
+    border-top: 1px solid $light-line-grey;
+    
+    .contextual-links-region{
+      overflow: auto;
+    }
+    
+    h2{
+      margin-bottom: 0;
+      @extend .badges-title; // imports badge sprite
+      width: auto;
+      display: inline-block;
+      padding-left: 50px;
+      background-size: 40px;
+      height: 2.5em;
+      padding-top: 3px;
+      line-height: 1.3;
+    }
+    
+    &.platinum h2{
+      @extend .badges-platinum; // imports badge sprite
+      background-size: 40px;
+      background-position: 0 -73px;
+    }
+
+    &.gold h2{
+      @extend .badges-gold; // imports badge sprite
+      background-size: 40px; 
+      background-position: 0 -289px;
+    }    
+    
+    &.silver h2{
+      @extend .badges-silver; // imports badge sprite
+      background-size: 40px; 
+      background-position: 0 -217px;
+    }
+    
+    &.bronze h2{
+      @extend .badges-bronze; // imports badge sprite
+      background-size: 40px; 
+      background-position: 0 -145px;
+    }
+    
+    
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li{
+        display: inline-block;
+        float: left;
+        margin: 2em 0 0;
+        padding: 0;
+        width: 100%;
+        
+        @media only screen and (min-width: 25em){
+          width: 47.5%;
+          margin: .5em 2.5%;
+          &:nth-child(odd){
+            margin-left:0;
+          }
+          &:nth-child(even){
+            margin-right:0;
+          }
+        }
+        @media only screen and (min-width: 35em){
+          width: 31%;
+          margin: .5em 0;
+          &:nth-child(3n+2){
+            margin: .5em 3%;
+          }
+        }
+        @media only screen and (min-width: 60em){
+          width: 23.125%;
+          
+          &:nth-child(3n+2){
+           margin: .5em 0; // overwrite previous
+          }
+          &:nth-child(even){
+            margin-right: 2.5%; // overwrite previous
+          }
+          
+          margin: .5em 2.5% .5em 0; // sets all other li's
+          
+          &:nth-child(5n+4){
+            margin-right: 0;
+          }
+        }//mediaquery
+        
+        
+        a, a img{
+          border: 0;
+          @include box-shadow(none);
+        }
+
+      }//li
+    }//ul
+  }//sponsors
+  
+  .become-a-sponsor{
+    @include clearfix;
+    margin-top: 2em;
+    border-top: 1px solid $light-line-grey;
+    overflow: visible;
+  }
+  
+}//not-front .main
+
+.pane-drupalcamp-sponsor-title-drupalcamp-sponsors{ // fixes border bottom hover on pages other than sponsor
+  a, a img{
+    border: 0 !important;
+    @include box-shadow(none);
+  }
+  ul{
+    padding: 0;
+    text-align: center;
+    
+  }
+  img{
+   // max-width: 250px;
+  }
+}
+
+
+
+.panel-col-last .panel-pane{
+  h2{
+    margin-top: 2.25em; 
+    @include rem-fallback(font-size, 1);//18px
+    text-transform: uppercase;
+    border-bottom: 1px double #eee;
+    color: #666 !important;
+  }
+}
+
+

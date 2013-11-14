@@ -139,7 +139,6 @@ $light-grey: #f1f1f1;
 $link-color: #0d70aa;
 
 $dc-blue: $link-color;
-
 $line-grey: #ccc;
 $light-line-grey: #eee;
 
@@ -149,6 +148,11 @@ $light-line-grey: #eee;
 
 @import "../images/icons/*.png";
 @include all-icons-sprites; 
+
+
+$badges-spacing: 40px;
+@import "../images/badges/*.png";
+@include all-badges-sprites;
 
 // =============================================================================
 // Partials to be shared with all .scss files.

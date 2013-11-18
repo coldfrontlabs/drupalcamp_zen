@@ -201,7 +201,7 @@ a:hover {
 /* Set 1 unit of vertical rhythm on the top and bottom margin. */
 p,
 pre {
-  margin: rhythm(1) 0;
+  //margin: rhythm(1) 0;
   //-webkit-font-smoothing: subpixel-antialiased;
 
 }
@@ -249,9 +249,11 @@ h5 {
   @include trailer(1, $h5-font-size);
 }
 h6 {
-  @include adjust-font-size-to( $h6-font-size );
-  @include leader(1, $h6-font-size);
-  @include trailer(1, $h6-font-size);
+  @include adjust-font-size-to( $h5-font-size );
+  @include leader(1, $h5-font-size);
+  @include trailer(1, $h5-font-size);
+  
+  text-transform: capitalize;
 }
 
 /* Address styling not present in IE 8/9, Safari 5, and Chrome. */
@@ -429,11 +431,15 @@ figure {
 fieldset {
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
-  border-color: #c0c0c0;
   @include apply-side-rhythm-border(top,    $width: 1px, $lines: 0.35);
   @include apply-side-rhythm-border(bottom, $width: 1px, $lines: 0.65);
   @include apply-side-rhythm-border(left,   $width: 1px, $lines: 0.65);
   @include apply-side-rhythm-border(right,  $width: 1px, $lines: 0.65);
+  
+    border: 0;
+    border-top: 1px solid $line-grey;
+    position: relative;
+    margin-top: 55px;
 }
 
 /**
@@ -447,7 +453,17 @@ legend {
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     *margin-left: -7px; /* 3 */
   }
+  
+  position: absolute;
+  top: -25px;
+  left: 1em;
+  margin: 0;
+  font-weight: bold;
 }
+
+
+
+
 
 /**
  * 1. Correct font family not being inherited in all browsers.
@@ -469,6 +485,12 @@ textarea {
   }
   max-width: 100%; /* 5 */
   @include box-sizing(border-box); /* 5 */
+  
+  @include border-radius(3px);
+  @include box-shadow(inset 1px 1px 1px rgba(0, 0, 0, 0.1));
+  border: 1px solid $line-grey;
+  padding: .2em .5em;
+
 }
 
 /**
@@ -509,6 +531,23 @@ input[type="submit"] {
   @if $legacy-support-for-ie7 {
     *overflow: visible; /* 4 */
   }
+  background-color: $link-color;
+  display: inline-block;
+  color: #f5f5f5;
+  font-weight: normal;
+  padding: .2em .5em .4em;
+  border: 0;
+  margin-right: .5em;
+  @include box-shadow(0 0 3px rgba(0,0,0, .2));
+  @include ease;
+  @include transition-property(background-color);
+  position: relative;
+  &:hover{
+    background-color: darken($link-color, 5%);
+  }
+  &:active{
+    top: 1px;
+  }
 }
 
 /**
@@ -532,6 +571,14 @@ input[type="radio"] {
   @if $legacy-support-for-ie7 {
     *height: 13px; /* 3 */
     *width: 13px; /* 3 */
+  }
+  margin: .5em 0 ;
+}
+
+.form-type-checkbox, 
+.form-type-radio{
+  label{
+    margin-left: 2px;
   }
 }
 
@@ -588,4 +635,56 @@ table {
   /* Add vertical rhythm margins. */
   @include leader(1);
   @include trailer(1);
+  
+  width: 100%;
+  text-align: left;
+  
+  tr.odd, tr.even{
+    background-color: transparent;
+    border-bottom: 1px solid $light-line-grey;    
+    border-top: 1px solid $light-line-grey;    
+  }
+  th,td{
+    padding: .5em;
+  }
+}
+
+
+.form-managed-file .form-file, 
+.form-managed-file .form-submit{
+  margin-right: .5em;
+  
+}
+
+.main {
+  li{
+    margin: 1em 0;
+    
+  }
+}
+
+/*wysiwig editor fixes */
+
+a.cke_button{
+  box-sizing: content-box;
+}
+
+.field-widget-entityreference-autocomplete tr{
+  padding: .5em;
+}
+
+
+// Throbber
+
+html.js input.form-autocomplete{
+  background-image:url('../../images/throbber.gif'); 
+}
+
+#autocomplete{
+  background-color: #fff;
+  border: 1px solid $line-grey;
+  li{
+    margin: 0;
+    padding: .5em 1em;
+  }
 }

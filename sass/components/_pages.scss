@@ -1,20 +1,11 @@
 // **** Pages scss
 @import '../_init';
 
-<<<<<<< HEAD
-body{
-  background: url(../images/bg.jpg) no-repeat center center fixed; 
-}
 
-=======
 body.html{
   background: url(../images/bg.jpg) no-repeat center center fixed; 
 }
 
-
-
-
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
 body.front{
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -27,13 +18,11 @@ body.not-front{
   background-position: 0 0;
   background-size: 600px;
   
-<<<<<<< HEAD
-=======
+
   .main{
     padding: 3em 1em;
   }
   
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
   @media only screen and (min-width: 30.0em) { //480px
     background-position: 0 -50px;
     background-size: 800px;
@@ -95,24 +84,17 @@ line-height: 1;
 
 .logo{
   padding: 0;  
-<<<<<<< HEAD
-  @include rem-fallback(font-size, 1);//24px
-=======
   @include rem-fallback(font-size, 1);//16px
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
   text-decoration: none;
   @media only screen and (min-width: 30.0em) { //480px
     padding: 0 1em;  
   }
   
-<<<<<<< HEAD
-=======
+
   @media only screen and (min-width: 60em) { //960px
     padding: 0 .3em;
-  
   }  
   
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
   img{
     margin: 7px 2px;
     padding: 0;
@@ -120,11 +102,7 @@ line-height: 1;
   }
   span{
     display: none;
-<<<<<<< HEAD
-    @media only screen and (min-width:  21.875em) { 
-=======
     @media only screen and (min-width:  25em) { 
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
     vertical-align: top;
     padding: 20px 15px 15px 0;
     display: inline-block;
@@ -174,26 +152,13 @@ article header{
   color: #f1f1f1;
   padding: 1em 1em 5em;
   
-<<<<<<< HEAD
-  
-  a:link, 
-   a:visited, 
-   a:active {
-=======
   a
   a:link, 
   a:visited {
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
      color: $link-color;
      text-decoration: none;
      font-weight: bold;
      padding-bottom: 2px;
-<<<<<<< HEAD
-     &:hover{
-      border-bottom: 1px solid darken($link-color, 10%);
-     }
-   }
-=======
      border-bottom: 0 solid darken($link-color, 5%);
    }
   a:hover,
@@ -202,7 +167,6 @@ article header{
     color: darken($link-color, 10%);
     border-bottom: 1px solid darken($link-color, 5%);
   }
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
   h1{
     margin-top: 125px;
     font-size: 1.9em;
@@ -239,23 +203,9 @@ article header{
     }
      @media only screen and (min-width: 45.000em) { //768px
         font-size: 1.125em;
-<<<<<<< HEAD
-        width: 600px;
-        
-    }
-    @media only screen and (min-width: 60.0em) { //960px
-    }
-    
-   
-    }
-    
-
-  
-=======
         width: 600px;   
     }
   }
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
 }//main
 
 
@@ -263,13 +213,6 @@ article header{
 .relative{
   position: relative;
   width: 100%;
-<<<<<<< HEAD
-  margin-top: 48px;
-}
-
-.front.home{
-  padding-bottom: 100px;
-=======
   margin-top: 250px;
   .main{
     min-height: 800px;
@@ -277,7 +220,6 @@ article header{
 }
 
 .front.home{
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
   .relative{
     position: relative;
     width: 100%;
@@ -292,12 +234,6 @@ article header{
     }
   }
   
-<<<<<<< HEAD
-  article{
-    color: #222;        
-  }
-  
-=======
   article, .pane-title{
     color: #222;        
   }
@@ -309,24 +245,10 @@ article header{
   header{
     padding: 0;
   }
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
   .contextual-links-region{
     .featurehover-block{
       color: #f1f1f1;
       position: absolute;
-<<<<<<< HEAD
-      top: -360px;
-      max-width: 350px;
-      
-      
-      @media only screen and (min-width: 30.0em) { //480px
-        top: -425px;
-        max-width: 450px;
-      }
-      
-      @media only screen and (min-width: 45.0em) { //720px
-        top: -450px;
-=======
       top: -340px;
       max-width: 350px;
       
@@ -342,7 +264,6 @@ article header{
       
       @media only screen and (min-width: 45.0em) { //720px
         top: -460px;
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
         max-width: 525px;
       }
 
@@ -350,12 +271,6 @@ article header{
   }
   
   .featurehover-block{
-<<<<<<< HEAD
-    color: #f1f1f1;
-    position: absolute;
-    @include ease;
-    
-=======
     position: absolute;
     @include ease;
     
@@ -378,16 +293,11 @@ article header{
     article{
       color: #f1f1f1;
     }
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
     
     h1{
       margin-top: 0;
       text-align: left;
-<<<<<<< HEAD
-=======
       line-height: 1.3;
-      
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
     }
     
     .feature{
@@ -397,32 +307,6 @@ article header{
       width: auto;
       text-transform: capitalize;
       @include border-radius(2px);
-<<<<<<< HEAD
-      
-      @media only screen and (min-width: 30.0em) { //480px        
-        @include rem-fallback(font-size, 1.2);//24px
-      }
-      @media only screen and (min-width: 45.0em) { //720px
-        @include rem-fallback(font-size, 1.5);//24px
-        padding: .3em 1em;
-      }
-    }
-    .feature:hover{
-      border-bottom: 7px solid #000;
-    }
-  }
-  
-  .panel-col-first{
-    width: 100%;
-  }
-  .panel-col-last{
-    width: 100%;
-    .inside{
-      margin: 0;
-    }
-  }
-
-=======
       border-bottom: 7px solid #000;
       @include ease;
       
@@ -531,7 +415,6 @@ hr{
   height: 1px;
   border: 0;
   border-top: 1px solid $light-line-grey;
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
 }
 
 
@@ -556,20 +439,6 @@ width: 0;
 
 .wrapper{
   margin: 0 auto;
-<<<<<<< HEAD
-  @media only screen and (min-width: 60.0em) { //960px
-    width: 960px;
-  }
-  
-  @media only screen and (min-width: 90.0em) { //1440px
-     width: 1100px;
-   }
-}
-
-
-
-
-=======
   max-width: 1100px;
   @media only screen and (min-width: 75.0em) { //960px
     width: 1100px;
@@ -725,6 +594,5 @@ width: 0;
     color: #666 !important;
   }
 }
->>>>>>> bb56fcb44499b12b664471b37ea8607108e99082
 
 

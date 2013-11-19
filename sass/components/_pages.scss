@@ -253,20 +253,19 @@ article header{
       top: -340px;
       max-width: 350px;
       
-      
-      @media only screen and (min-width: 20.0em) { //480px
-        top: -380px;
-        max-width: 450px;
-      }
-    
-     @media only screen and (min-width: 30.0em) { //600px
-       top: -420px;
-      }
-      
-      @media only screen and (min-width: 45.0em) { //720px
+       @media only screen and (min-width: 20.0em) { //480px
+         top: -420px;
+         max-width: 450px;
+       }
+
+      @media only screen and (min-width: 30.0em) { //600px
         top: -460px;
-        max-width: 525px;
-      }
+       }
+
+       @media only screen and (min-width: 45.0em) { //720px
+         top: -500px;
+         max-width: 525px;
+       } 
 
     }
   }

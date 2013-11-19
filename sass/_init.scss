@@ -53,7 +53,7 @@ $base-font-size:   16px; // The font size set on the root html element.
 $base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
 
 $h1-font-size: 2    * $base-font-size;
-$h2-font-size: 1.5  * $base-font-size;
+$h2-font-size: 1.675  * $base-font-size;
 $h3-font-size: 1.17 * $base-font-size;
 $h4-font-size: 1    * $base-font-size;
 $h5-font-size: 0.83 * $base-font-size;
@@ -89,7 +89,18 @@ $h6-font-size: 0.67 * $base-font-size;
   src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
 }
 
-
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
 // First, let's create some font stacks.
 $times-new-roman: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
 $times:           Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
@@ -127,7 +138,9 @@ $tabs-border: #bbb;
 $light-grey: #f1f1f1;
 $link-color: #0d70aa;
 
+$dc-blue: $link-color;
 $line-grey: #ccc;
+$light-line-grey: #eee;
 
 // =============================================================================
 // Sprites
@@ -135,6 +148,11 @@ $line-grey: #ccc;
 
 @import "../images/icons/*.png";
 @include all-icons-sprites; 
+
+
+$badges-spacing: 40px;
+@import "../images/badges/*.png";
+@include all-badges-sprites;
 
 // =============================================================================
 // Partials to be shared with all .scss files.

@@ -62,7 +62,6 @@
     padding: 0;
     float: right;
   }
-
   
   li a{
     display: inline-block;
@@ -87,11 +86,8 @@
       margin: 10px;
       clear: none;
     }
-    
   }// li a
-  
- 
-  
+
   @media only screen and (min-width: 30.0em) { //480px
    .logo{
      float: left;
@@ -100,7 +96,6 @@
    ul{
      float: right;
      margin: -50px 4em 0 0;
-     
    }
    li{
      display: inline-block;
@@ -122,6 +117,7 @@
    }//li 
   }//mediaquery
 }
+
 
 .header__region{
       float: right;
@@ -160,8 +156,6 @@
   
 }
 .relative{
-
-  
   #navigation.main-navigation{
       :focus{
          outline: transparent auto 0;
@@ -220,10 +214,8 @@
   position: fixed !important;
   z-index: 100;
   //top: 151px !important;
-  
-  
-  
   top: 56px !important;
+
 }
 
 /* Footer Styling */

@@ -1,0 +1,231 @@
+// **** Navigation scss
+@import '../_init';
+@import '../_mixins';
+
+/*fixes width issue*/
+
+
+
+#page, #header{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.header__secondary-menu{
+  margin: 0;
+  padding: 15px 0;
+  display: block;
+  float: inherit;
+  
+  @media only screen and (min-width: 21.875em){
+    padding: 5px 0;
+    
+  }
+  @media only screen and (min-width: 30.0em) { //480px
+    clear: both;
+    padding: 0;
+    li{
+      margin-top: -5px;
+    }
+  }
+  li, a{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.not-logged-in .header__secondary-menu{
+    .login{
+      @extend .icons-login;
+    }
+}
+
+.logged-in .header__secondary-menu{ 
+    .login{
+      display: none ;
+    }
+    .logout{
+      @extend .icons-logout;
+    }
+}
+
+.user-settings{
+   @extend .icons-gear;
+ }
+
+.header__secondary-menu{ 
+  ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+  
+  li a{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    @include hide-text;
+    padding: .5em 0;
+    border: 0;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0 10px 10px;
+    clear: left;
+    @include ease;
+    @include transition-property(opacity);
+    
+    &:hover{
+      border: 0;
+      @include opacity(.6);
+    }
+    @media only screen and (min-width: 21.875em) { //335px
+      margin: 10px;
+      clear: none;
+    }
+  }// li a
+  
+  @media only screen and (min-width: 30.0em) { //480px
+   .logo{
+     float: left;
+     display: inline-block;
+   }
+   ul{
+     float: right;
+     margin-top: -50px;
+     margin-right: 1em;
+   }
+   li{
+     display: inline-block;
+     margin-left: 1em;
+     a{
+       @include show-text;
+       background: none !important; 
+       width: auto;
+       height: 2em;
+       margin: 0;
+       padding-bottom: 0;       
+       &:hover{
+         text-decoration: none;
+         @include opacity(1);
+         
+        border-bottom: 1px solid #666;
+       }//hover
+     }//a
+   }//li 
+  }//mediaquery
+}
+
+.relative{
+
+  
+  #navigation.main-navigation{
+   // height: 56px;
+    background-color: $light-grey;
+    @media only screen and (min-width: 30.0em) { //480px
+      height: 56px;
+    }
+    li{
+      padding: 1rem .5rem;
+
+    }
+  }
+  @media only screen and (min-width: 30.0em) { //480px
+    //margin-top: 260px;
+    //padding-top: 55px;
+    #navigation.main-navigation{
+      position: inherit;
+    }
+  }
+}
+
+.sticky-wrapper{
+  margin-top: 48px;
+}
+
+.my-sticky-element.stuck{
+  width: 100%;
+  position: fixed !important;
+  z-index: 100;
+  //top: 151px !important;
+  
+  
+  
+  top: 48px !important;
+}
+
+/* Footer Styling */
+
+.fb{
+  @extend .icons-facebook; 
+}
+
+.twitter{
+  @extend .icons-twitter; 
+  background-position: 0 -48px !important;
+  }
+
+
+.front .region-footer, .not-front .region-footer{
+  position: absolute;
+  bottom: -24px;
+  width: 100%;
+  margin-bottom: 0;
+  
+    background-color: #111;
+    padding:0 1em ;
+    color: #f1f1f1;
+    ul{
+      display: inline-block;
+      float: left;
+      list-style-type: none;
+      margin: 0;
+      padding: .5em 0; 
+      li{
+        display: inline;
+        a{
+          @include hide-text;
+           display: inline-block;
+           margin: 0 .5em 0;
+           height: 25px;
+           width: 25px;
+           @include ease;
+           &:hover{
+            border-bottom: 0;
+            @include opacity(.6); 
+           }
+        }
+      }//li
+    }//ul
+    
+    .block{
+      margin-bottom: 0;
+    }
+    
+    
+    .colophon{
+      padding: 0; 
+      margin: 3px;
+      color: #555;
+      font-size: .775em;
+      font-weight: 400;
+      float: right;
+      display: inline-block;
+      
+      @media only screen and (min-width: 20.0em) { //320px
+        padding-top: .75em;
+      }
+      a{
+        color: #555;
+        &:hover{
+          border-color: #333;
+        }
+      }
+    }
+}//footer
+
+
+

@@ -643,12 +643,10 @@ input[type="submit"] {
   display: inline-block;
   color: #f5f5f5;
   font-weight: normal;
-  padding: .2em .5em .4em;
+  padding: .2em .5em;
   border: 0;
+  border-bottom: 3px solid #0a5784;
   margin-right: .5em;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -661,20 +659,17 @@ input[type="submit"] {
   -moz-transition-timing-function: ease-in-out;
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
-  -webkit-transition-property: background-color;
-  -moz-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
   position: relative;
 }
-/* line 545, ../sass/_normalize.scss */
+/* line 544, ../sass/_normalize.scss */
 button:hover,
 html input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
   background-color: #0b6092;
+  border-bottom: 3px solid #08476c;
 }
-/* line 548, ../sass/_normalize.scss */
+/* line 549, ../sass/_normalize.scss */
 button:active,
 html input[type="button"]:active,
 input[type="reset"]:active,
@@ -685,7 +680,7 @@ input[type="submit"]:active {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 557, ../sass/_normalize.scss */
+/* line 558, ../sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -697,7 +692,7 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-/* line 568, ../sass/_normalize.scss */
+/* line 569, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -709,7 +704,7 @@ input[type="radio"] {
   margin: 0.5em 0;
 }
 
-/* line 580, ../sass/_normalize.scss */
+/* line 581, ../sass/_normalize.scss */
 .form-type-checkbox label,
 .form-type-radio label {
   margin-left: 2px;
@@ -720,7 +715,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 590, ../sass/_normalize.scss */
+/* line 591, ../sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -734,14 +729,14 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 600, ../sass/_normalize.scss */
+/* line 601, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /* Remove inner padding and border in Firefox 4+. */
-/* line 606, ../sass/_normalize.scss */
+/* line 607, ../sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -752,7 +747,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 615, ../sass/_normalize.scss */
+/* line 616, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -761,7 +756,7 @@ textarea {
 }
 
 /* Drupal-style form labels. */
-/* line 621, ../sass/_normalize.scss */
+/* line 622, ../sass/_normalize.scss */
 label {
   display: block;
   font-weight: bold;
@@ -770,7 +765,7 @@ label {
 /**
  * Tables
  */
-/* line 629, ../sass/_normalize.scss */
+/* line 630, ../sass/_normalize.scss */
 table {
   /* Remove most spacing between table cells. */
   border-collapse: collapse;
@@ -783,50 +778,50 @@ table {
   width: 100%;
   text-align: left;
 }
-/* line 642, ../sass/_normalize.scss */
+/* line 643, ../sass/_normalize.scss */
 table tr.odd, table tr.even {
   background-color: transparent;
   border-bottom: 1px solid #eeeeee;
   border-top: 1px solid #eeeeee;
 }
-/* line 647, ../sass/_normalize.scss */
+/* line 648, ../sass/_normalize.scss */
 table th, table td {
   padding: .5em;
 }
 
-/* line 654, ../sass/_normalize.scss */
+/* line 655, ../sass/_normalize.scss */
 .form-managed-file .form-file,
 .form-managed-file .form-submit {
   margin-right: .5em;
 }
 
-/* line 660, ../sass/_normalize.scss */
+/* line 661, ../sass/_normalize.scss */
 .main article li {
   margin: 1em 0;
 }
 
 /*wysiwig editor fixes */
-/* line 668, ../sass/_normalize.scss */
+/* line 669, ../sass/_normalize.scss */
 a.cke_button {
   box-sizing: content-box;
 }
 
-/* line 672, ../sass/_normalize.scss */
+/* line 673, ../sass/_normalize.scss */
 .field-widget-entityreference-autocomplete tr {
   padding: .5em;
 }
 
-/* line 679, ../sass/_normalize.scss */
+/* line 680, ../sass/_normalize.scss */
 html.js input.form-autocomplete {
   background-image: url("../../images/throbber.gif");
 }
 
-/* line 683, ../sass/_normalize.scss */
+/* line 684, ../sass/_normalize.scss */
 #autocomplete {
   background-color: #fff;
   border: 1px solid #cccccc;
 }
-/* line 686, ../sass/_normalize.scss */
+/* line 687, ../sass/_normalize.scss */
 #autocomplete li {
   margin: 0;
   padding: .5em 1em;
@@ -2182,7 +2177,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   padding: 0;
   float: right;
 }
-/* line 67, ../sass/components/_navigation.scss */
+/* line 66, ../sass/components/_navigation.scss */
 .header__secondary-menu li a {
   display: inline-block;
   height: 25px;
@@ -2214,36 +2209,36 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   -o-transition-property: opacity;
   transition-property: opacity;
 }
-/* line 82, ../sass/components/_navigation.scss */
+/* line 81, ../sass/components/_navigation.scss */
 .header__secondary-menu li a:hover {
   border: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
 @media only screen and (min-width: 21.875em) {
-  /* line 67, ../sass/components/_navigation.scss */
+  /* line 66, ../sass/components/_navigation.scss */
   .header__secondary-menu li a {
     margin: 10px;
     clear: none;
   }
 }
 @media only screen and (min-width: 30em) {
-  /* line 96, ../sass/components/_navigation.scss */
+  /* line 92, ../sass/components/_navigation.scss */
   .header__secondary-menu .logo {
     float: left;
     display: inline-block;
   }
-  /* line 100, ../sass/components/_navigation.scss */
+  /* line 96, ../sass/components/_navigation.scss */
   .header__secondary-menu ul {
     float: right;
     margin: -50px 4em 0 0;
   }
-  /* line 105, ../sass/components/_navigation.scss */
+  /* line 100, ../sass/components/_navigation.scss */
   .header__secondary-menu li {
     display: inline-block;
     margin-left: 1em;
   }
-  /* line 108, ../sass/components/_navigation.scss */
+  /* line 103, ../sass/components/_navigation.scss */
   .header__secondary-menu li a {
     text-indent: 0;
     white-space: normal;
@@ -2254,7 +2249,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
     margin: 0;
     padding-bottom: 0;
   }
-  /* line 115, ../sass/components/_navigation.scss */
+  /* line 110, ../sass/components/_navigation.scss */
   .header__secondary-menu li a:hover {
     text-decoration: none;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -2263,11 +2258,11 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   }
 }
 
-/* line 126, ../sass/components/_navigation.scss */
+/* line 122, ../sass/components/_navigation.scss */
 .header__region {
   float: right;
 }
-/* line 128, ../sass/components/_navigation.scss */
+/* line 124, ../sass/components/_navigation.scss */
 .header__region ul {
   list-style-type: none;
   text-align: center;
@@ -2275,11 +2270,11 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   margin-top: -2.65em;
   margin-right: 1em;
 }
-/* line 135, ../sass/components/_navigation.scss */
+/* line 131, ../sass/components/_navigation.scss */
 .header__region li {
   display: inline-block;
 }
-/* line 137, ../sass/components/_navigation.scss */
+/* line 133, ../sass/components/_navigation.scss */
 .header__region li a {
   color: #f1f1f1;
   font-weight: 400;
@@ -2292,44 +2287,44 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   margin: 0;
   padding-bottom: 0;
 }
-/* line 146, ../sass/components/_navigation.scss */
+/* line 142, ../sass/components/_navigation.scss */
 .header__region li a:hover {
   text-decoration: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   border-bottom: 1px solid #666;
 }
-/* line 152, ../sass/components/_navigation.scss */
+/* line 148, ../sass/components/_navigation.scss */
 .header__region li a.active {
   display: none;
 }
 
-/* line 158, ../sass/components/_navigation.scss */
+/* line 154, ../sass/components/_navigation.scss */
 #navigation {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 165, ../sass/components/_navigation.scss */
+/* line 159, ../sass/components/_navigation.scss */
 .relative #navigation.main-navigation {
   background-color: #f1f1f1;
 }
-/* line 166, ../sass/components/_navigation.scss */
+/* line 160, ../sass/components/_navigation.scss */
 .relative #navigation.main-navigation :focus {
   outline: transparent auto 0;
 }
 @media only screen and (min-width: 30em) {
-  /* line 165, ../sass/components/_navigation.scss */
+  /* line 159, ../sass/components/_navigation.scss */
   .relative #navigation.main-navigation {
     height: 56px;
   }
 }
-/* line 176, ../sass/components/_navigation.scss */
+/* line 170, ../sass/components/_navigation.scss */
 .relative #navigation.main-navigation li {
   margin: 1em .5em;
 }
-/* line 180, ../sass/components/_navigation.scss */
+/* line 174, ../sass/components/_navigation.scss */
 .relative #navigation.main-navigation li a,
 .relative #navigation.main-navigation li a:link,
 .relative #navigation.main-navigation li a:visited {
@@ -2349,7 +2344,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 189, ../sass/components/_navigation.scss */
+/* line 183, ../sass/components/_navigation.scss */
 .relative #navigation.main-navigation li a:hover,
 .relative #navigation.main-navigation li a:focus,
 .relative #navigation.main-navigation li a:active,
@@ -2359,17 +2354,17 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   color: #555;
 }
 @media only screen and (min-width: 30em) {
-  /* line 197, ../sass/components/_navigation.scss */
+  /* line 191, ../sass/components/_navigation.scss */
   .relative #navigation.main-navigation {
     position: inherit;
   }
 }
 @media only screen and (min-width: 35em) {
-  /* line 203, ../sass/components/_navigation.scss */
+  /* line 197, ../sass/components/_navigation.scss */
   .relative #navigation.main-navigation li {
     margin: 1em;
   }
-  /* line 207, ../sass/components/_navigation.scss */
+  /* line 201, ../sass/components/_navigation.scss */
   .relative #navigation.main-navigation li a,
   .relative #navigation.main-navigation li a:link,
   .relative #navigation.main-navigation li a:visited {
@@ -2378,12 +2373,12 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   }
 }
 
-/* line 214, ../sass/components/_navigation.scss */
+/* line 208, ../sass/components/_navigation.scss */
 .sticky-wrapper {
   margin-top: 56px;
 }
 
-/* line 218, ../sass/components/_navigation.scss */
+/* line 212, ../sass/components/_navigation.scss */
 .my-sticky-element.stuck {
   width: 100%;
   position: fixed !important;
@@ -2392,12 +2387,12 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
 }
 
 /* Footer Styling */
-/* line 235, ../sass/components/_navigation.scss */
+/* line 227, ../sass/components/_navigation.scss */
 .twitter {
   background-position: 0 -48px !important;
 }
 
-/* line 241, ../sass/components/_navigation.scss */
+/* line 233, ../sass/components/_navigation.scss */
 .front .region-footer, .not-front .region-footer {
   position: absolute;
   bottom: -24px;
@@ -2407,7 +2402,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   padding: 0 1em;
   color: #f1f1f1;
 }
-/* line 250, ../sass/components/_navigation.scss */
+/* line 242, ../sass/components/_navigation.scss */
 .front .region-footer ul, .not-front .region-footer ul {
   display: inline-block;
   float: left;
@@ -2415,11 +2410,11 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   margin: 0;
   padding: .5em 0;
 }
-/* line 256, ../sass/components/_navigation.scss */
+/* line 248, ../sass/components/_navigation.scss */
 .front .region-footer ul li, .not-front .region-footer ul li {
   display: inline;
 }
-/* line 258, ../sass/components/_navigation.scss */
+/* line 250, ../sass/components/_navigation.scss */
 .front .region-footer ul li a, .not-front .region-footer ul li a {
   text-indent: 100%;
   white-space: nowrap;
@@ -2441,17 +2436,17 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 265, ../sass/components/_navigation.scss */
+/* line 257, ../sass/components/_navigation.scss */
 .front .region-footer ul li a:hover, .not-front .region-footer ul li a:hover {
   border-bottom: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 273, ../sass/components/_navigation.scss */
+/* line 265, ../sass/components/_navigation.scss */
 .front .region-footer .block, .not-front .region-footer .block {
   margin-bottom: 0;
 }
-/* line 278, ../sass/components/_navigation.scss */
+/* line 270, ../sass/components/_navigation.scss */
 .front .region-footer .colophon, .not-front .region-footer .colophon {
   padding: 0;
   margin: 3px;
@@ -2462,16 +2457,16 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   display: inline-block;
 }
 @media only screen and (min-width: 20em) {
-  /* line 278, ../sass/components/_navigation.scss */
+  /* line 270, ../sass/components/_navigation.scss */
   .front .region-footer .colophon, .not-front .region-footer .colophon {
     padding-top: .75em;
   }
 }
-/* line 290, ../sass/components/_navigation.scss */
+/* line 282, ../sass/components/_navigation.scss */
 .front .region-footer .colophon a, .not-front .region-footer .colophon a {
   color: #555;
 }
-/* line 292, ../sass/components/_navigation.scss */
+/* line 284, ../sass/components/_navigation.scss */
 .front .region-footer .colophon a:hover, .not-front .region-footer .colophon a:hover {
   border-color: #333;
 }
@@ -2576,12 +2571,12 @@ For formatting and usage see:
 http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
 
 */
-/* line 4, ../sass/components/_pages.scss */
+/* line 5, ../sass/components/_pages.scss */
 body.html {
   background: url(../images/bg.jpg) no-repeat center center fixed;
 }
 
-/* line 11, ../sass/components/_pages.scss */
+/* line 9, ../sass/components/_pages.scss */
 body.front {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2590,61 +2585,61 @@ body.front {
   height: 100%;
 }
 
-/* line 19, ../sass/components/_pages.scss */
+/* line 17, ../sass/components/_pages.scss */
 body.not-front {
   background-position: 0 0;
   background-size: 600px;
 }
-/* line 23, ../sass/components/_pages.scss */
+/* line 22, ../sass/components/_pages.scss */
 body.not-front .main {
   padding: 3em 1em;
 }
 @media only screen and (min-width: 30em) {
-  /* line 19, ../sass/components/_pages.scss */
+  /* line 17, ../sass/components/_pages.scss */
   body.not-front {
     background-position: 0 -50px;
     background-size: 800px;
   }
 }
 @media only screen and (min-width: 45em) {
-  /* line 19, ../sass/components/_pages.scss */
+  /* line 17, ../sass/components/_pages.scss */
   body.not-front {
     background-position: 0 0;
     background-size: 100%;
   }
 }
 @media only screen and (min-width: 60em) {
-  /* line 19, ../sass/components/_pages.scss */
+  /* line 17, ../sass/components/_pages.scss */
   body.not-front {
     background-position: 0 -100px;
   }
 }
 
-/* line 43, ../sass/components/_pages.scss */
+/* line 42, ../sass/components/_pages.scss */
 body.home {
   background-position: -100px -50px;
   background-size: auto 550px;
 }
 @media only screen and (min-width: 30em) {
-  /* line 43, ../sass/components/_pages.scss */
+  /* line 42, ../sass/components/_pages.scss */
   body.home {
     background-position: 0 -50px;
   }
 }
 @media only screen and (min-width: 45em) {
-  /* line 43, ../sass/components/_pages.scss */
+  /* line 42, ../sass/components/_pages.scss */
   body.home {
     background-size: auto 650px;
   }
 }
 @media only screen and (min-width: 80em) {
-  /* line 43, ../sass/components/_pages.scss */
+  /* line 42, ../sass/components/_pages.scss */
   body.home {
     background-size: 100%;
   }
 }
 
-/* line 62, ../sass/components/_pages.scss */
+/* line 61, ../sass/components/_pages.scss */
 .not-front .main {
   background-color: #fff;
   color: #222;
@@ -2652,27 +2647,27 @@ body.home {
   padding-top: 2em;
 }
 
-/* line 69, ../sass/components/_pages.scss */
+/* line 68, ../sass/components/_pages.scss */
 .region-footer {
   bottom: -22px;
 }
 
-/* line 73, ../sass/components/_pages.scss */
+/* line 72, ../sass/components/_pages.scss */
 #page {
   position: relative;
 }
 
-/* line 78, ../sass/components/_pages.scss */
+/* line 77, ../sass/components/_pages.scss */
 h1 {
   line-height: 1;
 }
 
-/* line 82, ../sass/components/_pages.scss */
+/* line 81, ../sass/components/_pages.scss */
 .header__site-name {
   line-height: 1;
 }
 
-/* line 86, ../sass/components/_pages.scss */
+/* line 85, ../sass/components/_pages.scss */
 .logo {
   padding: 0;
   font-size: 16px;
@@ -2680,29 +2675,29 @@ h1 {
   text-decoration: none;
 }
 @media only screen and (min-width: 30em) {
-  /* line 86, ../sass/components/_pages.scss */
+  /* line 85, ../sass/components/_pages.scss */
   .logo {
     padding: 0 1em;
   }
 }
 @media only screen and (min-width: 60em) {
-  /* line 86, ../sass/components/_pages.scss */
+  /* line 85, ../sass/components/_pages.scss */
   .logo {
     padding: 0 .3em;
   }
 }
-/* line 99, ../sass/components/_pages.scss */
+/* line 98, ../sass/components/_pages.scss */
 .logo img {
   margin: 7px 2px;
   padding: 0;
   vertical-align: none;
 }
-/* line 104, ../sass/components/_pages.scss */
+/* line 103, ../sass/components/_pages.scss */
 .logo span {
   display: none;
 }
 @media only screen and (min-width: 25em) {
-  /* line 104, ../sass/components/_pages.scss */
+  /* line 103, ../sass/components/_pages.scss */
   .logo span {
     vertical-align: top;
     padding: 20px 15px 15px 0;
@@ -2713,16 +2708,16 @@ h1 {
   }
 }
 @media only screen and (min-width: 30em) {
-  /* line 104, ../sass/components/_pages.scss */
+  /* line 103, ../sass/components/_pages.scss */
   .logo span {
     padding: 20px 15px;
   }
 }
-/* line 119, ../sass/components/_pages.scss */
+/* line 118, ../sass/components/_pages.scss */
 .logo strong {
   font-weight: 900;
 }
-/* line 123, ../sass/components/_pages.scss */
+/* line 122, ../sass/components/_pages.scss */
 .logo:hover {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -2741,7 +2736,7 @@ h1 {
   text-decoration: none;
 }
 
-/* line 131, ../sass/components/_pages.scss */
+/* line 130, ../sass/components/_pages.scss */
 .header {
   position: fixed;
   top: 0;
@@ -2754,7 +2749,7 @@ h1 {
   height: 56px;
 }
 
-/* line 144, ../sass/components/_pages.scss */
+/* line 143, ../sass/components/_pages.scss */
 article header {
   position: static;
   background-color: transparent;
@@ -2762,13 +2757,13 @@ article header {
   padding: 1em 0;
 }
 
-/* line 151, ../sass/components/_pages.scss */
+/* line 150, ../sass/components/_pages.scss */
 .front .main {
   min-height: 700px;
   color: #f1f1f1;
   padding: 1em 1em 5em;
 }
-/* line 158, ../sass/components/_pages.scss */
+/* line 157, ../sass/components/_pages.scss */
 .front .main a
 a:link,
 .front .main a:visited {
@@ -2778,14 +2773,14 @@ a:link,
   padding-bottom: 2px;
   border-bottom: 0 solid #0b6092;
 }
-/* line 167, ../sass/components/_pages.scss */
+/* line 166, ../sass/components/_pages.scss */
 .front .main a:hover,
 .front .main a:focus,
 .front .main a:active {
   color: #09517b;
   border-bottom: 1px solid #0b6092;
 }
-/* line 171, ../sass/components/_pages.scss */
+/* line 170, ../sass/components/_pages.scss */
 .front .main h1 {
   margin-top: 125px;
   font-size: 1.9em;
@@ -2793,20 +2788,20 @@ a:link,
   text-align: center;
 }
 @media only screen and (min-width: 30em) {
-  /* line 171, ../sass/components/_pages.scss */
+  /* line 170, ../sass/components/_pages.scss */
   .front .main h1 {
     text-align: left;
     font-size: 2.5em;
   }
 }
 @media only screen and (min-width: 45em) {
-  /* line 171, ../sass/components/_pages.scss */
+  /* line 170, ../sass/components/_pages.scss */
   .front .main h1 {
     margin-top: 95px;
     font-size: 3em;
   }
 }
-/* line 186, ../sass/components/_pages.scss */
+/* line 185, ../sass/components/_pages.scss */
 .front .main .feature {
   position: relative;
   padding: .5em 1.5em;
@@ -2823,65 +2818,65 @@ a:link,
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media only screen and (min-width: 30em) {
-  /* line 186, ../sass/components/_pages.scss */
+  /* line 185, ../sass/components/_pages.scss */
   .front .main .feature {
     max-width: 600px;
   }
 }
 @media only screen and (min-width: 45em) {
-  /* line 186, ../sass/components/_pages.scss */
+  /* line 185, ../sass/components/_pages.scss */
   .front .main .feature {
     font-size: 1.125em;
     width: 600px;
   }
 }
 
-/* line 214, ../sass/components/_pages.scss */
+/* line 213, ../sass/components/_pages.scss */
 .relative {
   position: relative;
   width: 100%;
   margin-top: 250px;
 }
-/* line 218, ../sass/components/_pages.scss */
+/* line 217, ../sass/components/_pages.scss */
 .relative .main {
   min-height: 800px;
 }
 
-/* line 223, ../sass/components/_pages.scss */
+/* line 222, ../sass/components/_pages.scss */
 .front.home {
   /* Drupal Camp Styles */
 }
-/* line 224, ../sass/components/_pages.scss */
+/* line 223, ../sass/components/_pages.scss */
 .front.home .relative {
   position: relative;
   width: 100%;
   margin-top: 350px;
 }
 @media only screen and (min-width: 20em) {
-  /* line 224, ../sass/components/_pages.scss */
+  /* line 223, ../sass/components/_pages.scss */
   .front.home .relative {
     margin-top: 450px;
   }
 }
 @media only screen and (min-width: 45em) {
-  /* line 224, ../sass/components/_pages.scss */
+  /* line 223, ../sass/components/_pages.scss */
   .front.home .relative {
     margin-top: 500px;
   }
 }
-/* line 238, ../sass/components/_pages.scss */
+/* line 237, ../sass/components/_pages.scss */
 .front.home article, .front.home .pane-title {
   color: #222;
 }
-/* line 242, ../sass/components/_pages.scss */
+/* line 241, ../sass/components/_pages.scss */
 .front.home h2 {
   margin: 1em 0;
 }
-/* line 246, ../sass/components/_pages.scss */
+/* line 245, ../sass/components/_pages.scss */
 .front.home header {
   padding: 0;
 }
-/* line 250, ../sass/components/_pages.scss */
+/* line 249, ../sass/components/_pages.scss */
 .front.home .contextual-links-region .featurehover-block {
   color: #f1f1f1;
   position: absolute;
@@ -2889,26 +2884,26 @@ a:link,
   max-width: 350px;
 }
 @media only screen and (min-width: 20em) {
-  /* line 250, ../sass/components/_pages.scss */
+  /* line 249, ../sass/components/_pages.scss */
   .front.home .contextual-links-region .featurehover-block {
     top: -420px;
     max-width: 450px;
   }
 }
 @media only screen and (min-width: 30em) {
-  /* line 250, ../sass/components/_pages.scss */
+  /* line 249, ../sass/components/_pages.scss */
   .front.home .contextual-links-region .featurehover-block {
     top: -460px;
   }
 }
 @media only screen and (min-width: 45em) {
-  /* line 250, ../sass/components/_pages.scss */
+  /* line 249, ../sass/components/_pages.scss */
   .front.home .contextual-links-region .featurehover-block {
     top: -500px;
     max-width: 525px;
   }
 }
-/* line 273, ../sass/components/_pages.scss */
+/* line 272, ../sass/components/_pages.scss */
 .front.home .featurehover-block {
   position: absolute;
   -webkit-transition-property: all;
@@ -2927,36 +2922,36 @@ a:link,
   max-width: 350px;
 }
 @media only screen and (min-width: 20em) {
-  /* line 273, ../sass/components/_pages.scss */
+  /* line 272, ../sass/components/_pages.scss */
   .front.home .featurehover-block {
     top: -295px;
     max-width: 450px;
   }
 }
 @media only screen and (min-width: 30em) {
-  /* line 273, ../sass/components/_pages.scss */
+  /* line 272, ../sass/components/_pages.scss */
   .front.home .featurehover-block {
     top: -355px;
   }
 }
 @media only screen and (min-width: 45em) {
-  /* line 273, ../sass/components/_pages.scss */
+  /* line 272, ../sass/components/_pages.scss */
   .front.home .featurehover-block {
     top: -400px;
     max-width: 525px;
   }
 }
-/* line 293, ../sass/components/_pages.scss */
+/* line 292, ../sass/components/_pages.scss */
 .front.home .featurehover-block article {
   color: #f1f1f1;
 }
-/* line 297, ../sass/components/_pages.scss */
+/* line 296, ../sass/components/_pages.scss */
 .front.home .featurehover-block h1 {
   margin-top: 0;
   text-align: left;
   line-height: 1.3;
 }
-/* line 304, ../sass/components/_pages.scss */
+/* line 302, ../sass/components/_pages.scss */
 .front.home .featurehover-block .feature {
   display: inline-block;
   color: #f1f1f1;
@@ -2982,7 +2977,7 @@ a:link,
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 314, ../sass/components/_pages.scss */
+/* line 312, ../sass/components/_pages.scss */
 .front.home .featurehover-block .feature:hover {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#77000000,endColorstr=#66000000)";
   /* IE8 */
@@ -2992,14 +2987,14 @@ a:link,
   background-color: rgba(0, 0, 0, 0.6);
 }
 @media only screen and (min-width: 30em) {
-  /* line 304, ../sass/components/_pages.scss */
+  /* line 302, ../sass/components/_pages.scss */
   .front.home .featurehover-block .feature {
     font-size: 20px;
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 45em) {
-  /* line 304, ../sass/components/_pages.scss */
+  /* line 302, ../sass/components/_pages.scss */
   .front.home .featurehover-block .feature {
     font-size: 22px;
     font-size: 1.375rem;
@@ -3007,7 +3002,7 @@ a:link,
     margin-top: -.2em;
   }
 }
-/* line 336, ../sass/components/_pages.scss */
+/* line 334, ../sass/components/_pages.scss */
 .front.home .feature-text {
   color: #0d70aa;
   text-align: center;
@@ -3019,7 +3014,7 @@ a:link,
   padding: .75em;
 }
 @media only screen and (min-width: 30em) {
-  /* line 336, ../sass/components/_pages.scss */
+  /* line 334, ../sass/components/_pages.scss */
   .front.home .feature-text {
     margin: 2em 0;
     padding: .75em 20%;
@@ -3027,11 +3022,11 @@ a:link,
     font-size: 1.675rem;
   }
 }
-/* line 355, ../sass/components/_pages.scss */
+/* line 353, ../sass/components/_pages.scss */
 .front.home article.node-news h2 {
   margin-bottom: 0;
 }
-/* line 359, ../sass/components/_pages.scss */
+/* line 357, ../sass/components/_pages.scss */
 .front.home article.node-news h2 a,
 .front.home article.node-news h2 a:link,
 .front.home article.node-news h2 a:visited {
@@ -3050,43 +3045,43 @@ a:link,
   transition-timing-function: ease-in-out;
   border-bottom: 0;
 }
-/* line 366, ../sass/components/_pages.scss */
+/* line 364, ../sass/components/_pages.scss */
 .front.home article.node-news h2 a:hover,
 .front.home article.node-news h2 a:focus,
 .front.home article.node-news h2 a:active {
   color: #09517b;
   border-bottom: 0;
 }
-/* line 372, ../sass/components/_pages.scss */
+/* line 370, ../sass/components/_pages.scss */
 .front.home article.node-news p.submitted {
   margin: 0 0 2em;
 }
-/* line 381, ../sass/components/_pages.scss */
+/* line 379, ../sass/components/_pages.scss */
 .front.home .panel-2col-bricks .panel-col-first {
   width: 100%;
 }
-/* line 384, ../sass/components/_pages.scss */
+/* line 382, ../sass/components/_pages.scss */
 .front.home .panel-2col-bricks .panel-col-last {
   width: 100%;
 }
-/* line 386, ../sass/components/_pages.scss */
+/* line 384, ../sass/components/_pages.scss */
 .front.home .panel-2col-bricks .panel-col-last .inside {
   margin: 0;
 }
 @media only screen and (min-width: 50em) {
-  /* line 392, ../sass/components/_pages.scss */
+  /* line 390, ../sass/components/_pages.scss */
   .front.home .panel-2col-bricks .panel-col-first {
     width: 65%;
     float: left;
   }
-  /* line 396, ../sass/components/_pages.scss */
+  /* line 394, ../sass/components/_pages.scss */
   .front.home .panel-2col-bricks .panel-col-last {
     width: 30%;
     float: right;
   }
 }
 
-/* line 404, ../sass/components/_pages.scss */
+/* line 402, ../sass/components/_pages.scss */
 time {
   padding: .3em 2em .3em 2em;
   background: transparent url("../images/time.png") no-repeat 0.5em center;
@@ -3103,14 +3098,14 @@ time {
   font-weight: bold;
 }
 
-/* line 415, ../sass/components/_pages.scss */
+/* line 413, ../sass/components/_pages.scss */
 hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
 
-/* line 422, ../sass/components/_pages.scss */
+/* line 420, ../sass/components/_pages.scss */
 .triangle-right.top:before {
   top: -20px;
   left: 0;
@@ -3119,7 +3114,7 @@ hr {
   border-color: transparent rgba(0, 0, 0, 0.5);
 }
 
-/* line 430, ../sass/components/_pages.scss */
+/* line 428, ../sass/components/_pages.scss */
 .triangle-right:before {
   content: "";
   position: absolute;
@@ -3131,37 +3126,37 @@ hr {
   width: 0;
 }
 
-/* line 441, ../sass/components/_pages.scss */
+/* line 439, ../sass/components/_pages.scss */
 .wrapper {
   margin: 0 auto;
   max-width: 1100px;
 }
 @media only screen and (min-width: 75em) {
-  /* line 441, ../sass/components/_pages.scss */
+  /* line 439, ../sass/components/_pages.scss */
   .wrapper {
     width: 1100px;
   }
 }
 
 /* Sponsor Pages */
-/* line 454, ../sass/components/_pages.scss */
+/* line 452, ../sass/components/_pages.scss */
 .not-front.sponsors .main h1 {
   line-height: 1.5;
 }
-/* line 458, ../sass/components/_pages.scss */
+/* line 456, ../sass/components/_pages.scss */
 .not-front.sponsors .main .panel-pane {
   clear: both;
 }
-/* line 463, ../sass/components/_pages.scss */
+/* line 461, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors {
   margin: 3em 0;
   border-top: 1px solid #eeeeee;
 }
-/* line 467, ../sass/components/_pages.scss */
+/* line 465, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors .contextual-links-region {
   overflow: auto;
 }
-/* line 471, ../sass/components/_pages.scss */
+/* line 469, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
   margin-bottom: 0;
   width: auto;
@@ -3172,33 +3167,33 @@ hr {
   padding-top: 3px;
   line-height: 1.3;
 }
-/* line 483, ../sass/components/_pages.scss */
+/* line 481, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2 {
   background-size: 40px;
   background-position: 0 -73px;
 }
-/* line 489, ../sass/components/_pages.scss */
+/* line 487, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2 {
   background-size: 40px;
   background-position: 0 -289px;
 }
-/* line 495, ../sass/components/_pages.scss */
+/* line 493, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2 {
   background-size: 40px;
   background-position: 0 -217px;
 }
-/* line 501, ../sass/components/_pages.scss */
+/* line 499, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2 {
   background-size: 40px;
   background-position: 0 -145px;
 }
-/* line 508, ../sass/components/_pages.scss */
+/* line 506, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 512, ../sass/components/_pages.scss */
+/* line 510, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li {
   display: inline-block;
   float: left;
@@ -3207,58 +3202,58 @@ hr {
   width: 100%;
 }
 @media only screen and (min-width: 25em) {
-  /* line 512, ../sass/components/_pages.scss */
+  /* line 510, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li {
     width: 47.5%;
     margin: .5em 2.5%;
   }
-  /* line 522, ../sass/components/_pages.scss */
+  /* line 520, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(odd) {
     margin-left: 0;
   }
-  /* line 525, ../sass/components/_pages.scss */
+  /* line 523, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(even) {
     margin-right: 0;
   }
 }
 @media only screen and (min-width: 35em) {
-  /* line 512, ../sass/components/_pages.scss */
+  /* line 510, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li {
     width: 31%;
     margin: .5em 0;
   }
-  /* line 532, ../sass/components/_pages.scss */
+  /* line 530, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(3n+2) {
     margin: .5em 3%;
   }
 }
 @media only screen and (min-width: 60em) {
-  /* line 512, ../sass/components/_pages.scss */
+  /* line 510, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li {
     width: 23.125%;
     margin: .5em 2.5% .5em 0;
   }
-  /* line 539, ../sass/components/_pages.scss */
+  /* line 537, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(3n+2) {
     margin: .5em 0;
   }
-  /* line 542, ../sass/components/_pages.scss */
+  /* line 540, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(even) {
     margin-right: 2.5%;
   }
-  /* line 548, ../sass/components/_pages.scss */
+  /* line 546, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(5n+4) {
     margin-right: 0;
   }
 }
-/* line 554, ../sass/components/_pages.scss */
+/* line 552, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li a, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li a img {
   border: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 563, ../sass/components/_pages.scss */
+/* line 561, ../sass/components/_pages.scss */
 .not-front.sponsors .main .become-a-sponsor {
   overflow: hidden;
   margin-top: 2em;
@@ -3266,20 +3261,20 @@ hr {
   overflow: visible;
 }
 
-/* line 573, ../sass/components/_pages.scss */
+/* line 571, ../sass/components/_pages.scss */
 .pane-drupalcamp-sponsor-title-drupalcamp-sponsors a, .pane-drupalcamp-sponsor-title-drupalcamp-sponsors a img {
   border: 0 !important;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 577, ../sass/components/_pages.scss */
+/* line 575, ../sass/components/_pages.scss */
 .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul {
   padding: 0;
   text-align: center;
 }
 
-/* line 590, ../sass/components/_pages.scss */
+/* line 588, ../sass/components/_pages.scss */
 .panel-col-last .panel-pane h2 {
   margin-top: 2.25em;
   font-size: 16px;

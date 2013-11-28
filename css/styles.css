@@ -3030,7 +3030,6 @@ a:link,
 .front.home article.node-news h2 a,
 .front.home article.node-news h2 a:link,
 .front.home article.node-news h2 a:visited {
-  color: #222;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -3052,38 +3051,52 @@ a:link,
   color: #09517b;
   border-bottom: 0;
 }
-/* line 370, ../sass/components/_pages.scss */
-.front.home article.node-news p.submitted {
-  margin: 0 0 2em;
+/* line 371, ../sass/components/_pages.scss */
+.front.home article.node-news .field-type-text-with-summary p {
+  margin: 0.2em 0 0 0;
 }
-/* line 379, ../sass/components/_pages.scss */
+/* line 382, ../sass/components/_pages.scss */
 .front.home .panel-2col-bricks .panel-col-first {
   width: 100%;
 }
-/* line 382, ../sass/components/_pages.scss */
+/* line 385, ../sass/components/_pages.scss */
 .front.home .panel-2col-bricks .panel-col-last {
   width: 100%;
 }
-/* line 384, ../sass/components/_pages.scss */
+/* line 387, ../sass/components/_pages.scss */
 .front.home .panel-2col-bricks .panel-col-last .inside {
   margin: 0;
 }
 @media only screen and (min-width: 50em) {
-  /* line 390, ../sass/components/_pages.scss */
+  /* line 393, ../sass/components/_pages.scss */
   .front.home .panel-2col-bricks .panel-col-first {
     width: 65%;
     float: left;
   }
-  /* line 394, ../sass/components/_pages.scss */
+  /* line 397, ../sass/components/_pages.scss */
   .front.home .panel-2col-bricks .panel-col-last {
     width: 30%;
     float: right;
   }
 }
 
-/* line 402, ../sass/components/_pages.scss */
-time {
-  padding: .3em 2em .3em 2em;
+/* line 407, ../sass/components/_pages.scss */
+.home .top-submitted {
+  display: none;
+}
+@media only screen and (min-width: 45em) {
+  /* line 411, ../sass/components/_pages.scss */
+  .home .top-submitted {
+    display: block;
+  }
+  /* line 414, ../sass/components/_pages.scss */
+  .home .bottom-submitted {
+    display: none;
+  }
+}
+/* line 419, ../sass/components/_pages.scss */
+.home time {
+  padding: .3em 1em .3em 2em;
   background: transparent url("../images/time.png") no-repeat 0.5em center;
   background-size: 15px 15px;
   background-color: #f5f5f5;
@@ -3097,15 +3110,71 @@ time {
   color: #999;
   font-weight: bold;
 }
+/* line 428, ../sass/components/_pages.scss */
+.home time em {
+  font-style: normal;
+}
+@media only screen and (min-width: 45em) {
+  /* line 419, ../sass/components/_pages.scss */
+  .home time {
+    text-align: center;
+    float: left;
+    font-size: 34.8px;
+    font-size: 2.175rem;
+    background-image: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 0px 20px;
+    width: 75px;
+    position: relative;
+    margin: 13px 16px 1em 0;
+    border-bottom: 4px solid #ccc;
+  }
+  /* line 443, ../sass/components/_pages.scss */
+  .home time em {
+    font-size: 16px;
+    font-size: 1rem;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    bottom: .4em;
+  }
+}
 
-/* line 413, ../sass/components/_pages.scss */
+/* line 456, ../sass/components/_pages.scss */
+.top-submitted {
+  display: none;
+}
+
+/* line 460, ../sass/components/_pages.scss */
+time {
+  padding: .3em 1em .3em 2em;
+  background: transparent url("../images/time.png") no-repeat 0.5em center;
+  background-size: 15px 15px;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: bold;
+}
+/* line 469, ../sass/components/_pages.scss */
+time em {
+  font-style: normal;
+}
+
+/* line 475, ../sass/components/_pages.scss */
 hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
 
-/* line 420, ../sass/components/_pages.scss */
+/* line 482, ../sass/components/_pages.scss */
 .triangle-right.top:before {
   top: -20px;
   left: 0;
@@ -3114,7 +3183,7 @@ hr {
   border-color: transparent rgba(0, 0, 0, 0.5);
 }
 
-/* line 428, ../sass/components/_pages.scss */
+/* line 490, ../sass/components/_pages.scss */
 .triangle-right:before {
   content: "";
   position: absolute;
@@ -3126,37 +3195,37 @@ hr {
   width: 0;
 }
 
-/* line 439, ../sass/components/_pages.scss */
+/* line 501, ../sass/components/_pages.scss */
 .wrapper {
   margin: 0 auto;
   max-width: 1100px;
 }
 @media only screen and (min-width: 75em) {
-  /* line 439, ../sass/components/_pages.scss */
+  /* line 501, ../sass/components/_pages.scss */
   .wrapper {
     width: 1100px;
   }
 }
 
 /* Sponsor Pages */
-/* line 452, ../sass/components/_pages.scss */
+/* line 514, ../sass/components/_pages.scss */
 .not-front.sponsors .main h1 {
   line-height: 1.5;
 }
-/* line 456, ../sass/components/_pages.scss */
+/* line 518, ../sass/components/_pages.scss */
 .not-front.sponsors .main .panel-pane {
   clear: both;
 }
-/* line 461, ../sass/components/_pages.scss */
+/* line 523, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors {
   margin: 3em 0;
   border-top: 1px solid #eeeeee;
 }
-/* line 465, ../sass/components/_pages.scss */
+/* line 527, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors .contextual-links-region {
   overflow: auto;
 }
-/* line 469, ../sass/components/_pages.scss */
+/* line 531, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
   margin-bottom: 0;
   width: auto;
@@ -3167,33 +3236,33 @@ hr {
   padding-top: 3px;
   line-height: 1.3;
 }
-/* line 481, ../sass/components/_pages.scss */
+/* line 543, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2 {
   background-size: 40px;
   background-position: 0 -73px;
 }
-/* line 487, ../sass/components/_pages.scss */
+/* line 549, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2 {
   background-size: 40px;
   background-position: 0 -289px;
 }
-/* line 493, ../sass/components/_pages.scss */
+/* line 555, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2 {
   background-size: 40px;
   background-position: 0 -217px;
 }
-/* line 499, ../sass/components/_pages.scss */
+/* line 561, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2 {
   background-size: 40px;
   background-position: 0 -145px;
 }
-/* line 506, ../sass/components/_pages.scss */
+/* line 568, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 510, ../sass/components/_pages.scss */
+/* line 572, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li {
   display: inline-block;
   float: left;
@@ -3202,58 +3271,58 @@ hr {
   width: 100%;
 }
 @media only screen and (min-width: 25em) {
-  /* line 510, ../sass/components/_pages.scss */
+  /* line 572, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li {
     width: 47.5%;
     margin: .5em 2.5%;
   }
-  /* line 520, ../sass/components/_pages.scss */
+  /* line 582, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(odd) {
     margin-left: 0;
   }
-  /* line 523, ../sass/components/_pages.scss */
+  /* line 585, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(even) {
     margin-right: 0;
   }
 }
 @media only screen and (min-width: 35em) {
-  /* line 510, ../sass/components/_pages.scss */
+  /* line 572, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li {
     width: 31%;
     margin: .5em 0;
   }
-  /* line 530, ../sass/components/_pages.scss */
+  /* line 592, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(3n+2) {
     margin: .5em 3%;
   }
 }
 @media only screen and (min-width: 60em) {
-  /* line 510, ../sass/components/_pages.scss */
+  /* line 572, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li {
     width: 23.125%;
     margin: .5em 2.5% .5em 0;
   }
-  /* line 537, ../sass/components/_pages.scss */
+  /* line 599, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(3n+2) {
     margin: .5em 0;
   }
-  /* line 540, ../sass/components/_pages.scss */
+  /* line 602, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(even) {
     margin-right: 2.5%;
   }
-  /* line 546, ../sass/components/_pages.scss */
+  /* line 608, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(5n+4) {
     margin-right: 0;
   }
 }
-/* line 552, ../sass/components/_pages.scss */
+/* line 614, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li a, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li a img {
   border: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 561, ../sass/components/_pages.scss */
+/* line 623, ../sass/components/_pages.scss */
 .not-front.sponsors .main .become-a-sponsor {
   overflow: hidden;
   margin-top: 2em;
@@ -3261,20 +3330,20 @@ hr {
   overflow: visible;
 }
 
-/* line 571, ../sass/components/_pages.scss */
+/* line 633, ../sass/components/_pages.scss */
 .pane-drupalcamp-sponsor-title-drupalcamp-sponsors a, .pane-drupalcamp-sponsor-title-drupalcamp-sponsors a img {
   border: 0 !important;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 575, ../sass/components/_pages.scss */
+/* line 637, ../sass/components/_pages.scss */
 .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul {
   padding: 0;
   text-align: center;
 }
 
-/* line 588, ../sass/components/_pages.scss */
+/* line 650, ../sass/components/_pages.scss */
 .panel-col-last .panel-pane h2 {
   margin-top: 2.25em;
   font-size: 16px;

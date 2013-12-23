@@ -3420,30 +3420,31 @@ hr {
 .view-volunteers .volunteer .views-field-field-profile-first,
 .view-volunteers .volunteer .views-field-field-profile-last {
   display: inline-block;
+  width: 50%;
   font-size: 26.8px;
   font-size: 1.675rem;
 }
-/* line 21, ../sass/components/_views.scss */
+/* line 22, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-profile-first {
   margin-right: .3em;
 }
-/* line 25, ../sass/components/_views.scss */
+/* line 26, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-profile-job-title {
   font-style: italic;
 }
-/* line 30, ../sass/components/_views.scss */
+/* line 31, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-profile-org {
   font-weight: 600;
   margin-top: -.3em;
   color: #333;
   margin-bottom: .5em;
 }
-/* line 39, ../sass/components/_views.scss */
+/* line 40, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-profile-job-title,
 .view-volunteers .volunteer .views-field-field-profile-org {
   display: none;
 }
-/* line 45, ../sass/components/_views.scss */
+/* line 46, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-drupal-org-username,
 .view-volunteers .volunteer .views-field-field-twitter {
   display: inline-block;
@@ -3466,13 +3467,13 @@ hr {
   -o-transition-property: opacity;
   transition-property: opacity;
 }
-/* line 52, ../sass/components/_views.scss */
+/* line 53, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-drupal-org-username:hover,
 .view-volunteers .volunteer .views-field-field-twitter:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 55, ../sass/components/_views.scss */
+/* line 56, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-drupal-org-username .views-label,
 .view-volunteers .volunteer .views-field-field-twitter .views-label {
   display: inline-block;
@@ -3485,32 +3486,32 @@ hr {
   vertical-align: bottom;
   background-size: 20px;
 }
-/* line 64, ../sass/components/_views.scss */
+/* line 65, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-drupal-org-username .field-content,
 .view-volunteers .volunteer .views-field-field-twitter .field-content {
   display: inline-block;
   font-size: 14px;
   font-size: 0.875rem;
 }
-/* line 67, ../sass/components/_views.scss */
+/* line 68, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-drupal-org-username .field-content:hover,
 .view-volunteers .volunteer .views-field-field-twitter .field-content:hover {
   border: 0;
 }
-/* line 73, ../sass/components/_views.scss */
+/* line 74, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-drupal-org-username {
   margin-right: 2em;
 }
-/* line 76, ../sass/components/_views.scss */
+/* line 77, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-drupal-org-username .views-label {
   background-position: 0 -40px;
 }
-/* line 89, ../sass/components/_views.scss */
+/* line 90, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-volunteer-contribution {
   margin-top: .5em;
   color: #999;
 }
-/* line 92, ../sass/components/_views.scss */
+/* line 93, ../sass/components/_views.scss */
 .view-volunteers .volunteer .views-field-field-volunteer-contribution .views-label {
   font-weight: 600;
   font-size: 12px;

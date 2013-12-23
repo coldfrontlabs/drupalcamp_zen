@@ -14,7 +14,6 @@
 
       <?php if ($display_submitted): ?>
         <p class="top-submitted">
-          <?php print $user_picture; ?>
           <?php print $submitted; ?>
         </p>
       <?php endif; ?> 

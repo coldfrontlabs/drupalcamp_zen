@@ -473,6 +473,13 @@ time{
 }
 
 
+/* IE8 Fixes */
+.lt-ie9{
+  time{
+    background-image:none;
+  }
+}
+
 hr{
   height: 1px;
   border: 0;
@@ -565,6 +572,7 @@ width: 0;
       background-position: 0 -145px;
     }
     
+
     
     ul{
       list-style-type: none;
@@ -629,6 +637,27 @@ width: 0;
   }
   
 }//not-front .main
+
+.lt-ie9 .not-front.sponsors .main{
+  .pane-drupalcamp-sponsor-title-drupalcamp-sponsors{
+    &.platinum h2{
+      @extend .badges-platinum; // imports badge sprite
+    }
+
+    &.gold h2{
+      @extend .badges-gold; // imports badge sprite
+    }    
+
+    &.silver h2{
+      @extend .badges-silver; // imports badge sprite
+    }
+
+    &.bronze h2{
+      @extend .badges-bronze; // imports badge sprite
+    }
+
+  }//pane
+}//ie9
 
 .pane-drupalcamp-sponsor-title-drupalcamp-sponsors{ // fixes border bottom hover on pages other than sponsor
   a, a img{

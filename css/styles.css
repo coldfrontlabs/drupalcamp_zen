@@ -46,57 +46,57 @@
   background: url('../images/../images/icons-s72525cd446.png') no-repeat;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook, .fb {
   background-position: 0 -100px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-gear, .user-settings {
   background-position: 0 0;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-login, .not-logged-in .header__secondary-menu .login {
   background-position: 0 -75px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-logout, .logged-in .header__secondary-menu .logout {
   background-position: 0 -25px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter, .twitter {
   background-position: 0 -50px;
 }
 
 /* line 74, ../images/badges/*.png */
-.badges-sprite, .badges-bronze, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2, .badges-gold, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2, .badges-platinum, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2, .badges-silver, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2, .badges-title, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
+.badges-sprite, .badges-bronze, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2, .badges-gold, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2, .badges-platinum, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2, .badges-silver, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2, .badges-title, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
   background: url('../images/../images/badges-s7ca0dac3b6.png') no-repeat;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.badges-bronze, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2 {
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.badges-bronze, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2 {
   background-position: 0 -180px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.badges-gold, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2 {
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.badges-gold, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2 {
   background-position: 0 -360px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.badges-platinum, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2 {
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.badges-platinum, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2 {
   background-position: 0 -90px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.badges-silver, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2 {
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.badges-silver, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2 {
   background-position: 0 -270px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .badges-title, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
   background-position: 0 0;
 }
@@ -2077,57 +2077,57 @@ tr.selected td {
   background: url('../images/../images/icons-s72525cd446.png') no-repeat;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook, .fb {
   background-position: 0 -100px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-gear, .user-settings {
   background-position: 0 0;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-login, .not-logged-in .header__secondary-menu .login {
   background-position: 0 -75px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-logout, .logged-in .header__secondary-menu .logout {
   background-position: 0 -25px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter, .twitter {
   background-position: 0 -50px;
 }
 
 /* line 74, ../images/badges/*.png */
-.badges-sprite, .badges-bronze, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2, .badges-gold, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2, .badges-platinum, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2, .badges-silver, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2, .badges-title, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
+.badges-sprite, .badges-bronze, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2, .badges-gold, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2, .badges-platinum, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2, .badges-silver, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2, .badges-title, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
   background: url('../images/../images/badges-s7ca0dac3b6.png') no-repeat;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.badges-bronze, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2 {
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.badges-bronze, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2 {
   background-position: 0 -180px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.badges-gold, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2 {
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.badges-gold, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2 {
   background-position: 0 -360px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.badges-platinum, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2 {
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.badges-platinum, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2 {
   background-position: 0 -90px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.badges-silver, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2 {
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.badges-silver, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2 {
   background-position: 0 -270px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .badges-title, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
   background-position: 0 0;
 }
@@ -2337,25 +2337,40 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   box-sizing: border-box;
 }
 
-/* line 159, ../sass/components/_navigation.scss */
+/* IE8 Fixes */
+/* line 164, ../sass/components/_navigation.scss */
+.lt-ie9 .logo img {
+  float: left;
+  margin-top: -1.4em;
+}
+/* line 168, ../sass/components/_navigation.scss */
+.lt-ie9 .logo span {
+  padding: 1em 0 0 3em;
+}
+/* line 172, ../sass/components/_navigation.scss */
+.lt-ie9 .header__secondary-menu ul {
+  padding-top: 5px;
+}
+
+/* line 178, ../sass/components/_navigation.scss */
 .relative #navigation.main-navigation {
   background-color: #f1f1f1;
 }
-/* line 160, ../sass/components/_navigation.scss */
+/* line 179, ../sass/components/_navigation.scss */
 .relative #navigation.main-navigation :focus {
   outline: transparent auto 0;
 }
 @media only screen and (min-width: 30em) {
-  /* line 159, ../sass/components/_navigation.scss */
+  /* line 178, ../sass/components/_navigation.scss */
   .relative #navigation.main-navigation {
     height: 56px;
   }
 }
-/* line 170, ../sass/components/_navigation.scss */
+/* line 189, ../sass/components/_navigation.scss */
 .relative #navigation.main-navigation li {
   margin: 1em .5em;
 }
-/* line 174, ../sass/components/_navigation.scss */
+/* line 193, ../sass/components/_navigation.scss */
 .relative #navigation.main-navigation li a,
 .relative #navigation.main-navigation li a:link,
 .relative #navigation.main-navigation li a:visited {
@@ -2375,7 +2390,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 183, ../sass/components/_navigation.scss */
+/* line 202, ../sass/components/_navigation.scss */
 .relative #navigation.main-navigation li a:hover,
 .relative #navigation.main-navigation li a:focus,
 .relative #navigation.main-navigation li a:active,
@@ -2385,17 +2400,17 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   color: #555;
 }
 @media only screen and (min-width: 30em) {
-  /* line 191, ../sass/components/_navigation.scss */
+  /* line 210, ../sass/components/_navigation.scss */
   .relative #navigation.main-navigation {
     position: inherit;
   }
 }
 @media only screen and (min-width: 35em) {
-  /* line 197, ../sass/components/_navigation.scss */
+  /* line 216, ../sass/components/_navigation.scss */
   .relative #navigation.main-navigation li {
     margin: 1em;
   }
-  /* line 201, ../sass/components/_navigation.scss */
+  /* line 220, ../sass/components/_navigation.scss */
   .relative #navigation.main-navigation li a,
   .relative #navigation.main-navigation li a:link,
   .relative #navigation.main-navigation li a:visited {
@@ -2404,12 +2419,12 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   }
 }
 
-/* line 208, ../sass/components/_navigation.scss */
+/* line 227, ../sass/components/_navigation.scss */
 .sticky-wrapper {
   margin-top: 56px;
 }
 
-/* line 212, ../sass/components/_navigation.scss */
+/* line 231, ../sass/components/_navigation.scss */
 .my-sticky-element.stuck {
   width: 100%;
   position: fixed !important;
@@ -2418,12 +2433,12 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
 }
 
 /* Footer Styling */
-/* line 227, ../sass/components/_navigation.scss */
+/* line 246, ../sass/components/_navigation.scss */
 .twitter {
   background-position: 0 -48px !important;
 }
 
-/* line 233, ../sass/components/_navigation.scss */
+/* line 252, ../sass/components/_navigation.scss */
 .front .region-footer, .not-front .region-footer {
   position: absolute;
   bottom: -24px;
@@ -2433,7 +2448,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   padding: 0 1em;
   color: #f1f1f1;
 }
-/* line 242, ../sass/components/_navigation.scss */
+/* line 261, ../sass/components/_navigation.scss */
 .front .region-footer ul, .not-front .region-footer ul {
   display: inline-block;
   float: left;
@@ -2441,11 +2456,11 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   margin: 0;
   padding: .5em 0;
 }
-/* line 248, ../sass/components/_navigation.scss */
+/* line 267, ../sass/components/_navigation.scss */
 .front .region-footer ul li, .not-front .region-footer ul li {
   display: inline;
 }
-/* line 250, ../sass/components/_navigation.scss */
+/* line 269, ../sass/components/_navigation.scss */
 .front .region-footer ul li a, .not-front .region-footer ul li a {
   text-indent: 100%;
   white-space: nowrap;
@@ -2467,17 +2482,17 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 257, ../sass/components/_navigation.scss */
+/* line 276, ../sass/components/_navigation.scss */
 .front .region-footer ul li a:hover, .not-front .region-footer ul li a:hover {
   border-bottom: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 265, ../sass/components/_navigation.scss */
+/* line 284, ../sass/components/_navigation.scss */
 .front .region-footer .block, .not-front .region-footer .block {
   margin-bottom: 0;
 }
-/* line 270, ../sass/components/_navigation.scss */
+/* line 289, ../sass/components/_navigation.scss */
 .front .region-footer .colophon, .not-front .region-footer .colophon {
   padding: 0;
   margin: 3px;
@@ -2488,16 +2503,16 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   display: inline-block;
 }
 @media only screen and (min-width: 20em) {
-  /* line 270, ../sass/components/_navigation.scss */
+  /* line 289, ../sass/components/_navigation.scss */
   .front .region-footer .colophon, .not-front .region-footer .colophon {
     padding-top: .75em;
   }
 }
-/* line 282, ../sass/components/_navigation.scss */
+/* line 301, ../sass/components/_navigation.scss */
 .front .region-footer .colophon a, .not-front .region-footer .colophon a {
   color: #555;
 }
-/* line 284, ../sass/components/_navigation.scss */
+/* line 303, ../sass/components/_navigation.scss */
 .front .region-footer .colophon a:hover, .not-front .region-footer .colophon a:hover {
   border-color: #333;
 }
@@ -2542,57 +2557,57 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   background: url('../images/../images/icons-s72525cd446.png') no-repeat;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook, .fb {
   background-position: 0 -100px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-gear, .user-settings {
   background-position: 0 0;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-login, .not-logged-in .header__secondary-menu .login {
   background-position: 0 -75px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-logout, .logged-in .header__secondary-menu .logout {
   background-position: 0 -25px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter, .twitter {
   background-position: 0 -50px;
 }
 
 /* line 74, ../images/badges/*.png */
-.badges-sprite, .badges-bronze, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2, .badges-gold, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2, .badges-platinum, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2, .badges-silver, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2, .badges-title, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
+.badges-sprite, .badges-bronze, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2, .badges-gold, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2, .badges-platinum, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2, .badges-silver, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2, .badges-title, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
   background: url('../images/../images/badges-s7ca0dac3b6.png') no-repeat;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.badges-bronze, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2 {
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.badges-bronze, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2 {
   background-position: 0 -180px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.badges-gold, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2 {
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.badges-gold, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2 {
   background-position: 0 -360px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.badges-platinum, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2 {
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.badges-platinum, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2 {
   background-position: 0 -90px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.badges-silver, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2 {
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.badges-silver, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2, .lt-ie9 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2 {
   background-position: 0 -270px;
 }
 
-/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../home/mwinstone/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .badges-title, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
   background-position: 0 0;
 }
@@ -3214,14 +3229,28 @@ time em {
   font-style: normal;
 }
 
+<<<<<<< HEAD
+/* IE8 Fixes */
+/* line 415, ../sass/components/_pages.scss */
+.lt-ie9 time {
+  background-image: none;
+}
+
+/* line 420, ../sass/components/_pages.scss */
+=======
 /* line 476, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
 
+<<<<<<< HEAD
+/* line 427, ../sass/components/_pages.scss */
+=======
 /* line 483, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .triangle-right.top:before {
   top: -20px;
   left: 0;
@@ -3230,7 +3259,11 @@ hr {
   border-color: transparent rgba(0, 0, 0, 0.5);
 }
 
+<<<<<<< HEAD
+/* line 435, ../sass/components/_pages.scss */
+=======
 /* line 491, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .triangle-right:before {
   content: "";
   position: absolute;
@@ -3242,19 +3275,38 @@ hr {
   width: 0;
 }
 
+<<<<<<< HEAD
+/* line 446, ../sass/components/_pages.scss */
+=======
 /* line 502, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .wrapper {
   margin: 0 auto;
   max-width: 1100px;
 }
 @media only screen and (min-width: 75em) {
+<<<<<<< HEAD
+  /* line 446, ../sass/components/_pages.scss */
+=======
   /* line 502, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
   .wrapper {
     width: 1100px;
   }
 }
 
 /* Sponsor Pages */
+<<<<<<< HEAD
+/* line 459, ../sass/components/_pages.scss */
+.not-front.sponsors .main h1 {
+  line-height: 1.5;
+}
+/* line 463, ../sass/components/_pages.scss */
+.not-front.sponsors .main .panel-pane {
+  clear: both;
+}
+/* line 468, ../sass/components/_pages.scss */
+=======
 /* line 515, ../sass/components/_pages.scss */
 .not-front.sponsors .main h1 {
   line-height: 1.5;
@@ -3264,15 +3316,24 @@ hr {
   clear: both;
 }
 /* line 524, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors {
   margin: 3em 0;
   border-top: 1px solid #eeeeee;
 }
+<<<<<<< HEAD
+/* line 472, ../sass/components/_pages.scss */
+.not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors .contextual-links-region {
+  overflow: auto;
+}
+/* line 476, ../sass/components/_pages.scss */
+=======
 /* line 528, ../sass/components/_pages.scss */
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors .contextual-links-region {
   overflow: auto;
 }
 /* line 532, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
   margin-bottom: 0;
   width: auto;
@@ -3283,33 +3344,57 @@ hr {
   padding-top: 3px;
   line-height: 1.3;
 }
+<<<<<<< HEAD
+/* line 488, ../sass/components/_pages.scss */
+=======
 /* line 544, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.platinum h2 {
   background-size: 40px;
   background-position: 0 -73px;
 }
+<<<<<<< HEAD
+/* line 494, ../sass/components/_pages.scss */
+=======
 /* line 550, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.gold h2 {
   background-size: 40px;
   background-position: 0 -289px;
 }
+<<<<<<< HEAD
+/* line 500, ../sass/components/_pages.scss */
+=======
 /* line 556, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.silver h2 {
   background-size: 40px;
   background-position: 0 -217px;
 }
+<<<<<<< HEAD
+/* line 506, ../sass/components/_pages.scss */
+=======
 /* line 562, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors.bronze h2 {
   background-size: 40px;
   background-position: 0 -145px;
 }
+<<<<<<< HEAD
+/* line 514, ../sass/components/_pages.scss */
+=======
 /* line 569, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
+/* line 518, ../sass/components/_pages.scss */
+=======
 /* line 573, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li {
   display: inline-block;
   float: left;
@@ -3318,37 +3403,72 @@ hr {
   width: 100%;
 }
 @media only screen and (min-width: 25em) {
+<<<<<<< HEAD
+  /* line 518, ../sass/components/_pages.scss */
+=======
   /* line 573, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li {
     width: 47.5%;
     margin: .5em 2.5%;
   }
+<<<<<<< HEAD
+  /* line 528, ../sass/components/_pages.scss */
+  .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(odd) {
+    margin-left: 0;
+  }
+  /* line 531, ../sass/components/_pages.scss */
+=======
   /* line 583, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(odd) {
     margin-left: 0;
   }
   /* line 586, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(even) {
     margin-right: 0;
   }
 }
 @media only screen and (min-width: 35em) {
+<<<<<<< HEAD
+  /* line 518, ../sass/components/_pages.scss */
+=======
   /* line 573, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li {
     width: 31%;
     margin: .5em 0;
   }
+<<<<<<< HEAD
+  /* line 538, ../sass/components/_pages.scss */
+=======
   /* line 593, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(3n+2) {
     margin: .5em 3%;
   }
 }
 @media only screen and (min-width: 60em) {
+<<<<<<< HEAD
+  /* line 518, ../sass/components/_pages.scss */
+=======
   /* line 573, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li {
     width: 23.125%;
     margin: .5em 2.5% .5em 0;
   }
+<<<<<<< HEAD
+  /* line 545, ../sass/components/_pages.scss */
+  .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(3n+2) {
+    margin: .5em 0;
+  }
+  /* line 548, ../sass/components/_pages.scss */
+  .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(even) {
+    margin-right: 2.5%;
+  }
+  /* line 554, ../sass/components/_pages.scss */
+=======
   /* line 600, ../sass/components/_pages.scss */
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(3n+2) {
     margin: .5em 0;
@@ -3358,18 +3478,27 @@ hr {
     margin-right: 2.5%;
   }
   /* line 609, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
   .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li:nth-child(5n+4) {
     margin-right: 0;
   }
 }
+<<<<<<< HEAD
+/* line 560, ../sass/components/_pages.scss */
+=======
 /* line 615, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li a, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul li a img {
   border: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
+<<<<<<< HEAD
+/* line 569, ../sass/components/_pages.scss */
+=======
 /* line 624, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .not-front.sponsors .main .become-a-sponsor {
   overflow: hidden;
   margin-top: 2em;
@@ -3377,20 +3506,32 @@ hr {
   overflow: visible;
 }
 
+<<<<<<< HEAD
+/* line 600, ../sass/components/_pages.scss */
+=======
 /* line 634, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .pane-drupalcamp-sponsor-title-drupalcamp-sponsors a, .pane-drupalcamp-sponsor-title-drupalcamp-sponsors a img {
   border: 0 !important;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
+<<<<<<< HEAD
+/* line 604, ../sass/components/_pages.scss */
+=======
 /* line 638, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .pane-drupalcamp-sponsor-title-drupalcamp-sponsors ul {
   padding: 0;
   text-align: center;
 }
 
+<<<<<<< HEAD
+/* line 617, ../sass/components/_pages.scss */
+=======
 /* line 651, ../sass/components/_pages.scss */
+>>>>>>> 4e92e270a74c2078ed44ebf4c68b9e7853e08698
 .panel-col-last .panel-pane h2 {
   margin-top: 2.25em;
   font-size: 16px;

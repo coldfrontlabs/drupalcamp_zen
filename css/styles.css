@@ -101,6 +101,21 @@
   background-position: 0 0;
 }
 
+/* line 50, ../images/volunteer-icons/*.png */
+.volunteer-icons-sprite, .volunteer-icons-drupalorg, .view-volunteers .volunteer .views-field-field-drupal-org-username .views-label, .volunteer-icons-twitter-2, .view-volunteers .volunteer .views-field-field-twitter .views-label {
+  background: url('../images/../images/volunteer-icons-s335cdba4df.png') no-repeat;
+}
+
+/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.volunteer-icons-drupalorg, .view-volunteers .volunteer .views-field-field-drupal-org-username .views-label {
+  background-position: 0 -80px;
+}
+
+/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.volunteer-icons-twitter-2, .view-volunteers .volunteer .views-field-field-twitter .views-label {
+  background-position: 0 0;
+}
+
 /*
 For formatting and usage see:
 http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
@@ -2117,6 +2132,21 @@ tr.selected td {
   background-position: 0 0;
 }
 
+/* line 50, ../images/volunteer-icons/*.png */
+.volunteer-icons-sprite, .volunteer-icons-drupalorg, .view-volunteers .volunteer .views-field-field-drupal-org-username .views-label, .volunteer-icons-twitter-2, .view-volunteers .volunteer .views-field-field-twitter .views-label {
+  background: url('../images/../images/volunteer-icons-s335cdba4df.png') no-repeat;
+}
+
+/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.volunteer-icons-drupalorg, .view-volunteers .volunteer .views-field-field-drupal-org-username .views-label {
+  background-position: 0 -80px;
+}
+
+/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.volunteer-icons-twitter-2, .view-volunteers .volunteer .views-field-field-twitter .views-label {
+  background-position: 0 0;
+}
+
 /*
 For formatting and usage see:
 http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
@@ -2564,6 +2594,21 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
 
 /* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .badges-title, .not-front.sponsors .main .pane-drupalcamp-sponsor-title-drupalcamp-sponsors h2 {
+  background-position: 0 0;
+}
+
+/* line 50, ../images/volunteer-icons/*.png */
+.volunteer-icons-sprite, .volunteer-icons-drupalorg, .view-volunteers .volunteer .views-field-field-drupal-org-username .views-label, .volunteer-icons-twitter-2, .view-volunteers .volunteer .views-field-field-twitter .views-label {
+  background: url('../images/../images/volunteer-icons-s335cdba4df.png') no-repeat;
+}
+
+/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.volunteer-icons-drupalorg, .view-volunteers .volunteer .views-field-field-drupal-org-username .views-label {
+  background-position: 0 -80px;
+}
+
+/* line 60, ../../../../../../../../../usr/local/rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.volunteer-icons-twitter-2, .view-volunteers .volunteer .views-field-field-twitter .views-label {
   background-position: 0 0;
 }
 
@@ -3353,6 +3398,123 @@ hr {
   text-transform: uppercase;
   border-bottom: 1px double #eee;
   color: #666 !important;
+}
+
+/* line 2, ../sass/components/_views.scss */
+.view-volunteers .volunteer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3em;
+}
+/* line 10, ../sass/components/_views.scss */
+.view-volunteers .volunteer img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 50%;
+  max-width: 150px;
+}
+/* line 17, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-profile-first,
+.view-volunteers .volunteer .views-field-field-profile-last {
+  display: inline-block;
+  font-size: 26.8px;
+  font-size: 1.675rem;
+}
+/* line 21, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-profile-first {
+  margin-right: .3em;
+}
+/* line 25, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-profile-job-title {
+  font-style: italic;
+}
+/* line 30, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-profile-org {
+  font-weight: 600;
+  margin-top: -.3em;
+  color: #333;
+  margin-bottom: .5em;
+}
+/* line 39, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-profile-job-title,
+.view-volunteers .volunteer .views-field-field-profile-org {
+  display: none;
+}
+/* line 45, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-drupal-org-username,
+.view-volunteers .volunteer .views-field-field-twitter {
+  display: inline-block;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+/* line 52, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-drupal-org-username:hover,
+.view-volunteers .volunteer .views-field-field-twitter:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 55, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-drupal-org-username .views-label,
+.view-volunteers .volunteer .views-field-field-twitter .views-label {
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: -999px;
+  padding: 0 .6em;
+  line-height: 22px;
+  vertical-align: bottom;
+  background-size: 20px;
+}
+/* line 64, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-drupal-org-username .field-content,
+.view-volunteers .volunteer .views-field-field-twitter .field-content {
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+/* line 67, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-drupal-org-username .field-content:hover,
+.view-volunteers .volunteer .views-field-field-twitter .field-content:hover {
+  border: 0;
+}
+/* line 73, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-drupal-org-username {
+  margin-right: 2em;
+}
+/* line 76, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-drupal-org-username .views-label {
+  background-position: 0 -40px;
+}
+/* line 89, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-volunteer-contribution {
+  margin-top: .5em;
+  color: #999;
+}
+/* line 92, ../sass/components/_views.scss */
+.view-volunteers .volunteer .views-field-field-volunteer-contribution .views-label {
+  font-weight: 600;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 /* SMACSS theme rules */

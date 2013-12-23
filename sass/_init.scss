@@ -154,6 +154,10 @@ $badges-spacing: 40px;
 @import "../images/badges/*.png";
 @include all-badges-sprites;
 
+$volunteer-icons-spacing: 40px;
+@import "../images/volunteer-icons/*.png";
+@include all-volunteer-icons-sprites;
+
 // =============================================================================
 // Partials to be shared with all .scss files.
 // =============================================================================

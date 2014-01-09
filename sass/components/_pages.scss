@@ -1,7 +1,6 @@
 // **** Pages scss
 @import '../_init';
 
-
 body.html{
   background: url(../images/bg.jpg) no-repeat center center fixed; 
 }
@@ -15,10 +14,9 @@ body.front{
 }
  
 body.not-front{
-  background-position: 0 0;
+  background-position: 0;
   background-size: 600px;
   
-
   .main{
     padding: 3em 1em;
   }

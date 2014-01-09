@@ -1,0 +1,101 @@
+.view-volunteers{
+  .volunteer{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3em;
+    @media only screen and (min-width: 45em){
+      
+    }
+    
+    img{
+      @include border-radius(50%);
+      width: 50%;
+      max-width: 150px;
+    }
+    
+    .views-field-field-profile-first, 
+    .views-field-field-profile-last{
+      display: inline-block;
+      width: 50%; 
+      @include rem-fallback(font-size, 1.675); //24px
+    }
+    .views-field-field-profile-first{
+      margin-right: .3em;
+    }
+    
+    .views-field-field-profile-job-title{
+      //color: #666;
+      font-style: italic;
+    }
+    
+    .views-field-field-profile-org{
+      font-weight: 600;
+      margin-top: -.3em;
+      color: #333;
+      margin-bottom: .5em;
+      
+    }
+    
+    .views-field-field-profile-job-title, 
+    .views-field-field-profile-org{
+      display: none;
+    }
+    
+    
+    .views-field-field-drupal-org-username, 
+    .views-field-field-twitter{
+      display: inline-block;
+      @include opacity(0.8);
+      @include ease;
+      @include transition-property(opacity);
+      
+      
+      &:hover{
+        @include opacity(1);
+      }
+      .views-label{
+        display: inline-block;
+        @include hide-text;
+        text-indent: -999px;
+        padding: 0 .6em;
+        line-height: 22px;
+        vertical-align: bottom;
+        background-size: 20px;
+      }
+      .field-content{
+        display: inline-block;
+        @include rem-fallback(font-size, .875); //24px
+        &:hover{
+         border: 0;
+        }
+      }
+    }
+    
+    .views-field-field-drupal-org-username{
+      margin-right: 2em;
+      
+      .views-label{
+        @extend .volunteer-icons-drupalorg;
+        background-position: 0 -40px;
+      }
+    }
+    
+    .views-field-field-twitter{
+      
+      .views-label{
+        @extend .volunteer-icons-twitter-2;
+      }
+    }
+    
+    .views-field-field-volunteer-contribution{ 
+      margin-top: .5em;
+      color: #999;
+      .views-label{
+        font-weight: 600;
+        @include rem-fallback(font-size, .75); //12px
+      }
+    }
+    
+
+  }
+}

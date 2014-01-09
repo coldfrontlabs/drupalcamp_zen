@@ -14,7 +14,7 @@ body.front{
 }
  
 body.not-front{
-  background-position: 0;
+  background-position: 0 0;
   background-size: 600px;
   
   .main{
@@ -545,10 +545,9 @@ width: 0;
       
       border-bottom: 1px solid #eee;
       padding-bottom: 1em;
-      padding-right: 3em;
       display: block;
       margin-bottom: 1em;
-      height: inherit;
+      height: 2.5em;
     }
     
     &.platinum h2{
@@ -688,6 +687,23 @@ width: 0;
     color: #666 !important;
   }
 }
+
+// Sessions
+.views-exposed-form .views-exposed-widget{
+  width: 100%;
+}
+
+
+
+//User Pages
+.not-logged-in.page-user{
+  .tabs-primary__tab{
+    @include border-radius(4px);
+    margin: .5em .5em .5em 0;
+    border: 1px solid #ccc; 
+  }
+}
+
 
 // Profile Pages
 

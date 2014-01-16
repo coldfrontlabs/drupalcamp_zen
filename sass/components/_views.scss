@@ -3,21 +3,40 @@
     width: 100%;
     text-align: center;
     margin-bottom: 3em;
+    position: relative;
     @media only screen and (min-width: 45em){
-      
+      width: 50%;
+      float: left;
     }
+    @media only screen and (min-width: 60em){
+      text-align: left;
+    }
+
     
     img{
       @include border-radius(50%);
       width: 50%;
       max-width: 150px;
+      @media only screen and (min-width: 60em){
+        float: left;
+        margin-right: 1em;
+        margin-bottom: 4em;
+        
+      }
     }
     
     .views-field-field-profile-first, 
     .views-field-field-profile-last{
       display: inline-block;
-      width: 50%; 
-      @include rem-fallback(font-size, 1.675); //24px
+      @include rem-fallback(font-size, 1.375); //22px
+      
+      @media only screen and (min-width: 45em){
+        @include rem-fallback(font-size, 1.675); //24px
+
+      }
+      @media only screen and (min-width: 60em){
+        margin-top: .5em;
+      }
     }
     .views-field-field-profile-first{
       margin-right: .3em;
@@ -26,6 +45,7 @@
     .views-field-field-profile-job-title{
       //color: #666;
       font-style: italic;
+      
     }
     
     .views-field-field-profile-org{
@@ -34,11 +54,13 @@
       color: #333;
       margin-bottom: .5em;
       
+      
     }
     
     .views-field-field-profile-job-title, 
     .views-field-field-profile-org{
-      display: none;
+      @include rem-fallback(font-size, 0.875); //14px
+      
     }
     
     
@@ -48,6 +70,7 @@
       @include opacity(0.8);
       @include ease;
       @include transition-property(opacity);
+      @include rem-fallback(font-size, 0.875); //14px
       
       
       &:hover{
@@ -64,7 +87,7 @@
       }
       .field-content{
         display: inline-block;
-        @include rem-fallback(font-size, .875); //24px
+        @include rem-fallback(font-size, .875); //14px
         &:hover{
          border: 0;
         }
@@ -81,20 +104,25 @@
     }
     
     .views-field-field-twitter{
-      
       .views-label{
         @extend .volunteer-icons-twitter-2;
       }
     }
     
-    .views-field-field-volunteer-contribution{ 
+    /*.views-field-field-volunteer-contribution{ 
       margin-top: .5em;
       color: #999;
+      @include rem-fallback(font-size, 0.875); //14px
+      display:none;
+      @media only screen and (min-width: 60em){
+        display: block;
+
+      }
       .views-label{
         font-weight: 600;
         @include rem-fallback(font-size, .75); //12px
       }
-    }
+    }*/
     
 
   }

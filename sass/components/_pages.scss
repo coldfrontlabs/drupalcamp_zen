@@ -97,6 +97,7 @@ line-height: 1;
     margin: 7px 2px;
     padding: 0;
     vertical-align: none;
+    @include box-shadow(none);
   }
   span{
     display: none;

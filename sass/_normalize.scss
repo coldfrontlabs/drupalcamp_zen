@@ -484,7 +484,8 @@ textarea {
     vertical-align: baseline; /* 4 */
     *vertical-align: middle; /* 4 */
   }
-  max-width: 100%; /* 5 */
+  width: 100%;
+  max-width: 400px; /* 5 */
   @include box-sizing(border-box); /* 5 */
   
   @include border-radius(3px);
@@ -492,6 +493,10 @@ textarea {
   border: 1px solid $line-grey;
   padding: .2em .5em;
 
+}
+
+textarea{
+  max-width: 100%;
 }
 
 /**
@@ -543,6 +548,13 @@ input[type="submit"] {
   margin-right: .5em;
   @include ease;
   position: relative;
+  width: 100%;
+  @media only screen and (min-width: 25em){
+    width: auto;
+    max-width: auto;
+  }
+  
+  
   &:hover{
     background-color: darken($link-color, 5%);
     border-bottom: 3px solid darken($link-color, 13%);
@@ -576,6 +588,8 @@ input[type="radio"] {
     *width: 13px; /* 3 */
   }
   margin: .5em 0 ;
+  @include box-shadow(none);
+  width: auto;
 }
 
 .form-type-checkbox, 

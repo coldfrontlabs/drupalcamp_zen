@@ -141,6 +141,7 @@ $link-color: #0d70aa;
 $dc-blue: $link-color;
 $line-grey: #ccc;
 $light-line-grey: #eee;
+$white: #fff;
 
 // =============================================================================
 // Sprites
@@ -149,7 +150,6 @@ $light-line-grey: #eee;
 @import "../images/icons/*.png";
 @include all-icons-sprites; 
 
-
 $badges-spacing: 40px;
 @import "../images/badges/*.png";
 @include all-badges-sprites;
@@ -157,6 +157,7 @@ $badges-spacing: 40px;
 $volunteer-icons-spacing: 40px;
 @import "../images/volunteer-icons/*.png";
 @include all-volunteer-icons-sprites;
+
 
 // =============================================================================
 // Partials to be shared with all .scss files.

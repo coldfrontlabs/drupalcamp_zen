@@ -100,7 +100,7 @@ line-height: 1;
   }
   span{
     display: none;
-    @media only screen and (min-width:  25em) { 
+    @media only screen and (min-width:  30em) { 
     vertical-align: top;
     padding: 20px 15px 15px 0;
     display: inline-block;
@@ -108,7 +108,7 @@ line-height: 1;
     color: #fafafa;
     font-weight: 400;
     }
-    @media only screen and (min-width: 30.0em) { //480px
+    @media only screen and (min-width: 40.0em) { //640px
       padding: 20px 15px;
     
     }
@@ -527,8 +527,12 @@ width: 0;
   
 
   .pane-drupalcamp-sponsor-title-drupalcamp-sponsors{
-    margin: 2em 0;
+    margin: 6em 0;
     border-top: 1px solid $light-line-grey;
+    @include clearfix;
+    &:first-child{
+      margin: 2em 0;
+    }
     
     .contextual-links-region{
       overflow: auto;
@@ -727,6 +731,42 @@ width: 0;
     display: inline-block;
     margin-right: .2em;
   }
+}
+
+.page-user{
+  #edit-picture-upload{
+    width: 100%;
+  }
+  
+  
+  #edit-pass-pass1 {
+  margin-bottom: 4em;
+  }
+  .confirm-parent, .password-parent{
+    width: 100%;
+    .password-strength{
+      top: 6em;
+      width: 17em;
+      position: relative;
+      float: none ;
+    }
+  }
+
+  
+  @media only screen and (min-width: 60em){
+    .confirm-parent, .password-parent{
+       width: 36.3em;
+       .password-strength{
+         float: right;
+         position: static;
+       }
+     }
+
+    #edit-pass-pass1{
+    margin-bottom: .4em;
+    }
+  }
+
 }
 
 

@@ -12,7 +12,7 @@
   <footer id="footer" class="<?php print $classes; ?>">
     <div class="wrapper">
       <?php print $content; ?>
-      <p class="colophon"><?php print t('&copy; 2013 '); ?><a href="http://drupalcampottawa.ca">DrupalCamp Ottawa</a></p>
+      <p class="colophon"><?php print t('&copy; ') . date(Y); ?><a href="http://drupalcampottawa.ca"> DrupalCamp Ottawa</a></p>
     </div> <!-- footer wrapper ends -->
   </footer> <!-- footer ends-->
 <?php endif; ?>

@@ -22,7 +22,7 @@
     padding: 5px 0;
     
   }
-  @media only screen and (min-width: 30.0em) { //480px
+  @media only screen and (min-width: 40.0em) { //640px
     clear: both;
     padding: 0;
     li{
@@ -48,8 +48,12 @@
     .logout{
       @extend .icons-logout;
     }
+
 }
 
+.cart{
+  @extend .icons-cart;
+}
 .user-settings{
    @extend .icons-gear;
  }
@@ -88,7 +92,7 @@
     }
   }// li a
 
-  @media only screen and (min-width: 30.0em) { //480px
+  @media only screen and (min-width: 40.0em) { //640px
    .logo{
      float: left;
      display: inline-block;

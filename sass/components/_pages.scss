@@ -97,6 +97,7 @@ line-height: 1;
     margin: 7px 2px;
     padding: 0;
     vertical-align: none;
+    @include box-shadow(none);
   }
   span{
     display: none;
@@ -351,6 +352,8 @@ article header{
   article.node-news{
     h2{
       margin-bottom: 0;
+      line-height: 1.3;
+      padding-top: .4em;
       a,
       a:link, 
       a:visited{
@@ -371,7 +374,12 @@ article header{
         margin:0.2em 0 0 0;
       } 
     }
-
+    .links.inline{
+      float: right;
+      a{
+        @include rem-fallback(font-size, .875);
+      }
+    }
   }//news
 
 
@@ -437,7 +445,7 @@ article header{
       padding: 0 0px 20px;
       width: 75px;
       position: relative;
-      margin: 13px 16px 1em 0;
+      margin: 13px 16px 1.3em 0;
       border-bottom: 4px solid #ccc;
       em{
         @include rem-fallback(font-size, 1);
@@ -613,9 +621,15 @@ width: 0;
           
           &:nth-child(3n+2){
            margin: .5em 0; // overwrite previous
+           margin: .5em 2.5% .5em 0;
           }
+          
           &:nth-child(even){
             margin-right: 2.5%; // overwrite previous
+          }
+          
+          &:nth-child(5n+1){
+            margin: .5em 2.5% .5em 0;
           }
           
           margin: .5em 2.5% .5em 0; // sets all other li's
@@ -768,5 +782,31 @@ width: 0;
   }
 
 }
+
+.page-node{
+  .user-picture img{
+    height: 24px;
+    width: 24px;
+    float: left;
+    margin-right: 1em;
+    box-shadow: none;
+  }
+}
+
+.node-type-session{
+  .field {
+    margin-top: 1em;
+  }
+}
+
+.node-type-sponsor{
+  .field-name-field-sponsor-logo img{
+    @include box-shadow(none);
+    max-width: 250px;
+    margin-bottom: 2em;
+  }
+}
+
+
 
 

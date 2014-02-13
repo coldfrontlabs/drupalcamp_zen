@@ -221,7 +221,7 @@ blockquote {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-h1 {
+h1, .alpha {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   @include adjust-font-size-to( $h1-font-size );
 
@@ -229,27 +229,27 @@ h1 {
   @include leader(1, $h1-font-size);
   @include trailer(1, $h1-font-size);
 }
-h2 {
+h2, .beta {
   @include adjust-font-size-to( $h2-font-size );
   @include leader(1, $h2-font-size);
   @include trailer(1, $h2-font-size);
 }
-h3 {
+h3, .gamma {
   @include adjust-font-size-to( $h3-font-size );
   @include leader(1, $h3-font-size);
   @include trailer(1, $h3-font-size);
 }
-h4 {
+h4, .delta {
   @include adjust-font-size-to( $h4-font-size );
   @include leader(1, $h4-font-size);
   @include trailer(1, $h4-font-size);
 }
-h5 {
+h5, .epsilon {
   @include adjust-font-size-to( $h5-font-size );
   @include leader(1, $h5-font-size);
   @include trailer(1, $h5-font-size);
 }
-h6 {
+h6, .zeta {
   @include adjust-font-size-to( $h5-font-size );
   @include leader(1, $h5-font-size);
   @include trailer(1, $h5-font-size);
@@ -322,9 +322,10 @@ q {
 }
 
 /* Address inconsistent and variable font size in all browsers. */
-small {
+small, .milli {
   font-size: 80%;
 }
+
 
 /* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
 sub,

@@ -12,7 +12,7 @@
               <?php if ($logo): ?>
                 <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
               <?php endif; ?>
-              <span><strong><?php print $site_name; ?></strong> Ottawa</span>
+              <span><strong><?php print str_replace('Ottawa', '', $site_name); ?></strong> Ottawa</span>
             </a>
           </h1>
         <?php endif; ?>
@@ -42,5 +42,5 @@
     <?php print render($page['header']); ?>
     </div> <!-- wrapper close -->
   </header>
-  
+
   <!-- End header -->

@@ -2,7 +2,7 @@
 @import '../_init';
 
 body.html{
-  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  background: url(../images/bg.jpg) no-repeat center center fixed;
 }
 
 body.front{
@@ -10,27 +10,27 @@ body.front{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%; 
+  height: 100%;
 }
- 
+
 body.not-front{
   background-position: 0 0;
   background-size: 600px;
-  
+
   .main{
     padding: 3em 1em;
   }
-  
+
   @media only screen and (min-width: 30.0em) { //480px
     background-position: 0 -50px;
     background-size: 800px;
   }
-  
+
   @media only screen and (min-width: 45.0em) { //720px
     background-position: 0 0;
     background-size: 100%;
   }
-  
+
   @media only screen and (min-width: 60.0em) { //960px
     background-position: 0 -100px;
   }
@@ -40,19 +40,19 @@ body.not-front{
 body.home{
   background-position: -100px -50px;
   background-size: auto 550px;
-  
+
   @media only screen and (min-width: 30.0em) { //480px
     background-position: 0 -50px;
   }
-  
+
   @media only screen and (min-width: 45.0em) { //720px
     background-size: auto 650px;
-    
+
   }
-  
+
   @media only screen and (min-width: 80em) { //960px
     background-size: 100%;
-    
+
   }
 }
 
@@ -81,18 +81,18 @@ line-height: 1;
 }
 
 .logo{
-  padding: 0;  
+  padding: 0;
   @include rem-fallback(font-size, 1);//16px
   text-decoration: none;
   @media only screen and (min-width: 30.0em) { //480px
-    padding: 0 1em;  
+    padding: 0 1em;
   }
-  
+
 
   @media only screen and (min-width: 60em) { //960px
     padding: 0 .3em;
-  }  
-  
+  }
+
   img{
     margin: 7px 2px;
     padding: 0;
@@ -101,7 +101,7 @@ line-height: 1;
   }
   span{
     display: none;
-    @media only screen and (min-width:  30em) { 
+    @media only screen and (min-width:  30em) {
     vertical-align: top;
     padding: 20px 15px 15px 0;
     display: inline-block;
@@ -111,13 +111,13 @@ line-height: 1;
     }
     @media only screen and (min-width: 40.0em) { //640px
       padding: 20px 15px;
-    
+
     }
   }
   strong{
     font-weight: 900;
   }
-  
+
   &:hover{
     @include ease;
     border: 0 !important;
@@ -130,13 +130,13 @@ line-height: 1;
   position:fixed;
   top: 0;
   left: 0;
-  right: 0; 
+  right: 0;
   z-index: 100;
   background-color: #222;
   margin: 0;
   padding: 5px 0;
   height: 56px;
-  
+
 }
 
 article header{
@@ -151,9 +151,9 @@ article header{
   min-height: 700px;
   color: #f1f1f1;
   padding: 1em 1em 5em;
-  
+
   a
-  a:link, 
+  a:link,
   a:visited {
      color: $link-color;
      text-decoration: none;
@@ -181,29 +181,29 @@ article header{
       font-size: 3em;
     }
   }
-  
+
   .feature{
     position:relative;
     padding: .5em 1.5em;
     border-bottom: 7px solid #000;
     line-height: 1.5;
-    
+
     -webkit-border-radius: 0px 0px 3px 3px;
             border-radius: 0px 0px 3px 3px;
-    
-    
+
+
     background: transparent;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000)"; /* IE8 */
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);   /* IE6 & 7 */
           zoom: 1;
     background-color: rgba(0,0,0,0.5);
-    
+
     @media only screen and (min-width: 30.0em) { //480px
       max-width: 600px;
     }
      @media only screen and (min-width: 45.000em) { //768px
         font-size: 1.125em;
-        width: 600px;   
+        width: 600px;
     }
   }
 }//main
@@ -219,143 +219,104 @@ article header{
   }
 }
 
+#block-blockify-blockify-site-slogan{
+  @include ease;
+}
+
+.site-slogan{
+  display: block;
+  color: $dc-blue;
+  text-align: center;
+  line-height: 1.4;
+  font-style: italic;
+  border-top: 1px solid $light-line-grey;
+  border-bottom: 1px solid $light-line-grey;
+  margin: .5em;
+  padding: .75em;
+
+  @media only screen and (min-width: 30.0em) { //480px
+    margin: 2em 0;
+    margin-top: 1em;
+
+    padding: .75em 20%;
+    @include rem-fallback(font-size, 1.675);//26.8px
+
+  }
+}
+
 .front.home{
   .relative{
     position: relative;
     width: 100%;
     margin-top: 350px;
-    
-    @media only screen and (min-width: 20.0em) { 
+
+    @media only screen and (min-width: 20.0em) {
       margin-top: 450px;
-    
+
     }
     @media only screen and (min-width: 45.0em) { //720px
       margin-top: 500px;
     }
   }
-  
-  article, .pane-title{
-    color: #222;        
+
+  article{
+    color: #f1f1f1;
   }
-  
+
+  h1{
+    margin-top: 0;
+    text-align: left;
+    line-height: 1.3;
+  }
+
+  .feature{
+    display: inline-block;
+    color: #f1f1f1;
+    padding: .5em 1.5em;
+    width: auto;
+    text-transform: capitalize;
+    @include border-radius(2px);
+    border-bottom: 7px solid #000;
+    @include ease;
+
+    &:hover{
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#77000000,endColorstr=#66000000)"; /* IE8 */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#77000000,endColorstr=#66000000);   /* IE6 & 7 */
+            zoom: 1;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    @media only screen and (min-width: 30.0em) { //480px
+      @include rem-fallback(font-size, 1.25);//20px
+    }
+    @media only screen and (min-width: 45.0em) { //720px
+      @include rem-fallback(font-size, 1.375);//24px
+      padding: .54m 1.2em;
+      margin-top: -.2em;
+    }
+  }
+  .feature:hover{
+  }
+
+  article, .pane-title{
+    color: #222;
+  }
+
   h2{
     margin: 1em 0;
   }
-  
+
   header{
     padding: 0;
   }
-  .contextual-links-region{
-    .featurehover-block{
-      color: #f1f1f1;
-      position: absolute;
-      top: -340px;
-      max-width: 350px;
-      
-       @media only screen and (min-width: 20.0em) { //480px
-         top: -420px;
-         max-width: 450px;
-       }
 
-      @media only screen and (min-width: 30.0em) { //600px
-        top: -460px;
-       }
-
-       @media only screen and (min-width: 45.0em) { //720px
-         top: -500px;
-         max-width: 525px;
-       } 
-
-    }
-  }
-  
-  .featurehover-block{
-    position: absolute;
-    @include ease;
-    
-      top: -255px;
-      max-width: 350px;
-     
-      @media only screen and (min-width: 20.0em) { //480px
-        top: -295px;
-        max-width: 450px;
-      }
-       @media only screen and (min-width: 30.0em) { //600px
-         top: -355px;
-        }
-      
-      @media only screen and (min-width: 45.0em) { //720px
-        top: -400px;
-        max-width: 525px;
-      }
-
-    article{
-      color: #f1f1f1;
-    }
-    
-    h1{
-      margin-top: 0;
-      text-align: left;
-      line-height: 1.3;
-    }
-    
-    .feature{
-      display: inline-block;
-      color: #f1f1f1;
-      padding: .5em 1.5em;
-      width: auto;
-      text-transform: capitalize;
-      @include border-radius(2px);
-      border-bottom: 7px solid #000;
-      @include ease;
-      
-      &:hover{
-        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#77000000,endColorstr=#66000000)"; /* IE8 */
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#77000000,endColorstr=#66000000);   /* IE6 & 7 */
-              zoom: 1;
-        background-color: rgba(0,0,0,0.6);
-      }
-      
-      @media only screen and (min-width: 30.0em) { //480px        
-        @include rem-fallback(font-size, 1.25);//20px
-      }
-      @media only screen and (min-width: 45.0em) { //720px
-        @include rem-fallback(font-size, 1.375);//24px
-        padding: .54m 1.2em;
-        margin-top: -.2em;
-      }
-    }
-    .feature:hover{
-    }
-  }
-  
-
-
-  .feature-text{
-    color: $dc-blue; 
-    text-align: center;
-    line-height: 1.4;
-    font-style: italic;
-    border-top: 1px solid $light-line-grey;
-    border-bottom: 1px solid $light-line-grey;
-    margin: .5em;
-    padding: .75em;
-    
-    @media only screen and (min-width: 30.0em) { //480px     
-      margin: 2em 0;
-         
-      padding: .75em 20%;
-      @include rem-fallback(font-size, 1.675);//26.8px
-      
-    }
-  }
   article.node-news{
     h2{
       margin-bottom: 0;
       line-height: 1.3;
       padding-top: .4em;
       a,
-      a:link, 
+      a:link,
       a:visited{
          //color: #222;
          @include ease;
@@ -367,12 +328,12 @@ article header{
         color:darken($link-color, 10%);
         border-bottom: 0;
       }
-      
+
     }//h2
     .field-type-text-with-summary{
       p{
         margin:0.2em 0 0 0;
-      } 
+      }
     }
     .links.inline{
       float: right;
@@ -396,7 +357,7 @@ article header{
       }
     }
     @media only screen and (min-width: 50em){
-      
+
       .panel-col-first{
         width: 65%;
         float: left;
@@ -528,11 +489,11 @@ width: 0;
   h1{
    line-height: 1.5;
   }
-  
+
   .panel-pane{
     clear: both;
   }
-  
+
 
   .pane-drupalcamp-sponsor-title-drupalcamp-sponsors{
     margin: 6em 0;
@@ -541,11 +502,11 @@ width: 0;
     &:first-child{
       margin: 2em 0;
     }
-    
+
     .contextual-links-region{
       overflow: auto;
     }
-    
+
     h2{
       margin-bottom: 0;
       @extend .badges-title; // imports badge sprite
@@ -554,14 +515,14 @@ width: 0;
       background-size: 40px;
       padding-top: 3px;
       line-height: 1.3;
-      
+
       border-bottom: 1px solid #eee;
       padding-bottom: 1em;
       display: block;
       margin-bottom: 1em;
       height: 2.5em;
     }
-    
+
     &.platinum h2{
       @extend .badges-platinum; // imports badge sprite
       background-size: 40px;
@@ -570,24 +531,24 @@ width: 0;
 
     &.gold h2{
       @extend .badges-gold; // imports badge sprite
-      background-size: 40px; 
+      background-size: 40px;
       background-position: 0 -289px;
-    }    
-    
+    }
+
     &.silver h2{
       @extend .badges-silver; // imports badge sprite
-      background-size: 40px; 
+      background-size: 40px;
       background-position: 0 -217px;
     }
-    
+
     &.bronze h2{
       @extend .badges-bronze; // imports badge sprite
-      background-size: 40px; 
+      background-size: 40px;
       background-position: 0 -145px;
     }
-    
 
-    
+
+
     ul{
       list-style-type: none;
       margin: 0;
@@ -598,7 +559,7 @@ width: 0;
         margin: 2em 0 0;
         padding: 0;
         width: 100%;
-        
+
         @media only screen and (min-width: 25em){
           width: 47.5%;
           margin: .5em 2.5%;
@@ -618,28 +579,28 @@ width: 0;
         }
         @media only screen and (min-width: 60em){
           width: 23.125%;
-          
+
           &:nth-child(3n+2){
            margin: .5em 0; // overwrite previous
            margin: .5em 2.5% .5em 0;
           }
-          
+
           &:nth-child(even){
             margin-right: 2.5%; // overwrite previous
           }
-          
+
           &:nth-child(5n+1){
             margin: .5em 2.5% .5em 0;
           }
-          
+
           margin: .5em 2.5% .5em 0; // sets all other li's
-          
+
           &:nth-child(5n+4){
             margin-right: 0;
           }
         }//mediaquery
-        
-        
+
+
         a, a img{
           border: 0;
           @include box-shadow(none);
@@ -648,14 +609,14 @@ width: 0;
       }//li
     }//ul
   }//sponsors
-  
+
   .become-a-sponsor{
     @include clearfix;
     margin-top: 2em;
     border-top: 1px solid $light-line-grey;
     overflow: visible;
   }
-  
+
 }//not-front .main
 
 .lt-ie9 .not-front.sponsors .main{
@@ -666,7 +627,7 @@ width: 0;
 
     &.gold h2{
       @extend .badges-gold; // imports badge sprite
-    }    
+    }
 
     &.silver h2{
       @extend .badges-silver; // imports badge sprite
@@ -687,7 +648,7 @@ width: 0;
   ul{
     padding: 0;
     text-align: center;
-    
+
   }
   img{
    // max-width: 250px;
@@ -698,7 +659,7 @@ width: 0;
 
 .panel-col-last .panel-pane{
   h2{
-    margin-top: 2.25em; 
+    margin-top: 2.25em;
     @include rem-fallback(font-size, 1);//18px
     text-transform: uppercase;
     border-bottom: 1px double #eee;
@@ -718,11 +679,11 @@ width: 0;
   .tabs-primary__tab{
     @include border-radius(4px);
     margin: .5em .5em .5em 0;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     @media only screen and (min-width: 48em){//768px
       @include border-bottom-left-radius(1px);
       @include border-bottom-right-radius(0);
-      margin: .5em .5em 0 0; 
+      margin: .5em .5em 0 0;
     }
   }
 }
@@ -736,12 +697,12 @@ width: 0;
   .user-picture{
     float: left;
   }
-  
-  .field-name-field-profile-first, 
+
+  .field-name-field-profile-first,
   .field-name-field-profile-last{
     clear: both;
     @include rem-fallback(font-size, 1.675); //24px
-    
+
     display: inline-block;
     margin-right: .2em;
   }
@@ -751,8 +712,8 @@ width: 0;
   #edit-picture-upload{
     width: 100%;
   }
-  
-  
+
+
   #edit-pass-pass1 {
   margin-bottom: 4em;
   }
@@ -766,7 +727,7 @@ width: 0;
     }
   }
 
-  
+
   @media only screen and (min-width: 60em){
     .confirm-parent, .password-parent{
        width: 36.3em;

@@ -269,7 +269,7 @@
 
  $tabs-container-bg: #fff;
  $tabs-border: $line-grey;
- 
+
 /* Basic positioning styles shared by primary and secondary tabs. */
 %tabs {
   @include clearfix;
@@ -634,7 +634,13 @@ label.option {
 
 /* Buttons used by contrib modules like Media. */
 a.button {
-  @include appearance(button);
+  //@include appearance(button);
+  &.btn-sponsor {
+    @include button(#85c51f, #8ed221);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .5em;
+  }
 }
 
 /* Password confirmation. */

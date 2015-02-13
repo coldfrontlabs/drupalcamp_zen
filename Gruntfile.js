@@ -4,6 +4,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     concurrent: {
       watch: {
+        files: "scss/**/*.scss",
         tasks: ['watch', 'compass:watch'],
         options: {
           logConcurrentOutput: true
@@ -77,6 +78,18 @@ module.exports = function(grunt) {
         files: ['<%= jshint.beforeconcat %>'],
         tasks: ['jshint']
       }
+    },
+
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src : 'css/*.css'
+        },
+        options: {
+          proxy: '2015.dcottawa.dflocal.net',
+          watchTask: true
+        }
+      }
     }
   });
 
@@ -86,4 +99,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-concurrent');
   grunt.loadNpmTasks('grunt-scss-lint');
+  grunt.loadNpmTasks('grunt-browser-sync');
 };

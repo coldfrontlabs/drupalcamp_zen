@@ -21,6 +21,12 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+//Anti Aliasing for light colors on dark backgrounds
+ @mixin anti-aliasing{
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
 // Turns off the element-invisible effect.
 @mixin element-invisible-off {
   position: static !important;

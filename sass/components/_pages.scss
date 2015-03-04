@@ -5,6 +5,10 @@ body.html{
   background: url(../images/bg.jpg) no-repeat center center fixed;
 }
 
+.white-bg{
+  background: #fff; 
+}
+
 body.front{
   -webkit-background-size: cover;
   -moz-background-size: cover;

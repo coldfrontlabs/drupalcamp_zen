@@ -26,4 +26,7 @@
   "bugs": {
     "url": "https://git.dropfort.com/dropfort/dropforty/issues"
   }
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  }
 }
